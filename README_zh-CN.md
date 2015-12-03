@@ -79,9 +79,7 @@ pod 'LCTabBarController'    # Podfile
 // 1. 如果你项目已经开工，哪怕已经写完了
 // 只需在 application:didFinishLaunchingWithOptions: 方法里面替换一句代码
 UITabBarController *tabBarC = [[UITabBarController alloc] init];
-
 ->
-
 LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 
 // 2. 如果你刚刚开始写一个新项目
