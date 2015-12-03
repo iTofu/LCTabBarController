@@ -29,8 +29,6 @@
         tabBar.delegate = self;
         self.lcTabBar = tabBar;
     })];
-    
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
