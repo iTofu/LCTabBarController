@@ -133,7 +133,7 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 }
 ````
 
-* Done!
+* **Done!**
 
 * You can change the following properties in `LCTabBarCONST.h/.m`, other more attributes can be directly read code changes!
 ````objc

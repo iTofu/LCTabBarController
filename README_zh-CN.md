@@ -141,7 +141,7 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 }
 ````
 
-* 搞定！
+* **搞定！**
 
 * 你可以在 `LCTabBarCONST.h/.m` 中随意更改下列属性，其他更多属性可直接阅读代码更改！
 ````objc
