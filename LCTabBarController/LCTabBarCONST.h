@@ -13,7 +13,7 @@
 
 
 #define LC_TABBAR_ITEM_TITLE_COLOR      LCColorForTabBar(117, 117, 117) // tabBar 标题字体颜色
-#define LC_TABBAR_ITEM_TITLE_COLOR_HL   LCColorForTabBar(234, 103, 7)   // tabBar 标题字体颜色 (高亮时)
+#define LC_TABBAR_ITEM_TITLE_COLOR_HL   LCColorForTabBar(234, 103, 7)   // tabBar 标题字体颜色 (高亮)
 
 
 UIKIT_EXTERN const CGFloat LCTabBarItemImageRatio;      // tabBar 图片所占比例

@@ -3,6 +3,8 @@
 
 你几乎可以自定义 100% 的属性！
 
+![LCTabBarController](https://github.com/LeoiOS/LCTabBarController/blob/master/demo01.png)
+
 ````
 In me the tiger sniffs the rose.
 
@@ -14,26 +16,26 @@ In me the tiger sniffs the rose.
 ## 特点
 
 * 高度解耦。
-> 所有控件全部作为一个单独的类拆开。`-->` 表示属于：
+> 所有控件全部作为一个单独的类拆开，项目耦合性超低！`-->` 表示属于：
 >
 > LCTabBarBadge --> LCTabBarItem --> LCTabBar --> LCTabBarController
 
 * 集成简单。
 > 把你 `AppDelegate.m` 中的 `UITabBarController` 单词替换成 `LCTabBarController` 即可完成集成！
 >
-> 所以就算你项目已经完成，你依然可以随时集成！也可以随时更换回 `UITabBarController`！（但我有 200% 的把握你不会这么做！）
+> 所以就算你项目已经完成了，你依然可以随时集成！你也可以随时更换回 `UITabBarController`！（但我有 200% 的把握你不会这么做！）
 
 * 零污染。
-> 拥有 `UITabBarController` 的全部功能，而没有任何入侵行为！你需要做的永远只有一步！
+> 拥有 `UITabBarController` 的全部功能，而没有任何入侵行为！你要做的永远只有一步！
 >
 > `LCTabBarController` 利用 KVO 监听系统 tabBarItem，你任何对 tabBarItem 的设置都可以继续生效！
 >
-> 如：vc1.tabBarItem.image = [UIImage imageNamed:@"tabbar_home"]; // 生效！
+> 如：viewController.tabBarItem.image = [UIImage imageNamed:@"tabbar_home"]; // 生效！
 >
 >    someVC.hidesBottomBarWhenPushed = YES;     // 生效！
 
 * 高度自定义。
-> 你可以自由设置以下属性：
+> 你可以自由设置下列属性，也可以选择去代码中直接改！
 >
 > 1. tabBar 标题字体颜色（普通、高亮等）
 > 
@@ -44,6 +46,8 @@ In me the tiger sniffs the rose.
 > 4. tabBar 小红点 frame
 >
 > 5. tabBar 小红点 字体
+>
+> ...
 
 
 
@@ -76,7 +80,6 @@ UITabBarController *tabBarC = [[UITabBarController alloc] init];
 ->
 
 LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
-````
 
 // 2. 如果你刚刚开始写一个新项目
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -139,17 +142,35 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 
 * 搞定！
 
+* 你可以在 `LCTabBarCONST.h/.m` 中随意更改下列属性，其他更多属性可直接阅读代码更改！
+````objc
+#define LC_TABBAR_ITEM_TITLE_COLOR      // tabBar 标题字体颜色
+#define LC_TABBAR_ITEM_TITLE_COLOR_HL   // tabBar 标题字体颜色 (高亮)
+
+const CGFloat LCTabBarItemImageRatio     = 0.70f;   // tabBar 图片所占比例
+const CGFloat LCTabBarItemTitleFontSize  = 10.0f;   // tabBar 标题字体大小
+const CGFloat LCTabBarBadgeTitleFontSize = 11.0f;   // tabBar badge 字体大小
+````
+
+
+
+## 示例
+
+
+![LCTabBarController](https://github.com/LeoiOS/LCTabBarController/blob/master/demo01.png)
+![LCTabBarController](https://github.com/LeoiOS/LCTabBarController/blob/master/demo02.png)
+![LCTabBarController](https://github.com/LeoiOS/LCTabBarController/blob/master/demo03.png)
+![LCTabBarController](https://github.com/LeoiOS/LCTabBarController/blob/master/demo04.png)
+
 
 
 ## 联系
 
 * 有问题请直接 [Issues](https://github.com/LeoiOS/LCTabBarController/issues/new) :)
-* Email:leoios@sina.com
+* Email:leoios@sina.com & liucsuper@gmail.com
 * Blog: http://www.leodong.com
+
 
 
 ### 授权
 本项目采用 [MIT license](http://opensource.org/licenses/MIT) 开源，你可以利用采用该协议的代码做任何事情，只需要继续继承 MIT 协议即可。
-
-
-
