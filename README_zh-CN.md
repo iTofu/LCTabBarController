@@ -15,17 +15,17 @@ In me the tiger sniffs the rose.
 
 ## 特点
 
-* 高度解耦。
+* 高度解耦！
 > 所有控件全部作为一个单独的类拆开，项目耦合性超低！`-->` 表示属于：
 >
 > LCTabBarBadge --> LCTabBarItem --> LCTabBar --> LCTabBarController
 
-* 集成简单。
-> 把你 `AppDelegate.m` 中的 `UITabBarController` 单词替换成 `LCTabBarController` 即可完成集成！
+* 集成简单！
+> 一步集成：把你 `AppDelegate.m` 中的 `UITabBarController` 单词替换成 `LCTabBarController` 即可完成集成！
 >
-> 所以就算你项目已经完成了，你依然可以随时集成！你也可以随时更换回 `UITabBarController`！（但我有 200% 的把握你不会这么做！）
+> 所以，就算你项目已经完成了，你依然可以随时集成！当然你也可以随时更换回 `UITabBarController`！（但我有 200% 的把握你不会这么做！）
 
-* 零污染。
+* 零污染！
 > 拥有 `UITabBarController` 的全部功能，而没有任何入侵行为！你要做的永远只有一步！
 >
 > `LCTabBarController` 利用 KVO 监听系统 tabBarItem，你任何对 tabBarItem 的设置都可以继续生效！
@@ -34,7 +34,7 @@ In me the tiger sniffs the rose.
 >
 >    someVC.hidesBottomBarWhenPushed = YES;     // 生效！
 
-* 高度自定义。
+* 高度自定义！
 > 你可以自由设置下列属性，也可以选择去代码中直接改！
 >
 > 1. tabBar 标题字体颜色（普通、高亮等）
@@ -53,8 +53,9 @@ In me the tiger sniffs the rose.
 
 ## CocoaPods 安装
 
+把下面的代码添加到你的 Podfile 中：
 ````ruby
-pod 'LCTabBarController'
+pod 'LCTabBarController'    # Podfile
 ````
 
 
