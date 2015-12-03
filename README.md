@@ -1,5 +1,7 @@
 # LCTabBarController
-A amazing and highly customized tabBarController! You could almost customize 100% of the properties with LCTabBarController!
+A amazing and highly customized tabBarController!
+
+You could almost customize 100% of the properties with LCTabBarController!
 
 ````
 In me the tiger sniffs the rose.
