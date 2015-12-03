@@ -91,18 +91,7 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
     vc1.tabBarItem.image = [UIImage imageNamed:@"tabbar_home"];
     vc1.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_home_selected"];
     
-    UIViewController *vc2 = [[UIViewController alloc] init];
-    vc2.view.backgroundColor = [UIColor cyanColor];
-    vc2.tabBarItem.badgeValue = @"1";
-    vc2.title = @"Message";
-    vc2.tabBarItem.image = [UIImage imageNamed:@"tabbar_message_center"];
-    vc2.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_message_center_selected"];
-    
-    UIViewController *vc3 = [[UIViewController alloc] init];
-    vc3.view.backgroundColor = [UIColor redColor];
-    vc3.title = @"Discover";
-    vc3.tabBarItem.image = [UIImage imageNamed:@"tabbar_discover"];
-    vc3.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_discover_selected"];
+    // vc2 vc3 ...
     
     UIViewController *vc4 = [[UIViewController alloc] init];
     vc4.view.backgroundColor = [UIColor yellowColor];
