@@ -52,7 +52,9 @@ In me the tiger sniffs the rose.
 
 LCTabBarController is available on [CocoaPods](https://cocoapods.org/). Just add the following to your project Podfile:
 
+````ruby
 pod "LCTabBarController"    # Podfile
+````
 
 
 
