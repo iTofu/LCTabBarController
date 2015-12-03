@@ -34,7 +34,7 @@
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
         self.titleLabel.font = [UIFont systemFontOfSize:LCTabBarItemTitleFontSize];
         [self setTitleColor:LC_TABBAR_ITEM_TITLE_COLOR forState:UIControlStateNormal];
-        [self setTitleColor:LC_TABBAR_ITEM_TITLE_COLOR_HL forState:UIControlStateSelected];
+        [self setTitleColor:LC_TABBAR_ITEM_TITLE_COLOR_SEL forState:UIControlStateSelected];
         
         [self addSubview:({
             

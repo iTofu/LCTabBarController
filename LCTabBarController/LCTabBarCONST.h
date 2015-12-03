@@ -5,6 +5,7 @@
 //  Created by Leo on 15/12/2.
 //  Copyright © 2015年 Leo. All rights reserved.
 //
+//  V 1.0.1
 
 #import <UIKit/UIKit.h>
 
@@ -13,7 +14,7 @@
 
 
 #define LC_TABBAR_ITEM_TITLE_COLOR      LCColorForTabBar(117, 117, 117) // tabBar 标题字体颜色
-#define LC_TABBAR_ITEM_TITLE_COLOR_HL   LCColorForTabBar(234, 103, 7)   // tabBar 标题字体颜色 (高亮)
+#define LC_TABBAR_ITEM_TITLE_COLOR_SEL  LCColorForTabBar(234, 103, 7)   // tabBar 标题字体颜色 (选中)
 
 
 UIKIT_EXTERN const CGFloat LCTabBarItemImageRatio;      // tabBar 图片所占比例

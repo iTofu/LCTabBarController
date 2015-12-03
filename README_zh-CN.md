@@ -146,7 +146,7 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 * 你可以在 `LCTabBarCONST.h/.m` 中随意更改下列属性，其他更多属性可直接阅读代码更改！
 ````objc
 #define LC_TABBAR_ITEM_TITLE_COLOR      // tabBar 标题字体颜色
-#define LC_TABBAR_ITEM_TITLE_COLOR_HL   // tabBar 标题字体颜色 (高亮)
+#define LC_TABBAR_ITEM_TITLE_COLOR_SEL   // tabBar 标题字体颜色 (选中)
 
 const CGFloat LCTabBarItemImageRatio     = 0.70f;   // tabBar 图片所占比例
 const CGFloat LCTabBarItemTitleFontSize  = 10.0f;   // tabBar 标题字体大小
