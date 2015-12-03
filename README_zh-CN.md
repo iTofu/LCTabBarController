@@ -47,7 +47,7 @@ In me the tiger sniffs the rose.
 >
 > 5. tabBar 小红点 字体
 >
-> ...
+> 6. ...
 
 
 
@@ -74,7 +74,6 @@ pod 'LCTabBarController'
 
 // 1. 如果你项目已经开工，哪怕已经写完了
 // 只需在 application:didFinishLaunchingWithOptions: 方法里面替换一句代码
-````objc
 UITabBarController *tabBarC = [[UITabBarController alloc] init];
 
 ->
@@ -156,10 +155,12 @@ const CGFloat LCTabBarBadgeTitleFontSize = 11.0f;   // tabBar badge 字体大小
 
 ## 示例
 
-
 ![LCTabBarController](https://github.com/LeoiOS/LCTabBarController/blob/master/demo01.png)
+---
 ![LCTabBarController](https://github.com/LeoiOS/LCTabBarController/blob/master/demo02.png)
+---
 ![LCTabBarController](https://github.com/LeoiOS/LCTabBarController/blob/master/demo03.png)
+---
 ![LCTabBarController](https://github.com/LeoiOS/LCTabBarController/blob/master/demo04.png)
 
 
