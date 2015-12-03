@@ -138,7 +138,7 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 * You can change the following properties in `LCTabBarCONST.h/.m`, other more attributes can be directly read code changes!
 ````objc
 #define LC_TABBAR_ITEM_TITLE_COLOR      // tabBar title color
-#define LC_TABBAR_ITEM_TITLE_COLOR_SEL   // tabBar title color (selected)
+#define LC_TABBAR_ITEM_TITLE_COLOR_SEL  // tabBar title color (selected)
 
 const CGFloat LCTabBarItemImageRatio     = 0.70f;   // tabBar image ratio
 const CGFloat LCTabBarItemTitleFontSize  = 10.0f;   // tabBar title font size
