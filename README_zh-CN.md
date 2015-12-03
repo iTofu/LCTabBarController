@@ -49,6 +49,9 @@ In me the tiger sniffs the rose.
 >
 > 6. ...
 
+* 如果觉得还不错，请点击右上角 star！⭐️ 谢谢！
+> 我会根据 Issue 持续更新，如果你想随时了解我的进度，请点击右上角的 watch！
+
 
 
 ## CocoaPods 安装
