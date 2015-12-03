@@ -1,7 +1,7 @@
 # LCTabBarController
 一个感天动地的高度自定义的 tabBarController！
 
-你几乎可以自定义 100% 的属性！
+你几乎可以自定义 100% 的属性！😍 ✨
 
 ![LCTabBarController](https://github.com/LeoiOS/LCTabBarController/blob/master/demo01.png)
 
