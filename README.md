@@ -83,7 +83,7 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
     
     [self.window makeKeyAndVisible];
     
-    // 示例代码
+    // Other code
     HomeVC *vc1 = [[HomeVC alloc] init];
     vc1.view.backgroundColor = [UIColor whiteColor];
     vc1.tabBarItem.badgeValue = @"23";
