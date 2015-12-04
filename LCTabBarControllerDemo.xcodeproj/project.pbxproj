@@ -9,9 +9,8 @@
 /* Begin PBXBuildFile section */
 		B32570A71C0EAD0200B820A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B32570A61C0EAD0200B820A6 /* main.m */; };
 		B32570AA1C0EAD0200B820A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B32570A91C0EAD0200B820A6 /* AppDelegate.m */; };
-		B32570B01C0EAD0200B820A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32570AE1C0EAD0200B820A6 /* Main.storyboard */; };
 		B32570B21C0EAD0200B820A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32570B11C0EAD0200B820A6 /* Assets.xcassets */; };
-		B32570B51C0EAD0200B820A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32570B31C0EAD0200B820A6 /* LaunchScreen.storyboard */; };
+		B32F6D081C119CB500A85BE4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B32F6D071C119CB500A85BE4 /* LaunchScreen.xib */; };
 		B3313DB81C0FFA840093D61D /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B3313DB71C0FFA840093D61D /* HomeVC.m */; };
 		B34B56211C0ECA99006DA598 /* LCTabBarCONST.m in Sources */ = {isa = PBXBuildFile; fileRef = B34B56201C0ECA99006DA598 /* LCTabBarCONST.m */; };
 		B34B56241C0EF707006DA598 /* LCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B34B56231C0EF707006DA598 /* LCTabBarController.m */; };
@@ -26,10 +25,9 @@
 		B32570A61C0EAD0200B820A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B32570A81C0EAD0200B820A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B32570A91C0EAD0200B820A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B32570AF1C0EAD0200B820A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B32570B11C0EAD0200B820A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B32570B41C0EAD0200B820A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B32570B61C0EAD0200B820A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B32F6D071C119CB500A85BE4 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		B3313DB61C0FFA840093D61D /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
 		B3313DB71C0FFA840093D61D /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
 		B34B561F1C0ECA99006DA598 /* LCTabBarCONST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarCONST.h; sourceTree = "<group>"; };
@@ -80,9 +78,8 @@
 				B3313DB71C0FFA840093D61D /* HomeVC.m */,
 				B32570A81C0EAD0200B820A6 /* AppDelegate.h */,
 				B32570A91C0EAD0200B820A6 /* AppDelegate.m */,
-				B32570AE1C0EAD0200B820A6 /* Main.storyboard */,
+				B32F6D071C119CB500A85BE4 /* LaunchScreen.xib */,
 				B32570B11C0EAD0200B820A6 /* Assets.xcassets */,
-				B32570B31C0EAD0200B820A6 /* LaunchScreen.storyboard */,
 				B32570B61C0EAD0200B820A6 /* Info.plist */,
 				B32570A51C0EAD0200B820A6 /* Supporting Files */,
 			);
@@ -173,9 +170,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B34B56301C0EFC47006DA598 /* LCTabBarController.bundle in Resources */,
-				B32570B51C0EAD0200B820A6 /* LaunchScreen.storyboard in Resources */,
+				B32F6D081C119CB500A85BE4 /* LaunchScreen.xib in Resources */,
 				B32570B21C0EAD0200B820A6 /* Assets.xcassets in Resources */,
-				B32570B01C0EAD0200B820A6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,25 +194,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		B32570AE1C0EAD0200B820A6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B32570AF1C0EAD0200B820A6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B32570B31C0EAD0200B820A6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B32570B41C0EAD0200B820A6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B32570B71C0EAD0200B820A6 /* Debug */ = {
