@@ -16,7 +16,7 @@ In me the tiger sniffs the rose.
 ## Introduction
 
 * Highly decoupled!
-> Each control is a independent class! `-->` means "own":
+> Each control is a independent class! `-->` means "be possessed":
 >
 > LCTabBarBadge --> LCTabBarItem --> LCTabBar --> LCTabBarController
 
