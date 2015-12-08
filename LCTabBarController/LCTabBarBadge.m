@@ -18,6 +18,7 @@
         self.userInteractionEnabled = NO;
         self.hidden = YES;
         self.titleLabel.font = [UIFont systemFontOfSize:LCTabBarBadgeTitleFontSize];
+//        self.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin;
         
         NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"LCTabBarController" ofType:@"bundle"];
         NSString *imagePath = [bundlePath stringByAppendingPathComponent:@"LCTabBarBadge@2x.png"];
@@ -38,12 +39,25 @@
         [self setTitle:badgeValue forState:UIControlStateNormal];
         
         CGRect frame = self.frame;
-        CGFloat badgeW = self.currentBackgroundImage.size.width;
-        CGFloat badgeH = self.currentBackgroundImage.size.height;
         
-        CGSize titleSize = [badgeValue sizeWithAttributes:@{NSFontAttributeName : [UIFont systemFontOfSize:LCTabBarBadgeTitleFontSize]}];
-        frame.size.width = MAX(badgeW, titleSize.width + 10);
-        frame.size.height = badgeH;
+        if (self.badgeValue.length > 0) {
+            
+            CGFloat badgeW = self.currentBackgroundImage.size.width;
+            CGFloat badgeH = self.currentBackgroundImage.size.height;
+            
+            CGSize titleSize = [badgeValue sizeWithAttributes:@{NSFontAttributeName : [UIFont systemFontOfSize:LCTabBarBadgeTitleFontSize]}];
+            frame.size.width = MAX(badgeW, titleSize.width + 10);
+            frame.size.height = badgeH;
+            self.frame = frame;
+            
+        } else {
+            
+            frame.size.width = 12.0f;
+            frame.size.height = frame.size.width;
+        }
+        
+        frame.origin.x = 58.0f * [UIScreen mainScreen].bounds.size.width / 375;
+        frame.origin.y = 2.0f;
         self.frame = frame;
     }
 }

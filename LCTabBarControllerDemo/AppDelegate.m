@@ -26,7 +26,7 @@
     
     HomeVC *vc1 = [[HomeVC alloc] init];
     vc1.view.backgroundColor = [UIColor whiteColor];
-    vc1.tabBarItem.badgeValue = @"23";
+    vc1.tabBarItem.badgeValue = @"";
     vc1.title = @"Home";
     vc1.tabBarItem.image = [UIImage imageNamed:@"tabbar_home"];
     vc1.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_home_selected"];

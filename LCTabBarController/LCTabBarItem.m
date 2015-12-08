@@ -36,12 +36,9 @@
         [self setTitleColor:LC_TABBAR_ITEM_TITLE_COLOR forState:UIControlStateNormal];
         [self setTitleColor:LC_TABBAR_ITEM_TITLE_COLOR_SEL forState:UIControlStateSelected];
         
-        [self addSubview:({
-            
-            LCTabBarBadge *tabBarBadge = [[LCTabBarBadge alloc] init];
-            tabBarBadge.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin;
-            self.tabBarBadge = tabBarBadge;
-        })];
+        LCTabBarBadge *tabBarBadge = [[LCTabBarBadge alloc] init];
+        self.tabBarBadge = tabBarBadge;
+        [self addSubview:tabBarBadge];
     }
     return self;
 }
@@ -66,12 +63,7 @@
     
     self.tabBarBadge.badgeValue = self.tabBarItem.badgeValue;
     
-    CGRect frame = self.tabBarBadge.frame;
-    CGFloat badgeX = self.frame.size.width - frame.size.width - 12.0f;
-    CGFloat badgeY = 2.0f;
-    frame.origin.x = badgeX;
-    frame.origin.y = badgeY;
-    self.tabBarBadge.frame = frame;
+    NSLog(@"%@", NSStringFromCGRect([UIScreen mainScreen].bounds));
 }
 
 #pragma mark - Reset TabBarItem
