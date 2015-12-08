@@ -62,8 +62,6 @@
     [self setImage:self.tabBarItem.selectedImage forState:UIControlStateSelected];
     
     self.tabBarBadge.badgeValue = self.tabBarItem.badgeValue;
-    
-    NSLog(@"%@", NSStringFromCGRect([UIScreen mainScreen].bounds));
 }
 
 #pragma mark - Reset TabBarItem

@@ -9,11 +9,15 @@ In me the tiger sniffs the rose.
 心有猛虎，细嗅蔷薇。
 ````
 
+Welcome to visit my blog: http://LeoDev.me
+
+
+
 **[中文介绍](https://github.com/LeoiOS/LCTabBarController/blob/master/README_zh-CN.md)**
 
 
 
-## Introduction
+## Feature
 
 * Highly decoupled!
 > Each control is a independent class! `-->` means "be possessed":
@@ -135,6 +139,25 @@ const CGFloat LCTabBarItemImageRatio     = 0.70f;   // tabBar image ratio
 const CGFloat LCTabBarItemTitleFontSize  = 10.0f;   // tabBar title font size
 const CGFloat LCTabBarBadgeTitleFontSize = 11.0f;   // tabBar badge title font size
 ````
+
+
+## Release
+
+### 1.0.3
+
+* Delete some logs.
+* Update demo images.
+
+
+### 1.0.2
+
+* UI fixed.
+
+
+### 1.0.0
+
+* Init Commit.
+* [CocoaPods](https://cocoapods.org/) support.
 
 
 
