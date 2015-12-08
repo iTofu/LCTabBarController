@@ -185,7 +185,7 @@ If you have any questions, please commit a [Issues](https://github.com/LeoiOS/LC
 
 Email: liucsuper@gmail.com & leoios@sina.com
 
-Blog: http://www.leodong.com
+Blog: http://LeoDev.me & http://www.leodong.com
 
 
 

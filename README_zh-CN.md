@@ -186,7 +186,7 @@ const CGFloat LCTabBarBadgeTitleFontSize = 11.0f;   // tabBar badge 字体大小
 
 * 有问题请直接 [Issues](https://github.com/LeoiOS/LCTabBarController/issues/new) :)
 * Email:leoios@sina.com & liucsuper@gmail.com
-* Blog: http://www.leodong.com
+* Blog: http://LeoDev.me & http://www.leodong.com
 
 
 
