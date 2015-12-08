@@ -141,25 +141,6 @@ const CGFloat LCTabBarBadgeTitleFontSize = 11.0f;   // tabBar badge title font s
 ````
 
 
-## Release
-
-### 1.0.3
-
-* Delete some logs.
-* Update demo images.
-
-
-### 1.0.2
-
-* UI fixed.
-
-
-### 1.0.0
-
-* Init Commit.
-* [CocoaPods](https://cocoapods.org/) support.
-
-
 
 ## Example
 
@@ -170,6 +151,31 @@ const CGFloat LCTabBarBadgeTitleFontSize = 11.0f;   // tabBar badge title font s
 ![LCTabBarController](https://github.com/LeoiOS/LCTabBarController/blob/master/demo03.png)
 ---
 ![LCTabBarController](https://github.com/LeoiOS/LCTabBarController/blob/master/demo04.png)
+
+
+
+## Release
+
+### V 1.0.3
+
+* Delete some logs.
+* Update demo images.
+
+
+### V 1.0.2
+
+* UI adjustment.
+
+
+### V 1.0.1
+
+* Bug fixed.
+
+
+### V 1.0.0
+
+* Init Commit.
+* [CocoaPods](https://cocoapods.org/) support.
 
 
 
