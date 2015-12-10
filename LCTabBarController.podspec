@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/LeoiOS/LCTabBarController"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Leo" => "leoios@sina.com" }
-  s.social_media_url   = "http://LeoDev.me"
+# s.social_media_url   = "http://LeoDev.me"
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/LeoiOS/LCTabBarController.git", :tag => s.version }
   s.source_files  = "LCTabBarController/**/*.{h,m}"
