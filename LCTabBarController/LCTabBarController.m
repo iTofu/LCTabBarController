@@ -5,7 +5,7 @@
 //  Created by Leo on 15/12/2.
 //  Copyright © 2015年 Leo. All rights reserved.
 //
-//  V 1.0.3
+//  V 1.0.5
 
 #import "LCTabBarController.h"
 #import "LCTabBar.h"
