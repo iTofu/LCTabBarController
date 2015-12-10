@@ -157,7 +157,13 @@ const CGFloat LCTabBarBadgeTitleFontSize = 11.0f;   // tabBar badge 字体大小
 ![LCTabBarController](https://github.com/LeoiOS/LCTabBarController/blob/master/demo04.png)
 
 
+
 ## 版本
+
+### V 1.0.5
+
+* `tabBarItem` 中的 `imageView` 的 `contentModel` 修改为 `UIViewContentModeScaleAspectFit`。
+
 
 ### V 1.0.3
 
