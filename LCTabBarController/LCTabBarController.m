@@ -55,7 +55,6 @@
         
         [self addChildViewController:VC];
         
-        // 添加tabBarView内部按钮
         [self.lcTabBar addTabBarItem:VC.tabBarItem];
     }];
 }
