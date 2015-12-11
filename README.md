@@ -156,10 +156,16 @@ const CGFloat LCTabBarBadgeTitleFontSize = 11.0f;   // tabBar badge title font s
 
 ## Release
 
+### V 1.2.0
+
+* for you!
+
+
 ### V 1.1.0
 
 * for LanMeng Tec.
 * V 1.1.x will for LanMeng Tec. only.
+
 
 ### V 1.0.6
 

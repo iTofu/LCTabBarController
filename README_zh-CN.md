@@ -160,10 +160,16 @@ const CGFloat LCTabBarBadgeTitleFontSize = 11.0f;   // tabBar badge 字体大小
 
 ## 版本
 
+### V 1.2.0
+
+* 公众版本。
+
+
 ### V 1.1.0
 
 * 适配 [揽梦云签](http://itunes.apple.com/cn/app/id1006513728)。
 * V 1.1.x 将为揽梦科技专用。
+
 
 ### V 1.0.6
 
