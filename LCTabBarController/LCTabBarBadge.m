@@ -56,7 +56,7 @@
             frame.size.height = frame.size.width;
         }
         
-        frame.origin.x = 58.0f * [UIScreen mainScreen].bounds.size.width / 375;
+        frame.origin.x = 58.0f * ([UIScreen mainScreen].bounds.size.width / self.tabBarItemCount) / 375.0f * 4.0f;
         frame.origin.y = 2.0f;
         self.frame = frame;
     }

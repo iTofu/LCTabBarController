@@ -36,12 +36,19 @@
         [self setTitleColor:LC_TABBAR_ITEM_TITLE_COLOR forState:UIControlStateNormal];
         [self setTitleColor:LC_TABBAR_ITEM_TITLE_COLOR_SEL forState:UIControlStateSelected];
         
-        LCTabBarBadge *tabBarBadge = [[LCTabBarBadge alloc] init];
-        self.tabBarBadge = tabBarBadge;
-        [self addSubview:tabBarBadge];
+        self.tabBarBadge = [[LCTabBarBadge alloc] init];
+        [self addSubview:self.tabBarBadge];
     }
     return self;
 }
+
+- (void)setTabBarItemCount:(NSInteger)tabBarItemCount {
+    
+    _tabBarItemCount = tabBarItemCount;
+    
+    self.tabBarBadge.tabBarItemCount = self.tabBarItemCount;
+}
+
 
 - (void)setTabBarItem:(UITabBarItem *)tabBarItem {
     

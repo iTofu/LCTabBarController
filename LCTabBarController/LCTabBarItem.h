@@ -12,4 +12,6 @@
 
 @property (nonatomic, strong) UITabBarItem *tabBarItem;
 
+@property (nonatomic, assign) NSInteger tabBarItemCount;
+
 @end

@@ -5,7 +5,6 @@
 //  Created by Leo on 15/12/2.
 //  Copyright © 2015年 Leo. All rights reserved.
 //
-//  V 1.2.0
 
 #import "LCTabBarController.h"
 #import "LCTabBar.h"
@@ -45,6 +44,8 @@
 }
 
 - (void)setViewControllers:(NSArray *)viewControllers {
+    
+    self.lcTabBar.tabBarItemCount = viewControllers.count;
     
     [viewControllers enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         

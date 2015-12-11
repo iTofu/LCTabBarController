@@ -31,6 +31,8 @@
     
     LCTabBarItem *tabBarItem = [LCTabBarItem buttonWithType:UIButtonTypeCustom];
     
+    tabBarItem.tabBarItemCount = self.tabBarItemCount;
+    
     tabBarItem.tabBarItem = item;
     
     [tabBarItem addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchDown];

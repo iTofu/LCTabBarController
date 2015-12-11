@@ -23,6 +23,8 @@
 
 @interface LCTabBar : UIView
 
+@property (nonatomic, assign) NSInteger tabBarItemCount;
+
 @property (nonatomic, weak) id<LCTabBarDelegate> delegate;
 
 - (void)addTabBarItem:(UITabBarItem *)item;
