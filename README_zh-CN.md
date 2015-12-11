@@ -160,6 +160,11 @@ const CGFloat LCTabBarBadgeTitleFontSize = 11.0f;   // tabBar badge 字体大小
 
 ## 版本
 
+### V 1.0.6
+
+* 适配 [揽梦云签](http://itunes.apple.com/cn/app/id1006513728)。
+
+
 ### V 1.0.5
 
 * `tabBarItem` 中的 `imageView` 的 `contentModel` 修改为 `UIViewContentModeScaleAspectFit`。

@@ -79,7 +79,7 @@
     
     CGFloat titleX = 0;
     CGFloat titleW = contentRect.size.width;
-    CGFloat titleY = contentRect.size.height * LCTabBarItemImageRatio;
+    CGFloat titleY = contentRect.size.height * LCTabBarItemImageRatio - (LCTabBarItemImageRatio == 1.0f ? 0 : 5.0f);
     CGFloat titleH = contentRect.size.height - titleY;
     return CGRectMake(titleX, titleY, titleW, titleH);
 }
