@@ -68,16 +68,16 @@
 
 - (CGRect)imageRectForContentRect:(CGRect)contentRect {
     
-    CGFloat imageX = 5.0f;
-    CGFloat imageY = 5.0f;
-    CGFloat imageW = contentRect.size.width - 10.0f;
-    CGFloat imageH = contentRect.size.height * LCTabBarItemImageRatio - 10.0f;
+    CGFloat imageX = 0.f;
+    CGFloat imageY = 0.f;
+    CGFloat imageW = contentRect.size.width;
+    CGFloat imageH = contentRect.size.height * LCTabBarItemImageRatio;
     return CGRectMake(imageX, imageY, imageW, imageH);
 }
 
 - (CGRect)titleRectForContentRect:(CGRect)contentRect {
     
-    CGFloat titleX = 0;
+    CGFloat titleX = 0.f;
     CGFloat titleW = contentRect.size.width;
     CGFloat titleY = contentRect.size.height * LCTabBarItemImageRatio + (LCTabBarItemImageRatio == 1.0f ? 100.0f : -5.0f);
     CGFloat titleH = contentRect.size.height - titleY;
