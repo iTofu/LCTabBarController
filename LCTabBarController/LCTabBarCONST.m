@@ -8,6 +8,6 @@
 
 #import "LCTabBarCONST.h"
 
-const CGFloat LCTabBarItemImageRatio     = 0.70f;   // tabBar 图片所占比例
+const CGFloat LCTabBarItemImageRatio     = 1.00f;   // tabBar 图片所占比例
 const CGFloat LCTabBarItemTitleFontSize  = 10.0f;   // tabBar 标题字体大小
 const CGFloat LCTabBarBadgeTitleFontSize = 11.0f;   // tabBar badge 字体大小
