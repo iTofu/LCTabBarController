@@ -156,6 +156,19 @@ const CGFloat LCTabBarBadgeTitleFontSize = 11.0f;   // tabBar badge title font s
 
 ## Release
 
+
+### V 1.2.2
+
+* 
+    ````objc
+    tabBarItem.imageView.contentModel == UIViewContentModeScaleAspectFit;
+    
+    -->
+    
+    tabBarItem.imageView.contentModel == UIViewContentModeCenter;
+    ````
+
+
 ### V 1.2.1
 
 * Fix frame: `tabBarBadge`'s `x`.
