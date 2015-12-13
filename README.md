@@ -82,11 +82,11 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 
 // 2. If you're just starting to write a new project
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
+
     [self.window makeKeyAndVisible];
-    
+
     // Other code
     HomeVC *vc1 = [[HomeVC alloc] init];
     vc1.view.backgroundColor = [UIColor whiteColor];
@@ -94,24 +94,24 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
     vc1.title = @"Home";
     vc1.tabBarItem.image = [UIImage imageNamed:@"tabbar_home"];
     vc1.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_home_selected"];
-    
+
     // vc2 vc3 ...
-    
+
     UIViewController *vc4 = [[UIViewController alloc] init];
     vc4.view.backgroundColor = [UIColor yellowColor];
     vc4.tabBarItem.badgeValue = @"99+";
     vc4.title = @"Profile";
     vc4.tabBarItem.image = [UIImage imageNamed:@"tabbar_profile"];
     vc4.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_profile_selected"];
-    
-    
+
+
     UINavigationController *navC1 = [[UINavigationController alloc] initWithRootViewController:vc1];
     UINavigationController *navC2 = [[UINavigationController alloc] initWithRootViewController:vc2];
     UINavigationController *navC3 = [[UINavigationController alloc] initWithRootViewController:vc3];
     UINavigationController *navC4 = [[UINavigationController alloc] initWithRootViewController:vc4];
-    
-    
-    
+
+
+
     /**************************************** Key Code ****************************************/
 
     LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
@@ -121,9 +121,9 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
     self.window.rootViewController = tabBarC;
 
     /******************************************************************************************/
-    
-    
-    
+
+
+
     return YES;
 }
 ````
@@ -159,12 +159,12 @@ const CGFloat LCTabBarBadgeTitleFontSize = 11.0f;   // tabBar badge title font s
 
 ### V 1.2.2
 
-* 
+*
     ````objc
     tabBarItem.imageView.contentModel == UIViewContentModeScaleAspectFit;
-    
+
     -->
-    
+
     tabBarItem.imageView.contentModel == UIViewContentModeCenter;
     ````
 
@@ -192,12 +192,12 @@ const CGFloat LCTabBarBadgeTitleFontSize = 11.0f;   // tabBar badge title font s
 
 ### V 1.0.5
 
-* 
+*
     ````objc
     tabBarItem.imageView.contentModel == UIViewContentModeCenter;
-    
+
     -->
-    
+
     tabBarItem.imageView.contentModel == UIViewContentModeScaleAspectFit;
     ````
 
@@ -229,7 +229,7 @@ const CGFloat LCTabBarBadgeTitleFontSize = 11.0f;   // tabBar badge title font s
 
 If you have any questions, please commit a [Issues](https://github.com/LeoiOS/LCTabBarController/issues/new)! Thx!
 
-Email: liucsuper@gmail.com & leoios@sina.com
+Email: <liucsuper@gmail.com> & <leoios@sina.com>
 
 Blog: http://LeoDev.me & http://www.leodong.com
 
@@ -238,6 +238,3 @@ Blog: http://LeoDev.me & http://www.leodong.com
 ## License
 
 [MIT License](http://opensource.org/licenses/MIT)
-
-
-
