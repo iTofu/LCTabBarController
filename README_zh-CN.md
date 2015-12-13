@@ -40,7 +40,7 @@ In me the tiger sniffs the rose.
 > 你可以自由设置下列属性，也可以选择去代码中直接改！
 >
 > 1. tabBar 标题字体颜色（普通、高亮等）
-> 
+>
 > 2. tabBar 标题字体
 >
 > 3. tabBar 图片所占比例
@@ -86,11 +86,11 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 
 // 2. 如果你刚刚开始写一个新项目
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
+
     [self.window makeKeyAndVisible];
-    
+
     // 示例代码
     HomeVC *vc1 = [[HomeVC alloc] init];
     vc1.view.backgroundColor = [UIColor whiteColor];
@@ -98,36 +98,36 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
     vc1.title = @"Home";
     vc1.tabBarItem.image = [UIImage imageNamed:@"tabbar_home"];
     vc1.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_home_selected"];
-    
+
     // vc2 vc3 ...
-    
+
     UIViewController *vc4 = [[UIViewController alloc] init];
     vc4.view.backgroundColor = [UIColor yellowColor];
     vc4.tabBarItem.badgeValue = @"99+";
     vc4.title = @"Profile";
     vc4.tabBarItem.image = [UIImage imageNamed:@"tabbar_profile"];
     vc4.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_profile_selected"];
-    
-    
+
+
     UINavigationController *navC1 = [[UINavigationController alloc] initWithRootViewController:vc1];
     UINavigationController *navC2 = [[UINavigationController alloc] initWithRootViewController:vc2];
     UINavigationController *navC3 = [[UINavigationController alloc] initWithRootViewController:vc3];
     UINavigationController *navC4 = [[UINavigationController alloc] initWithRootViewController:vc4];
-    
-    
-    
+
+
+
     /**************************************** Key Code ****************************************/
 
     LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
-    
+
     tabBarC.viewControllers = @[navC1, navC2, navC3, navC4];
-    
+
     self.window.rootViewController = tabBarC;
-    
+
     /******************************************************************************************/
-    
-    
-    
+
+
+
     return YES;
 }
 ````
@@ -218,7 +218,7 @@ const CGFloat LCTabBarBadgeTitleFontSize = 11.0f;   // tabBar badge 字体大小
 ## 联系
 
 * 有问题请直接 [Issues](https://github.com/LeoiOS/LCTabBarController/issues/new) :)
-* Email:leoios@sina.com & liucsuper@gmail.com
+* Email: <leoios@sina.com> & <liucsuper@gmail.com>
 * Blog: http://LeoDev.me & http://www.leodong.com
 
 
