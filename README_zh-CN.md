@@ -176,7 +176,7 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 ## 版本
 
 
-### V 1.2.3
+### V 1.2.5
 
 * 改善自定义属性的方法，体验更佳！
 

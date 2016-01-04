@@ -172,7 +172,7 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 ## Release
 
 
-### V 1.2.3
+### V 1.2.5
 
 * Change custom way, experience better!
 
