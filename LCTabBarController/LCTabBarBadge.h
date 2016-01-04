@@ -14,4 +14,9 @@
 
 @property (nonatomic, assign) NSInteger tabBarItemCount;
 
+/**
+ *  tabbar item's badge title font
+ */
+@property (nonatomic, strong) UIFont *badgeTitleFont;
+
 @end

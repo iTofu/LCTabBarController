@@ -29,7 +29,12 @@
 
 - (void)addTabBarItem:(UITabBarItem *)item {
     
-    LCTabBarItem *tabBarItem = [LCTabBarItem buttonWithType:UIButtonTypeCustom];
+    LCTabBarItem *tabBarItem = [[LCTabBarItem alloc] initWithItemImageRatio:self.itemImageRatio];
+    
+    tabBarItem.badgeTitleFont         = self.badgeTitleFont;
+    tabBarItem.itemTitleFont          = self.itemTitleFont;
+    tabBarItem.itemTitleColor         = self.itemTitleColor;
+    tabBarItem.selectedItemTitleColor = self.selectedItemTitleColor;
     
     tabBarItem.tabBarItemCount = self.tabBarItemCount;
     

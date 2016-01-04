@@ -8,6 +8,7 @@
 
 #import "LCTabBarController.h"
 #import "LCTabBar.h"
+#import "LCTabBarCONST.h"
 
 @interface LCTabBarController () <LCTabBarDelegate>
 
@@ -17,6 +18,53 @@
 
 @implementation LCTabBarController
 
+#pragma mark -
+
+- (UIColor *)itemTitleColor {
+    
+    if (!_itemTitleColor) {
+        
+        _itemTitleColor = LCColorForTabBar(117, 117, 117);
+    }
+    return _itemTitleColor;
+}
+
+- (UIColor *)selectedItemTitleColor {
+    
+    if (!_selectedItemTitleColor) {
+        
+        _selectedItemTitleColor = LCColorForTabBar(234, 103, 7);
+    }
+    return _selectedItemTitleColor;
+}
+
+- (UIFont *)itemTitleFont {
+    
+    if (!_itemTitleFont) {
+        
+        _itemTitleFont = [UIFont systemFontOfSize:10.0f];
+    }
+    return _itemTitleFont;
+}
+
+- (UIFont *)badgeTitleFont {
+    
+    if (!_badgeTitleFont) {
+        
+        _badgeTitleFont = [UIFont systemFontOfSize:11.0f];
+    }
+    return _badgeTitleFont;
+}
+
+#pragma mark -
+
+- (void)loadView {
+    
+    [super loadView];
+    
+    self.itemImageRatio = 0.70f;
+}
+
 - (void)viewDidLoad {
     
     [super viewDidLoad];
@@ -24,8 +72,9 @@
     [self.tabBar addSubview:({
         
         LCTabBar *tabBar = [[LCTabBar alloc] init];
-        tabBar.frame = self.tabBar.bounds;
-        tabBar.delegate = self;
+        tabBar.frame     = self.tabBar.bounds;
+        tabBar.delegate  = self;
+        
         self.lcTabBar = tabBar;
     })];
 }
@@ -44,6 +93,12 @@
 }
 
 - (void)setViewControllers:(NSArray *)viewControllers {
+    
+    self.lcTabBar.badgeTitleFont         = self.badgeTitleFont;
+    self.lcTabBar.itemTitleFont          = self.itemTitleFont;
+    self.lcTabBar.itemImageRatio         = self.itemImageRatio;
+    self.lcTabBar.itemTitleColor         = self.itemTitleColor;
+    self.lcTabBar.selectedItemTitleColor = self.selectedItemTitleColor;
     
     self.lcTabBar.tabBarItemCount = viewControllers.count;
     

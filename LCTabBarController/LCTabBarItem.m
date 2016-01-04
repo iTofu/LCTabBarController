@@ -32,15 +32,53 @@
         
         self.imageView.contentMode = UIViewContentModeCenter;
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
-        self.titleLabel.font = [UIFont systemFontOfSize:LCTabBarItemTitleFontSize];
-        [self setTitleColor:LC_TABBAR_ITEM_TITLE_COLOR forState:UIControlStateNormal];
-        [self setTitleColor:LC_TABBAR_ITEM_TITLE_COLOR_SEL forState:UIControlStateSelected];
         
         self.tabBarBadge = [[LCTabBarBadge alloc] init];
         [self addSubview:self.tabBarBadge];
     }
     return self;
 }
+
+- (instancetype)initWithItemImageRatio:(CGFloat)itemImageRatio {
+    
+    if (self = [super init]) {
+        
+        self.itemImageRatio = itemImageRatio;
+    }
+    return self;
+}
+
+#pragma mark -
+
+- (void)setItemTitleFont:(UIFont *)itemTitleFont {
+    
+    _itemTitleFont = itemTitleFont;
+    
+    self.titleLabel.font = itemTitleFont;
+}
+
+- (void)setItemTitleColor:(UIColor *)itemTitleColor {
+    
+    _itemTitleColor = itemTitleColor;
+    
+    [self setTitleColor:itemTitleColor forState:UIControlStateNormal];
+}
+
+- (void)setSelectedItemTitleColor:(UIColor *)selectedItemTitleColor {
+    
+    _selectedItemTitleColor = selectedItemTitleColor;
+    
+    [self setTitleColor:selectedItemTitleColor forState:UIControlStateSelected];
+}
+
+- (void)setBadgeTitleFont:(UIFont *)badgeTitleFont {
+    
+    _badgeTitleFont = badgeTitleFont;
+    
+    self.tabBarBadge.badgeTitleFont = badgeTitleFont;
+}
+
+#pragma mark -
 
 - (void)setTabBarItemCount:(NSInteger)tabBarItemCount {
     
@@ -78,7 +116,8 @@
     CGFloat imageX = 0.f;
     CGFloat imageY = 0.f;
     CGFloat imageW = contentRect.size.width;
-    CGFloat imageH = contentRect.size.height * LCTabBarItemImageRatio;
+    CGFloat imageH = contentRect.size.height * self.itemImageRatio;
+    
     return CGRectMake(imageX, imageY, imageW, imageH);
 }
 
@@ -86,8 +125,9 @@
     
     CGFloat titleX = 0.f;
     CGFloat titleW = contentRect.size.width;
-    CGFloat titleY = contentRect.size.height * LCTabBarItemImageRatio + (LCTabBarItemImageRatio == 1.0f ? 100.0f : -5.0f);
+    CGFloat titleY = contentRect.size.height * self.itemImageRatio + (self.itemImageRatio == 1.0f ? 100.0f : -5.0f);
     CGFloat titleH = contentRect.size.height - titleY;
+    
     return CGRectMake(titleX, titleY, titleW, titleH);
 }
 

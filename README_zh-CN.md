@@ -134,15 +134,30 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 
 * **搞定！**
 
-* 你可以在 `LCTabBarCONST.h/.m` 中随意更改下列属性，其他更多属性可直接阅读代码更改！
-````objc
-#define LC_TABBAR_ITEM_TITLE_COLOR      // tabBar 标题字体颜色
-#define LC_TABBAR_ITEM_TITLE_COLOR_SEL  // tabBar 标题字体颜色 (选中)
+* 你可以在通过更改 `LCTabBarController` 对象随意更改下列属性，其他更多属性可直接阅读代码更改！
 
-const CGFloat LCTabBarItemImageRatio     = 0.70f;   // tabBar 图片所占比例
-const CGFloat LCTabBarItemTitleFontSize  = 10.0f;   // tabBar 标题字体大小
-const CGFloat LCTabBarBadgeTitleFontSize = 11.0f;   // tabBar badge 字体大小
-````
+  ````objc
+  /**************************************** Key Code ****************************************/
+
+  LCTabBarController *tabBarC    = [[LCTabBarController alloc] init];
+
+  // look here, you should set this properties before `- setViewControllers:`
+  tabBarC.itemTitleFont          = [UIFont boldSystemFontOfSize:11.0f];
+  tabBarC.itemTitleColor         = [UIColor greenColor];
+  tabBarC.selectedItemTitleColor = [UIColor redColor];
+  tabBarC.itemImageRatio         = 0.5f;
+  tabBarC.badgeTitleFont         = [UIFont boldSystemFontOfSize:12.0f];
+
+  tabBarC.viewControllers        = @[navC1, navC2, navC3, navC4];
+
+  self.window.rootViewController = tabBarC;
+
+  /******************************************************************************************/
+  ````
+
+  Than you could see like this:
+
+  ![LCTabBarController](https://github.com/LeoiOS/LCTabBarController/blob/master/CustomProperties.png)
 
 
 
@@ -159,6 +174,12 @@ const CGFloat LCTabBarBadgeTitleFontSize = 11.0f;   // tabBar badge 字体大小
 
 
 ## 版本
+
+
+### V 1.2.3
+
+* 改善自定义属性的方法，体验更佳！
+
 
 
 ### V 1.2.2

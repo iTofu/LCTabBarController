@@ -130,15 +130,30 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 
 * **Done!**
 
-* You can change the following properties in `LCTabBarCONST.h/.m`, other more attributes can be directly read code changes!
-````objc
-#define LC_TABBAR_ITEM_TITLE_COLOR      // tabBar title color
-#define LC_TABBAR_ITEM_TITLE_COLOR_SEL  // tabBar title color (selected)
+* You can change the following properties with `LCTabBarController` object, other more attributes can be directly read code changes!
 
-const CGFloat LCTabBarItemImageRatio     = 0.70f;   // tabBar image ratio
-const CGFloat LCTabBarItemTitleFontSize  = 10.0f;   // tabBar title font size
-const CGFloat LCTabBarBadgeTitleFontSize = 11.0f;   // tabBar badge title font size
-````
+  ````objc
+  /**************************************** Key Code ****************************************/
+
+  LCTabBarController *tabBarC    = [[LCTabBarController alloc] init];
+
+  // look here, you should set this properties before `- setViewControllers:`
+  tabBarC.itemTitleFont          = [UIFont boldSystemFontOfSize:11.0f];
+  tabBarC.itemTitleColor         = [UIColor greenColor];
+  tabBarC.selectedItemTitleColor = [UIColor redColor];
+  tabBarC.itemImageRatio         = 0.5f;
+  tabBarC.badgeTitleFont         = [UIFont boldSystemFontOfSize:12.0f];
+
+  tabBarC.viewControllers        = @[navC1, navC2, navC3, navC4];
+
+  self.window.rootViewController = tabBarC;
+
+  /******************************************************************************************/
+  ````
+
+  Than you could see like this:
+
+  ![LCTabBarController](https://github.com/LeoiOS/LCTabBarController/blob/master/CustomProperties.png)
 
 
 
@@ -155,6 +170,11 @@ const CGFloat LCTabBarBadgeTitleFontSize = 11.0f;   // tabBar badge title font s
 
 
 ## Release
+
+
+### V 1.2.3
+
+* Change custom way, experience better!
 
 
 ### V 1.2.2

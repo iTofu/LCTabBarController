@@ -61,10 +61,16 @@
     
     /**************************************** Key Code ****************************************/
     
-    LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
-    
-    tabBarC.viewControllers = @[navC1, navC2, navC3, navC4];
-    
+    LCTabBarController *tabBarC    = [[LCTabBarController alloc] init];
+
+//    tabBarC.itemTitleFont          = [UIFont boldSystemFontOfSize:11.0f];
+//    tabBarC.itemTitleColor         = [UIColor greenColor];
+//    tabBarC.selectedItemTitleColor = [UIColor redColor];
+//    tabBarC.itemImageRatio         = 0.5f;
+//    tabBarC.badgeTitleFont         = [UIFont boldSystemFontOfSize:12.0f];
+
+    tabBarC.viewControllers        = @[navC1, navC2, navC3, navC4];
+
     self.window.rootViewController = tabBarC;
     
     /******************************************************************************************/
