@@ -182,7 +182,7 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 
   ````objc
   [self.navigationController popToRootViewControllerAnimated:YES];
-  
+
   [(LCTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController removeOriginControls];
   ````
 
@@ -227,14 +227,15 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 
 ### V 1.0.5
 
-*
-    ````objc
-    tabBarItem.imageView.contentModel == UIViewContentModeCenter;
+* Change something:
 
-    -->
+  ````objc
+  tabBarItem.imageView.contentModel == UIViewContentModeCenter;
 
-    tabBarItem.imageView.contentModel == UIViewContentModeScaleAspectFit;
-    ````
+  -->
+
+  tabBarItem.imageView.contentModel == UIViewContentModeScaleAspectFit;
+  ````
 
 
 ### V 1.0.3
