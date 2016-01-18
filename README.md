@@ -172,6 +172,21 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 ## Release
 
 
+### V 1.2.6
+
+* Bug fixed:
+
+  When I call the `- popToRootViewController` method, the origin controls of the system's tabbar is displayed again.
+
+  Now, You could call `- removeOriginControls` method after `- popToRootViewController`, like this:
+
+  ````objc
+  [self.navigationController popToRootViewControllerAnimated:YES];
+  
+  [(LCTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController removeOriginControls];
+  ````
+
+
 ### V 1.2.5
 
 * Change custom way, experience better!

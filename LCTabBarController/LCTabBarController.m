@@ -77,11 +77,25 @@
         
         self.lcTabBar = tabBar;
     })];
+//    UIKeyboardWillShowNotification
+//    [[NSNotificationCenter defaultCenter] addobserver];
 }
+
+//- (void)viewWillLayoutSubviews {
+//    
+//    [super viewWillLayoutSubviews];
+//    
+//    
+//}
 
 - (void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
+    
+    [self removeOriginControls];
+}
+
+- (void)removeOriginControls {
     
     [self.tabBar.subviews enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         

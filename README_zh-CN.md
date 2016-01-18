@@ -176,6 +176,20 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 ## 版本
 
 
+### V 1.2.6
+
+* 修复 Bug：
+
+  当调用 `- popToRootViewController` 方法后，系统的 tabbar 原有控件又重新显示出来了。
+  你可以在调用 `- popToRootViewController` 方法后，调用 `- removeOriginControls` 方法，像这样：
+
+  ````objc
+  [self.navigationController popToRootViewControllerAnimated:YES];
+
+  [(LCTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController removeOriginControls];
+  ````
+
+
 ### V 1.2.5
 
 * 改善自定义属性的方法，体验更佳！

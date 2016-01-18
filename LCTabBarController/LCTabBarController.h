@@ -5,7 +5,7 @@
 //  Created by Leo on 15/12/2.
 //  Copyright © 2015年 Leo. All rights reserved.
 //
-//  V 1.2.5
+//  V 1.2.6
 
 #import <UIKit/UIKit.h>
 
@@ -35,5 +35,10 @@
  *  tabbar item image ratio
  */
 @property (nonatomic, assign) CGFloat itemImageRatio;
+
+/**
+ *  Remove origin controls, for `- popToRootViewController`
+ */
+- (void)removeOriginControls;
 
 @end

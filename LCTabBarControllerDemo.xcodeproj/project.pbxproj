@@ -12,7 +12,8 @@
 		B32570B21C0EAD0200B820A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32570B11C0EAD0200B820A6 /* Assets.xcassets */; };
 		B32F6D081C119CB500A85BE4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B32F6D071C119CB500A85BE4 /* LaunchScreen.xib */; };
 		B3313DB81C0FFA840093D61D /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B3313DB71C0FFA840093D61D /* HomeVC.m */; };
-		B34B56211C0ECA99006DA598 /* LCTabBarCONST.m in Sources */ = {isa = PBXBuildFile; fileRef = B34B56201C0ECA99006DA598 /* LCTabBarCONST.m */; };
+		B34231701C4CEB4200119719 /* OtherVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B342316F1C4CEB4200119719 /* OtherVC.m */; };
+		B34231731C4CEBB700119719 /* TwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B34231721C4CEBB700119719 /* TwoVC.m */; };
 		B34B56241C0EF707006DA598 /* LCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B34B56231C0EF707006DA598 /* LCTabBarController.m */; };
 		B34B56271C0EF786006DA598 /* LCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B34B56261C0EF786006DA598 /* LCTabBar.m */; };
 		B34B562A1C0EF7C2006DA598 /* LCTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B34B56291C0EF7C2006DA598 /* LCTabBarItem.m */; };
@@ -30,8 +31,11 @@
 		B32F6D071C119CB500A85BE4 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		B3313DB61C0FFA840093D61D /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
 		B3313DB71C0FFA840093D61D /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		B342316E1C4CEB4200119719 /* OtherVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherVC.h; sourceTree = "<group>"; };
+		B342316F1C4CEB4200119719 /* OtherVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherVC.m; sourceTree = "<group>"; };
+		B34231711C4CEBB700119719 /* TwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoVC.h; sourceTree = "<group>"; };
+		B34231721C4CEBB700119719 /* TwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoVC.m; sourceTree = "<group>"; };
 		B34B561F1C0ECA99006DA598 /* LCTabBarCONST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarCONST.h; sourceTree = "<group>"; };
-		B34B56201C0ECA99006DA598 /* LCTabBarCONST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBarCONST.m; sourceTree = "<group>"; };
 		B34B56221C0EF707006DA598 /* LCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarController.h; sourceTree = "<group>"; };
 		B34B56231C0EF707006DA598 /* LCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBarController.m; sourceTree = "<group>"; };
 		B34B56251C0EF786006DA598 /* LCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBar.h; sourceTree = "<group>"; };
@@ -76,6 +80,10 @@
 			children = (
 				B3313DB61C0FFA840093D61D /* HomeVC.h */,
 				B3313DB71C0FFA840093D61D /* HomeVC.m */,
+				B34231711C4CEBB700119719 /* TwoVC.h */,
+				B34231721C4CEBB700119719 /* TwoVC.m */,
+				B342316E1C4CEB4200119719 /* OtherVC.h */,
+				B342316F1C4CEB4200119719 /* OtherVC.m */,
 				B32570A81C0EAD0200B820A6 /* AppDelegate.h */,
 				B32570A91C0EAD0200B820A6 /* AppDelegate.m */,
 				B32F6D071C119CB500A85BE4 /* LaunchScreen.xib */,
@@ -99,7 +107,6 @@
 			children = (
 				B34B562F1C0EFC47006DA598 /* LCTabBarController.bundle */,
 				B34B561F1C0ECA99006DA598 /* LCTabBarCONST.h */,
-				B34B56201C0ECA99006DA598 /* LCTabBarCONST.m */,
 				B34B56221C0EF707006DA598 /* LCTabBarController.h */,
 				B34B56231C0EF707006DA598 /* LCTabBarController.m */,
 				B34B56251C0EF786006DA598 /* LCTabBar.h */,
@@ -183,10 +190,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B34B562D1C0EF7E4006DA598 /* LCTabBarBadge.m in Sources */,
-				B34B56211C0ECA99006DA598 /* LCTabBarCONST.m in Sources */,
 				B34B56241C0EF707006DA598 /* LCTabBarController.m in Sources */,
+				B34231731C4CEBB700119719 /* TwoVC.m in Sources */,
 				B34B56271C0EF786006DA598 /* LCTabBar.m in Sources */,
 				B34B562A1C0EF7C2006DA598 /* LCTabBarItem.m in Sources */,
+				B34231701C4CEB4200119719 /* OtherVC.m in Sources */,
 				B3313DB81C0FFA840093D61D /* HomeVC.m in Sources */,
 				B32570AA1C0EAD0200B820A6 /* AppDelegate.m in Sources */,
 				B32570A71C0EAD0200B820A6 /* main.m in Sources */,

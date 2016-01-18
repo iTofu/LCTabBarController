@@ -8,6 +8,8 @@
 
 #import "HomeVC.h"
 #import "LCTabBarCONST.h"
+#import "OtherVC.h"
+#import "TwoVC.h"
 
 @interface HomeVC ()
 
@@ -45,7 +47,7 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    UIViewController *someVC = [[UIViewController alloc] init];
+    TwoVC *someVC = [[TwoVC alloc] init];
     someVC.title = @"tabBar hide ok?";
     someVC.view.backgroundColor = [UIColor greenColor];
     someVC.hidesBottomBarWhenPushed = YES;
