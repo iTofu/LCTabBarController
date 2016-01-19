@@ -11,9 +11,6 @@
 
 @interface LCTabBar ()
 
-@property (nonatomic, strong) LCTabBarItem *selectedItem;
-@property (nonatomic, strong) NSMutableArray *tabBarItems;
-
 @end
 
 @implementation LCTabBar

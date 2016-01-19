@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@class LCTabBar;
+@class LCTabBar, LCTabBarItem;
 
 @protocol LCTabBarDelegate <NSObject>
 
@@ -49,6 +49,10 @@
 @property (nonatomic, assign) CGFloat itemImageRatio;
 
 @property (nonatomic, assign) NSInteger tabBarItemCount;
+
+@property (nonatomic, strong) LCTabBarItem *selectedItem;
+
+@property (nonatomic, strong) NSMutableArray *tabBarItems;
 
 @property (nonatomic, weak) id<LCTabBarDelegate> delegate;
 

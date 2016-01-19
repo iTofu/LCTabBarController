@@ -176,6 +176,11 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 ## 版本
 
 
+### V 1.2.7
+
+* 修复 Bug: [Issues 3](https://github.com/LeoiOS/LCTabBarController/issues/3), 感谢 [Sesadev](https://github.com/Sesadev) 的提交!
+
+
 ### V 1.2.6
 
 * 修复 Bug：

@@ -10,6 +10,7 @@
 #import "LCTabBarCONST.h"
 #import "OtherVC.h"
 #import "TwoVC.h"
+#import "LCTabBarController.h"
 
 @interface HomeVC ()
 
@@ -20,6 +21,13 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Go" style:UIBarButtonItemStyleDone target:self action:@selector(rightBarButtonItemClicked)];
+}
+
+- (void)rightBarButtonItemClicked {
+    
+    [(LCTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController setSelectedIndex:1];
 }
 
 #pragma mark - Table view data source

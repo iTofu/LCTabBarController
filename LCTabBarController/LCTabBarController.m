@@ -9,6 +9,7 @@
 #import "LCTabBarController.h"
 #import "LCTabBar.h"
 #import "LCTabBarCONST.h"
+#import "LCTabBarItem.h"
 
 @interface LCTabBarController () <LCTabBarDelegate>
 
@@ -127,6 +128,15 @@
         
         [self.lcTabBar addTabBarItem:VC.tabBarItem];
     }];
+}
+
+- (void)setSelectedIndex:(NSUInteger)selectedIndex {
+    
+    [super setSelectedIndex:selectedIndex];
+    
+    self.lcTabBar.selectedItem.selected = NO;
+    self.lcTabBar.selectedItem = self.lcTabBar.tabBarItems[selectedIndex];
+    self.lcTabBar.selectedItem.selected = YES;
 }
 
 #pragma mark - XXTabBarDelegate Method

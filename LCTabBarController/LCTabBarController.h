@@ -5,7 +5,7 @@
 //  Created by Leo on 15/12/2.
 //  Copyright © 2015年 Leo. All rights reserved.
 //
-//  V 1.2.6
+//  V 1.2.7
 
 #import <UIKit/UIKit.h>
 
