@@ -258,8 +258,8 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 ## 联系
 
 * 有问题请直接 [Issues](https://github.com/LeoiOS/LCTabBarController/issues/new) :)
-* Email: <leoios@sina.com> & <liucsuper@gmail.com>
-* Blog: http://LeoDev.me & http://www.leodong.com
+* Mail: <devtip@163.com>
+* Blog: http://LeoDev.me
 
 
 

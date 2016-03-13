@@ -200,7 +200,7 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 
 ### V 1.2.2
 
-* 
+*
     ````objc
     tabBarItem.imageView.contentModel == UIViewContentModeScaleAspectFit;
 
@@ -269,11 +269,11 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 
 ## Support
 
-If you have any questions, please commit a [Issues](https://github.com/LeoiOS/LCTabBarController/issues/new)! Thx!
+* If you have any questions, please commit a [Issues](https://github.com/LeoiOS/LCTabBarController/issues/new)! Thx!
 
-Email: <liucsuper@gmail.com> & <leoios@sina.com>
+* Mail: <devtip@163.com>
 
-Blog: http://LeoDev.me & http://www.leodong.com
+* Blog: http://LeoDev.me
 
 
 
