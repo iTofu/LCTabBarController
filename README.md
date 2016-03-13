@@ -200,7 +200,8 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 
 ### V 1.2.2
 
-*
+* Change imageView's contentModel:
+
     ````objc
     tabBarItem.imageView.contentModel == UIViewContentModeScaleAspectFit;
 
