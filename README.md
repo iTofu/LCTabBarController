@@ -1,6 +1,7 @@
 # LCTabBarController
 
 [![Join the chat at https://gitter.im/LeoiOS/LCTabBarController](https://badges.gitter.im/LeoiOS/LCTabBarController.svg)](https://gitter.im/LeoiOS/LCTabBarController?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A amazing and highly customized tabBarController! You could almost customize 100% of the properties with LCTabBarController! 😍 ✨
 
 ![LCTabBarController](https://github.com/LeoiOS/LCTabBarController/blob/master/demo01.png)
