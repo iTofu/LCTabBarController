@@ -19,7 +19,7 @@
         self.hidden = YES;
 //        self.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin;
         
-        NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"LCTabBarController" ofType:@"bundle"];
+        NSString *bundlePath = [[NSBundle bundleForClass:self.class] pathForResource:@"LCTabBarController" ofType:@"bundle"];
         NSString *imagePath = [bundlePath stringByAppendingPathComponent:@"LCTabBarBadge@2x.png"];
         [self setBackgroundImage:[self resizedImageFromMiddle:[UIImage imageWithContentsOfFile:imagePath]]
                         forState:UIControlStateNormal];

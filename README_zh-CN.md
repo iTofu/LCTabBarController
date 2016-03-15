@@ -183,6 +183,11 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 
 ## 版本
 
+### V 1.3.0
+
+* 修复使用 Swift + CocoaPods 时 bundle 找不到的问题。
+* 支持 [building](https://travis-ci.org/)。
+
 
 ### V 1.2.7
 

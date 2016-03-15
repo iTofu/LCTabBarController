@@ -45,7 +45,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
     }
     
-    cell.textLabel.text = indexPath.row % 2 ? @"You can click cell" : @"Leo";
+    cell.textLabel.text = indexPath.row % 2 ? @"You could click cell" : @"Leo";
     cell.backgroundColor = indexPath.row % 2 ? LCColorForTabBar(235, 235, 235) : [UIColor whiteColor];
     
     return cell;

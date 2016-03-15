@@ -24,27 +24,27 @@
 @interface LCTabBar : UIView
 
 /**
- *  tabbar item title color
+ *  Tabbar item title color
  */
 @property (nonatomic, strong) UIColor *itemTitleColor;
 
 /**
- *  tabbar selected item title color
+ *  Tabbar selected item title color
  */
 @property (nonatomic, strong) UIColor *selectedItemTitleColor;
 
 /**
- *  tabbar item title font
+ *  Tabbar item title font
  */
 @property (nonatomic, strong) UIFont *itemTitleFont;
 
 /**
- *  tabbar item's badge title font
+ *  Tabbar item's badge title font
  */
 @property (nonatomic, strong) UIFont *badgeTitleFont;
 
 /**
- *  tabbar item image ratio
+ *  Tabbar item image ratio
  */
 @property (nonatomic, assign) CGFloat itemImageRatio;
 
