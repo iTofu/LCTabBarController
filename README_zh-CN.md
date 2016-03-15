@@ -1,4 +1,12 @@
 # LCTabBarController
+
+[![Travis](https://img.shields.io/travis/LeoiOS/LCTabBarController.svg?style=flat)](https://travis-ci.org/LeoiOS/LCTabBarController)
+[![CocoaPods](https://img.shields.io/cocoapods/v/LCTabBarController.svg)](http://cocoadocs.org/docsets/LCTabBarController)
+[![CocoaPods](https://img.shields.io/cocoapods/l/LCTabBarController.svg)](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/master/LICENSE)
+[![CocoaPods](https://img.shields.io/cocoapods/p/LCTabBarController.svg)](http://cocoadocs.org/docsets/LCTabBarController)
+[![LeoDev](https://img.shields.io/badge/blog-LeoDev.me-brightgreen.svg)](http://leodev.me)
+[![Join the chat at https://gitter.im/LeoiOS/LCTabBarController](https://badges.gitter.im/LeoiOS/LCTabBarController.svg)](https://gitter.im/LeoiOS/LCTabBarController?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 一个感天动地的高度自定义的 tabBarController！
 
 你几乎可以自定义 100% 的属性！😍 ✨
