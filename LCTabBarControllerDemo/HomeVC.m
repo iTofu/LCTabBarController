@@ -22,7 +22,15 @@
     
     [super viewDidLoad];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Go" style:UIBarButtonItemStyleDone target:self action:@selector(rightBarButtonItemClicked)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Change Item" style:UIBarButtonItemStyleDone target:self action:@selector(leftBarButtonItemClicked)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Go Message" style:UIBarButtonItemStyleDone target:self action:@selector(rightBarButtonItemClicked)];
+}
+
+- (void)leftBarButtonItemClicked {
+    
+    self.tabBarItem.image = [UIImage imageNamed:@"tabbar_discover"];
+    self.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_discover_selected"];
+    self.tabBarItem.title = @"Woo!";
 }
 
 - (void)rightBarButtonItemClicked {
