@@ -264,7 +264,7 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 ### V 1.0.0
 
 * 初始化提交。
-* 添加 [CocoaPods](https://cocoapods.org/) 支持.
+* 添加 [CocoaPods](https://cocoapods.org/) 支持。
 
 
 
