@@ -81,7 +81,7 @@ Just drag the LCTabBarController folder into your project.
 * Inside your `AppDelegate.m`:
 
   ````objc
-  // Import header file
+  // 0. Import header file
   #import "LCTabBarController.h"
 
   // 1. If you have already started the project, even if it's already done.
@@ -162,19 +162,19 @@ Just drag the LCTabBarController folder into your project.
 
   Than you could see like this:
 
-  ![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/blob/master/CustomProperties.png)
+  ![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/master/CustomProperties.png)
 
 
 
 ## Example
 
-![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/blob/master/demo01.png)
+![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/master/demo01.png)
 ---
-![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/blob/master/demo02.png)
+![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/master/demo02.png)
 ---
-![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/blob/master/demo03.png)
+![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/master/demo03.png)
 ---
-![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/blob/master/demo04.png)
+![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/master/demo04.png)
 
 
 
