@@ -9,7 +9,7 @@
 
 A amazing and highly customized tabBarController! You could almost customize 100% of the properties with LCTabBarController! 😍 ✨
 
-![LCTabBarController](https://github.com/LeoiOS/LCTabBarController/blob/master/demo01.png)
+![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/master/demo01.png)
 
 ````
 In me the tiger sniffs the rose.
