@@ -185,6 +185,10 @@ pod 'LCTabBarController'    # Podfile
 
 ## 版本
 
+### V 1.3.2
+
+* 更新 CocoaPods 来源。
+
 ### V 1.3.0
 
 * 修复使用 Swift + CocoaPods 时 bundle 找不到的问题。

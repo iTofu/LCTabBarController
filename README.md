@@ -180,6 +180,11 @@ Just drag the LCTabBarController folder into your project.
 
 ## Release
 
+### V 1.3.2
+
+* Update CocoaPods source URL.
+
+
 ### V 1.3.0
 
 * Bug fixed: Can't find right bundle when using Swift & CocoaPods.
