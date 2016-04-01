@@ -79,62 +79,63 @@ Just drag the LCTabBarController folder into your project.
 ## Usage
 
 * Inside your `AppDelegate.m`:
-````objc
-// Import header file
-#import "LCTabBarController.h"
 
-// 1. If you have already started the project, even if it's already done.
-UITabBarController *tabBarC = [[UITabBarController alloc] init];
-->
-LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
+  ````objc
+  // Import header file
+  #import "LCTabBarController.h"
 
-// 2. If you're just starting to write a new project
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  // 1. If you have already started the project, even if it's already done.
+  UITabBarController *tabBarC = [[UITabBarController alloc] init];
+  ->
+  LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+  // 2. If you're just starting to write a new project
+  - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    [self.window makeKeyAndVisible];
+      self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 
-    // Other code
-    HomeVC *vc1 = [[HomeVC alloc] init];
-    vc1.view.backgroundColor = [UIColor whiteColor];
-    vc1.tabBarItem.badgeValue = @"23";
-    vc1.title = @"Home";
-    vc1.tabBarItem.image = [UIImage imageNamed:@"tabbar_home"];
-    vc1.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_home_selected"];
+      [self.window makeKeyAndVisible];
 
-    // vc2 vc3 ...
+      // Other code
+      HomeVC *vc1 = [[HomeVC alloc] init];
+      vc1.view.backgroundColor = [UIColor whiteColor];
+      vc1.tabBarItem.badgeValue = @"23";
+      vc1.title = @"Home";
+      vc1.tabBarItem.image = [UIImage imageNamed:@"tabbar_home"];
+      vc1.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_home_selected"];
 
-    UIViewController *vc4 = [[UIViewController alloc] init];
-    vc4.view.backgroundColor = [UIColor yellowColor];
-    vc4.tabBarItem.badgeValue = @"99+";
-    vc4.title = @"Profile";
-    vc4.tabBarItem.image = [UIImage imageNamed:@"tabbar_profile"];
-    vc4.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_profile_selected"];
+      // vc2 vc3 ...
 
-
-    UINavigationController *navC1 = [[UINavigationController alloc] initWithRootViewController:vc1];
-    UINavigationController *navC2 = [[UINavigationController alloc] initWithRootViewController:vc2];
-    UINavigationController *navC3 = [[UINavigationController alloc] initWithRootViewController:vc3];
-    UINavigationController *navC4 = [[UINavigationController alloc] initWithRootViewController:vc4];
+      UIViewController *vc4 = [[UIViewController alloc] init];
+      vc4.view.backgroundColor = [UIColor yellowColor];
+      vc4.tabBarItem.badgeValue = @"99+";
+      vc4.title = @"Profile";
+      vc4.tabBarItem.image = [UIImage imageNamed:@"tabbar_profile"];
+      vc4.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_profile_selected"];
 
 
-
-    /**************************************** Key Code ****************************************/
-
-    LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
-
-    tabBarC.viewControllers = @[navC1, navC2, navC3, navC4];
-
-    self.window.rootViewController = tabBarC;
-
-    /******************************************************************************************/
+      UINavigationController *navC1 = [[UINavigationController alloc] initWithRootViewController:vc1];
+      UINavigationController *navC2 = [[UINavigationController alloc] initWithRootViewController:vc2];
+      UINavigationController *navC3 = [[UINavigationController alloc] initWithRootViewController:vc3];
+      UINavigationController *navC4 = [[UINavigationController alloc] initWithRootViewController:vc4];
 
 
 
-    return YES;
-}
-````
+      /**************************************** Key Code ****************************************/
+
+      LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
+
+      tabBarC.viewControllers = @[navC1, navC2, navC3, navC4];
+
+      self.window.rootViewController = tabBarC;
+
+      /******************************************************************************************/
+
+
+
+      return YES;
+  }
+  ````
 
 * **Done!**
 
@@ -161,19 +162,19 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 
   Than you could see like this:
 
-  ![LCTabBarController](https://github.com/LeoiOS/LCTabBarController/blob/master/CustomProperties.png)
+  ![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/blob/master/CustomProperties.png)
 
 
 
 ## Example
 
-![LCTabBarController](https://github.com/LeoiOS/LCTabBarController/blob/master/demo01.png)
+![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/blob/master/demo01.png)
 ---
-![LCTabBarController](https://github.com/LeoiOS/LCTabBarController/blob/master/demo02.png)
+![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/blob/master/demo02.png)
 ---
-![LCTabBarController](https://github.com/LeoiOS/LCTabBarController/blob/master/demo03.png)
+![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/blob/master/demo03.png)
 ---
-![LCTabBarController](https://github.com/LeoiOS/LCTabBarController/blob/master/demo04.png)
+![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/blob/master/demo04.png)
 
 
 
@@ -182,6 +183,7 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 ### V 1.3.0
 
 * Bug fixed: Can't find right bundle when using Swift & CocoaPods.
+
 * [building](https://travis-ci.org/) support.
 
 
@@ -215,13 +217,13 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 
 * Change imageView's contentModel:
 
-    ````objc
-    tabBarItem.imageView.contentModel == UIViewContentModeScaleAspectFit;
+  ````objc
+  tabBarItem.imageView.contentModel == UIViewContentModeScaleAspectFit;
 
-    -->
+  -->
 
-    tabBarItem.imageView.contentModel == UIViewContentModeCenter;
-    ````
+  tabBarItem.imageView.contentModel == UIViewContentModeCenter;
+  ````
 
 
 ### V 1.2.1
@@ -237,6 +239,7 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 ### V 1.1.0
 
 * for LanMeng Tec.
+
 * V 1.1.x will for LanMeng Tec. only.
 
 
@@ -261,6 +264,7 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 ### V 1.0.3
 
 * Delete some logs.
+
 * Update demo images.
 
 
@@ -283,7 +287,7 @@ LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
 
 ## Support
 
-* If you have any questions, please commit a [Issues](https://github.com/LeoiOS/LCTabBarController/issues/new)! Thx!
+* If you have any questions, please [commit a Issues](https://github.com/LeoiOS/LCTabBarController/issues/new)! Thx!
 
 * Mail: <devtip@163.com>
 
