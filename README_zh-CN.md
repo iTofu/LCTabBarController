@@ -1,17 +1,17 @@
 # LCTabBarController
 
-[![Travis](https://img.shields.io/travis/LeoiOS/LCTabBarController.svg?style=flat)](https://travis-ci.org/LeoiOS/LCTabBarController)
+[![Travis](https://img.shields.io/travis/iTofu/LCTabBarController.svg?style=flat)](https://travis-ci.org/iTofu/LCTabBarController)
 [![CocoaPods](https://img.shields.io/cocoapods/v/LCTabBarController.svg)](http://cocoadocs.org/docsets/LCTabBarController)
-[![CocoaPods](https://img.shields.io/cocoapods/l/LCTabBarController.svg)](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/master/LICENSE)
+[![CocoaPods](https://img.shields.io/cocoapods/l/LCTabBarController.svg)](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/LICENSE)
 [![CocoaPods](https://img.shields.io/cocoapods/p/LCTabBarController.svg)](http://cocoadocs.org/docsets/LCTabBarController)
 [![LeoDev](https://img.shields.io/badge/blog-LeoDev.me-brightgreen.svg)](http://leodev.me)
-[![Join the chat at https://gitter.im/LeoiOS/LCTabBarController](https://badges.gitter.im/LeoiOS/LCTabBarController.svg)](https://gitter.im/LeoiOS/LCTabBarController?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/iTofu/LCTabBarController](https://badges.gitter.im/iTofu/LCTabBarController.svg)](https://gitter.im/iTofu/LCTabBarController?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 一个感天动地的高度自定义的 tabBarController！
 
 你几乎可以自定义 100% 的属性！😍 ✨
 
-![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/master/demo01.png)
+![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo01.png)
 
 ````
 In me the tiger sniffs the rose.
@@ -167,25 +167,25 @@ pod 'LCTabBarController'    # Podfile
 
   Than you could see like this:
 
-  ![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/master/CustomProperties.png)
+  ![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/CustomProperties.png)
 
 
 
 ## 示例
 
-![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/master/demo01.png)
+![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo01.png)
 ---
-![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/master/demo02.png)
+![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo02.png)
 ---
-![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/master/demo03.png)
+![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo03.png)
 ---
-![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/master/demo04.png)
+![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo04.png)
 
 
 
 ## 版本
 
-### V 1.3.2
+### V 1.3.3
 
 * 更新 CocoaPods 来源。
 
@@ -198,7 +198,7 @@ pod 'LCTabBarController'    # Podfile
 
 ### V 1.2.7
 
-* 修复 Bug: [Issues 3](https://github.com/LeoiOS/LCTabBarController/issues/3), 感谢 [Sesadev](https://github.com/Sesadev) 的提交!
+* 修复 Bug: [Issues 3](https://github.com/iTofu/LCTabBarController/issues/3), 感谢 [Sesadev](https://github.com/Sesadev) 的提交!
 
 
 ### V 1.2.6
@@ -280,7 +280,7 @@ pod 'LCTabBarController'    # Podfile
 
 ## 联系
 
-* 有问题请直接 [Issues](https://github.com/LeoiOS/LCTabBarController/issues/new) :)
+* 有问题请直接 [Issues](https://github.com/iTofu/LCTabBarController/issues/new) :)
 
 * Mail: devtip@163.com
 

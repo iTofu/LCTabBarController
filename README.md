@@ -1,15 +1,15 @@
 # LCTabBarController
 
-[![Travis](https://img.shields.io/travis/LeoiOS/LCTabBarController.svg?style=flat)](https://travis-ci.org/LeoiOS/LCTabBarController)
+[![Travis](https://img.shields.io/travis/iTofu/LCTabBarController.svg?style=flat)](https://travis-ci.org/iTofu/LCTabBarController)
 [![CocoaPods](https://img.shields.io/cocoapods/v/LCTabBarController.svg)](http://cocoadocs.org/docsets/LCTabBarController)
-[![CocoaPods](https://img.shields.io/cocoapods/l/LCTabBarController.svg)](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/master/LICENSE)
+[![CocoaPods](https://img.shields.io/cocoapods/l/LCTabBarController.svg)](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/LICENSE)
 [![CocoaPods](https://img.shields.io/cocoapods/p/LCTabBarController.svg)](http://cocoadocs.org/docsets/LCTabBarController)
 [![LeoDev](https://img.shields.io/badge/blog-LeoDev.me-brightgreen.svg)](http://leodev.me)
-[![Join the chat at https://gitter.im/LeoiOS/LCTabBarController](https://badges.gitter.im/LeoiOS/LCTabBarController.svg)](https://gitter.im/LeoiOS/LCTabBarController?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/iTofu/LCTabBarController](https://badges.gitter.im/iTofu/LCTabBarController.svg)](https://gitter.im/iTofu/LCTabBarController?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 A amazing and highly customized tabBarController! You could almost customize 100% of the properties with LCTabBarController! 😍 ✨
 
-![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/master/demo01.png)
+![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo01.png)
 
 ````
 In me the tiger sniffs the rose.
@@ -17,11 +17,11 @@ In me the tiger sniffs the rose.
 心有猛虎，细嗅蔷薇。
 ````
 
-Welcome to visit my blog: http://LeoDev.me
+Welcome to my blog: http://LeoDev.me
 
 
 
-**[中文介绍](https://github.com/LeoiOS/LCTabBarController/blob/master/README_zh-CN.md)**
+**[中文介绍]**(https://github.com/iTofu/LCTabBarController/blob/master/README_zh-CN.md)
 
 
 
@@ -162,25 +162,25 @@ Just drag the LCTabBarController folder into your project.
 
   Than you could see like this:
 
-  ![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/master/CustomProperties.png)
+  ![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/CustomProperties.png)
 
 
 
 ## Example
 
-![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/master/demo01.png)
+![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo01.png)
 ---
-![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/master/demo02.png)
+![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo02.png)
 ---
-![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/master/demo03.png)
+![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo03.png)
 ---
-![LCTabBarController](https://raw.githubusercontent.com/LeoiOS/LCTabBarController/master/demo04.png)
+![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo04.png)
 
 
 
 ## Release
 
-### V 1.3.2
+### V 1.3.3
 
 * Update CocoaPods source URL.
 
@@ -194,7 +194,7 @@ Just drag the LCTabBarController folder into your project.
 
 ### V 1.2.7
 
-* Bug fixed: [Issues 3](https://github.com/LeoiOS/LCTabBarController/issues/3), thanks [Sesadev](https://github.com/Sesadev)'s commit!
+* Bug fixed: [Issues 3](https://github.com/iTofu/LCTabBarController/issues/3), thanks [Sesadev](https://github.com/Sesadev)'s commit!
 
 
 
@@ -286,13 +286,14 @@ Just drag the LCTabBarController folder into your project.
 ### V 1.0.0
 
 * Init Commit.
+
 * [CocoaPods](https://cocoapods.org/) support.
 
 
 
 ## Support
 
-* If you have any questions, please [commit a Issues](https://github.com/LeoiOS/LCTabBarController/issues/new)! Thx!
+* If you have any questions, please [commit a Issues](https://github.com/iTofu/LCTabBarController/issues/new)! Thx!
 
 * Mail: <devtip@163.com>
 
