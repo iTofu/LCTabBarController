@@ -21,7 +21,7 @@ Welcome to my blog: http://LeoDev.me
 
 
 
-**[中文介绍]**(https://github.com/iTofu/LCTabBarController/blob/master/README_zh-CN.md)
+**[中文介绍](https://github.com/iTofu/LCTabBarController/blob/master/README_zh-CN.md)**
 
 
 
