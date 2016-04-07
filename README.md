@@ -9,7 +9,7 @@
 
 A amazing and highly customized tabBarController! You could almost customize 100% of the properties with LCTabBarController! 😍 ✨
 
-![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo01.png)
+![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo01.png)
 
 ````
 In me the tiger sniffs the rose.
@@ -162,19 +162,19 @@ Just drag the LCTabBarController folder into your project.
 
   Than you could see like this:
 
-  ![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/CustomProperties.png)
+  ![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/CustomProperties.png)
 
 
 
 ## Example
 
-![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo01.png)
+![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo01.png)
 ---
-![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo02.png)
+![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo02.png)
 ---
-![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo03.png)
+![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo03.png)
 ---
-![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo04.png)
+![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo04.png)
 
 
 
@@ -293,7 +293,7 @@ Just drag the LCTabBarController folder into your project.
 
 ## Support
 
-* If you have any questions, please [commit a Issues](https://github.com/iTofu/LCTabBarController/issues/new)! Thx!
+* If you have any questions, please [commit a issue](https://github.com/iTofu/LCTabBarController/issues/new)! Thx!
 
 * Mail: <devtip@163.com>
 

@@ -11,7 +11,7 @@
 
 你几乎可以自定义 100% 的属性！😍 ✨
 
-![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo01.png)
+![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo01.png)
 
 ````
 In me the tiger sniffs the rose.
@@ -167,19 +167,19 @@ pod 'LCTabBarController'    # Podfile
 
   Than you could see like this:
 
-  ![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/CustomProperties.png)
+  ![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/CustomProperties.png)
 
 
 
 ## 示例
 
-![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo01.png)
+![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo01.png)
 ---
-![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo02.png)
+![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo02.png)
 ---
-![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo03.png)
+![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo03.png)
 ---
-![LCTabBarController](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo04.png)
+![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo04.png)
 
 
 
@@ -280,7 +280,7 @@ pod 'LCTabBarController'    # Podfile
 
 ## 联系
 
-* 有问题请直接 [Issues](https://github.com/iTofu/LCTabBarController/issues/new) :)
+* 有问题请直接提交 [Issue](https://github.com/iTofu/LCTabBarController/issues/new) :)
 
 * Mail: devtip@163.com
 
