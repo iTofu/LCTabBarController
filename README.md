@@ -7,7 +7,7 @@
 [![LeoDev](https://img.shields.io/badge/blog-LeoDev.me-brightgreen.svg)](http://leodev.me)
 [![Join the chat at https://gitter.im/iTofu/LCTabBarController](https://badges.gitter.im/iTofu/LCTabBarController.svg)](https://gitter.im/iTofu/LCTabBarController?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-A amazing and highly customized tabBarController! You could almost customize 100% of the properties with LCTabBarController! 😍 ✨
+A amazing and highly customized tabBarController! You could almost customize 100% properties with LCTabBarController! 😍 ✨
 
 ![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo01.png)
 
