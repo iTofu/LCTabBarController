@@ -59,6 +59,9 @@ Welcome to my blog: http://LeoDev.me
 > I will keep update with new Issue, if you want to know my progress at any time, please click on the `watch` button in the upper right corner!
 
 
+**⚠️ NOTE: It doesn't support Storyboard for the time being!**
+
+
 
 ## Installation
 
