@@ -69,7 +69,7 @@ In me the tiger sniffs the rose.
 把下面的代码添加到你的 Podfile 中：
 
 ````ruby
-pod 'LCTabBarController'    # Podfile
+pod 'LCTabBarController', :git => 'https://github.com/iTofu/LCTabBarController.git' # Podfile
 ````
 
 

@@ -68,7 +68,7 @@ Welcome to my blog: http://LeoDev.me
 LCTabBarController is available on [CocoaPods](https://cocoapods.org/). Just add the following to your project Podfile:
 
 ````ruby
-pod "LCTabBarController"    # Podfile
+pod 'LCTabBarController', :git => 'https://github.com/iTofu/LCTabBarController.git' # Podfile
 ````
 
 
