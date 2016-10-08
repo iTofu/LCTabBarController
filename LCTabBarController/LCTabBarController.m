@@ -98,14 +98,13 @@
 
 - (void)removeOriginControls {
     
-    [self.tabBar.subviews enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+    [self.tabBar.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
         if ([obj isKindOfClass:[UIControl class]]) {
             
             [obj removeFromSuperview];
         }
     }];
-    self.tabBar
 }
 
 - (void)setViewControllers:(NSArray *)viewControllers {
