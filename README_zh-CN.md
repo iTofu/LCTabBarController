@@ -185,6 +185,10 @@ pod 'LCTabBarController'    # Podfile
 
 ## 版本
 
+### V 1.3.5
+
+* 修复 #13，Merged [sunnysuhappy](https://github.com/sunnysuhappy)'s pull #14。
+
 ### V 1.3.3
 
 * 更新 CocoaPods 来源。

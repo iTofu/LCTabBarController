@@ -181,7 +181,11 @@ Just drag the LCTabBarController folder into your project.
 
 
 
-## Release
+## CHANGELOG
+
+### V 1.3.5
+
+* Fix #13，Merged [sunnysuhappy](https://github.com/sunnysuhappy)'s pull #14。
 
 ### V 1.3.3
 

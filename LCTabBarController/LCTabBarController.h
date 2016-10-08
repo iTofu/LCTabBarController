@@ -8,7 +8,7 @@
 //  GitHub: https://github.com/iTofu/LCTabBarController
 //  Blog:   http://LeoDev.me
 //
-//  V 1.3.3
+//  V 1.3.5
 
 #import <UIKit/UIKit.h>
 
