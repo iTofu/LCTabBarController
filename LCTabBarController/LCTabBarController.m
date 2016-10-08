@@ -98,7 +98,7 @@
 
 - (void)removeOriginControls {
     
-    [self.tabBar.subviews enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+    [self.tabBar.subviews enumerateObjectsUsingBlock:^(__kindof UIView * obj, NSUInteger idx, BOOL * stop) {
         
         if ([obj isKindOfClass:[UIControl class]]) {
             
