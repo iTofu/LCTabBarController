@@ -105,6 +105,7 @@
             [obj removeFromSuperview];
         }
     }];
+    self.tabBar
 }
 
 - (void)setViewControllers:(NSArray *)viewControllers {
