@@ -11,11 +11,11 @@ A amazing and highly customized tabBarController! You could almost customize 100
 
 ![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo01.png)
 
-````
+```
 In me the tiger sniffs the rose.
 
 心有猛虎，细嗅蔷薇。
-````
+```
 
 Welcome to my blog: http://LeoDev.me
 
@@ -28,35 +28,40 @@ Welcome to my blog: http://LeoDev.me
 ## Feature
 
 * Highly decoupled!
-> Each control is a independent class! `-->` means "be possessed":
->
-> LCTabBarBadge --> LCTabBarItem --> LCTabBar --> LCTabBarController
+
+  > Each control is a independent class! `-->` means "be possessed":
+  >
+  > LCTabBarBadge --> LCTabBarItem --> LCTabBar --> LCTabBarController
 
 * Simple integration!
-> Integration takes only one step: Just replace the `UITabBarController` word in your `AppDelegate.m` with `LCTabBarController` to complete the integration!
+
+  > Integration takes only one step: Just replace the `UITabBarController` word in your `AppDelegate.m` with `LCTabBarController` to complete the integration!
 
 * Non-Pollution!
-> `LCTabBarController` has all the functions of `UITabBarController`, and NO any intrusion behavior!
->
-> So, even if your project is complete, you could integrated at any time! You could also change back to `UITabBarController`! (But I 200% believe you won't do it!)
+
+  > `LCTabBarController` has all the functions of `UITabBarController`, and NO any intrusion behavior!
+  >
+  > So, even if your project is complete, you could integrated at any time! You could also change back to `UITabBarController`! (But I 200% believe you won't do it!)
 
 * Highly customized!
-> You can freely set the following properties, you can also choose to modify the code directly!
->
-> 1. tabBar title color
->
-> 2. tabbar title font
->
-> 3. tabbar image ratio
->
-> 4. tabbar badge frame
->
-> 5. tabbar badge font
->
-> 6. ...
+
+  > You can freely set the following properties, you can also choose to modify the code directly!
+  >
+  > 1. tabBar title color
+  >
+  > 2. tabbar title font
+  >
+  > 3. tabbar image ratio
+  >
+  > 4. tabbar badge frame
+  >
+  > 5. tabbar badge font
+  >
+  > 6. ...
 
 * If you feel good, please give me a star, thank you very much! ⭐️
-> I will keep update with new Issue, if you want to know my progress at any time, please click on the `watch` button in the upper right corner!
+
+  > I will keep update with new Issue, if you want to know my progress at any time, please click on the `watch` button in the upper right corner!
 
 
 **⚠️ NOTE: It doesn't support Storyboard for the time being!**
@@ -67,9 +72,9 @@ Welcome to my blog: http://LeoDev.me
 
 LCTabBarController is available on [CocoaPods](https://cocoapods.org/). Just add the following to your project Podfile:
 
-````ruby
+```ruby
 pod 'LCTabBarController' # Podfile
-````
+```
 
 
 
@@ -83,7 +88,7 @@ Just drag the LCTabBarController folder into your project.
 
 * Inside your `AppDelegate.m`:
 
-  ````objc
+  ```objc
   // 0. Import header file
   #import "LCTabBarController.h"
 
@@ -138,13 +143,13 @@ Just drag the LCTabBarController folder into your project.
 
       return YES;
   }
-  ````
+  ```
 
 * **Done!**
 
 * You can change the following properties with `LCTabBarController` object, other more attributes can be directly read code changes!
 
-  ````objc
+  ```objc
   /**************************************** Key Code ****************************************/
 
   LCTabBarController *tabBarC    = [[LCTabBarController alloc] init];
@@ -161,7 +166,7 @@ Just drag the LCTabBarController folder into your project.
   self.window.rootViewController = tabBarC;
 
   /******************************************************************************************/
-  ````
+  ```
 
   Than you could see like this:
 
@@ -172,11 +177,17 @@ Just drag the LCTabBarController folder into your project.
 ## Example
 
 ![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo01.png)
+
 ---
+
 ![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo02.png)
+
 ---
+
 ![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo03.png)
+
 ---
+
 ![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo04.png)
 
 
@@ -209,14 +220,14 @@ Just drag the LCTabBarController folder into your project.
 
 * Bug fixed:
 
-  When I call the `- popToRootViewController;` method, the origin controls of the system's tabbar is displayed again.
+  When I call the `popToRootViewController;` method, the origin controls of the system's tabBar is displayed again.
 
-  Now, You could call `[lcTabBarController removeOriginControls];` method after `- popToRootViewController;`, like this:
+  Now, You should call `[lcTabBarController removeOriginControls];` method after `popToRootViewController;`, like this:
 
   ````objc
   [self.navigationController popToRootViewControllerAnimated:YES];
 
-  [(LCTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController removeOriginControls];
+  [lcTabBarController removeOriginControls];
   ````
 
 
@@ -229,13 +240,13 @@ Just drag the LCTabBarController folder into your project.
 
 * Change imageView's contentModel:
 
-  ````objc
+  ```objc
   tabBarItem.imageView.contentModel == UIViewContentModeScaleAspectFit;
 
   -->
 
   tabBarItem.imageView.contentModel == UIViewContentModeCenter;
-  ````
+  ```
 
 
 ### V 1.2.1
@@ -264,13 +275,13 @@ Just drag the LCTabBarController folder into your project.
 
 * Change something:
 
-  ````objc
+  ```objc
   tabBarItem.imageView.contentModel == UIViewContentModeCenter;
 
   -->
 
   tabBarItem.imageView.contentModel == UIViewContentModeScaleAspectFit;
-  ````
+  ```
 
 
 ### V 1.0.3
@@ -300,9 +311,9 @@ Just drag the LCTabBarController folder into your project.
 
 ## Support
 
-* If you have any questions, please [commit a issue](https://github.com/iTofu/LCTabBarController/issues/new)! Thx!
+* If you have any question, just [commit a issue](https://github.com/iTofu/LCTabBarController/issues/new)! Thank you!
 
-* Mail: <devtip@163.com>
+* Mail: devtip@163.com
 
 * Blog: http://LeoDev.me
 
