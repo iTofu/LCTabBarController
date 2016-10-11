@@ -13,11 +13,11 @@
 
 ![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo01.png)
 
-````
+```
 In me the tiger sniffs the rose.
 
 心有猛虎，细嗅蔷薇。
-````
+```
 
 欢迎访问 **我的博客**：http://LeoDev.me
 
@@ -26,41 +26,46 @@ In me the tiger sniffs the rose.
 ## 特性
 
 * 高度解耦！
-> 所有控件全部作为一个单独的类拆开，项目耦合性超低！`-->` 表示属于：
->
-> LCTabBarBadge --> LCTabBarItem --> LCTabBar --> LCTabBarController
+
+  > 所有控件全部作为一个单独的类拆开，项目耦合性超低！`-->` 表示属于：
+  >
+  > LCTabBarBadge --> LCTabBarItem --> LCTabBar --> LCTabBarController
 
 * 集成简单！
-> 一步集成：把你 `AppDelegate.m` 中的 `UITabBarController` 单词替换成 `LCTabBarController` 即可完成集成！
->
-> 所以，就算你项目已经完成了，你依然可以随时集成！当然你也可以随时更换回 `UITabBarController`！（但我有 200% 的把握你不会这么做！）
+
+  > 一步集成：把你 `AppDelegate.m` 中的 `UITabBarController` 单词替换成 `LCTabBarController` 即可完成集成！
+  >
+  > 所以，就算你项目已经完成了，你依然可以随时集成！当然你也可以随时更换回 `UITabBarController`！（但我有 200% 的把握你不会这么做！）
 
 * 零污染！
-> 拥有 `UITabBarController` 的全部功能，而没有任何入侵行为！你要做的永远只有一步！
->
-> `LCTabBarController` 利用 KVO 监听系统 tabBarItem，你任何对 tabBarItem 的设置都可以继续生效！
->
-> 如：viewController.tabBarItem.image = [UIImage imageNamed:@"tabbar_home"]; // 生效！
->
->    someVC.hidesBottomBarWhenPushed = YES;     // 生效！
+
+  > 拥有 `UITabBarController` 的全部功能，而没有任何入侵行为！你要做的永远只有一步！
+  >
+  > `LCTabBarController` 利用 KVO 监听系统 tabBarItem，你任何对 tabBarItem 的设置都可以继续生效！
+  >
+  > 如：viewController.tabBarItem.image = [UIImage imageNamed:@"tabbar_home"]; // 生效！
+  >
+  >    someVC.hidesBottomBarWhenPushed = YES;     // 生效！
 
 * 高度自定义！
-> 你可以自由设置下列属性，也可以选择去代码中直接改！
->
-> 1. tabBar 标题字体颜色（普通、高亮等）
->
-> 2. tabBar 标题字体
->
-> 3. tabBar 图片所占比例
->
-> 4. tabBar 小红点 frame
->
-> 5. tabBar 小红点 字体
->
-> 6. ...
+
+  > 你可以自由设置下列属性，也可以选择去代码中直接改！
+  >
+  > 1. tabBar 标题字体颜色（普通、高亮等）
+  >
+  > 2. tabBar 标题字体
+  >
+  > 3. tabBar 图片所占比例
+  >
+  > 4. tabBar 小红点 frame
+  >
+  > 5. tabBar 小红点 字体
+  >
+  > 6. ...
 
 * 如果觉得还不错，请点击右上角 star！⭐️ 谢谢！
-> 我会根据 Issue 持续更新，如果你想随时了解我的进度，请点击右上角的 watch！
+
+  > 我会根据 Issue 持续更新，如果你想随时了解我的进度，请点击右上角的 watch！
 
 
 
@@ -68,9 +73,9 @@ In me the tiger sniffs the rose.
 
 把下面的代码添加到你的 Podfile 中：
 
-````ruby
-pod 'LCTabBarController', :git => 'https://github.com/iTofu/LCTabBarController.git' # Podfile
-````
+```ruby
+pod 'LCTabBarController' # Podfile
+```
 
 
 
@@ -84,7 +89,7 @@ pod 'LCTabBarController', :git => 'https://github.com/iTofu/LCTabBarController.g
 
 * 在你的 `AppDelegate.m` 里面：
 
-  ````objc
+  ```objc
   // 0. 导入头文件
   #import "LCTabBarController.h"
 
@@ -140,13 +145,13 @@ pod 'LCTabBarController', :git => 'https://github.com/iTofu/LCTabBarController.g
 
       return YES;
   }
-  ````
+  ```
 
 * **搞定！**
 
 * 你可以在通过更改 `LCTabBarController` 对象随意更改下列属性，其他更多属性可直接阅读代码更改！
 
-  ````objc
+  ```objc
   /**************************************** Key Code ****************************************/
 
   LCTabBarController *tabBarC    = [[LCTabBarController alloc] init];
@@ -163,9 +168,9 @@ pod 'LCTabBarController', :git => 'https://github.com/iTofu/LCTabBarController.g
   self.window.rootViewController = tabBarC;
 
   /******************************************************************************************/
-  ````
+  ```
 
-  Than you could see like this:
+  然后你就可以看到类似下图的效果：
 
   ![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/CustomProperties.png)
 
@@ -174,11 +179,17 @@ pod 'LCTabBarController', :git => 'https://github.com/iTofu/LCTabBarController.g
 ## 示例
 
 ![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo01.png)
+
 ---
+
 ![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo02.png)
+
 ---
+
 ![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo03.png)
+
 ---
+
 ![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo04.png)
 
 
@@ -209,14 +220,14 @@ pod 'LCTabBarController', :git => 'https://github.com/iTofu/LCTabBarController.g
 
 * 修复 Bug：
 
-  当调用 `- popToRootViewController` 方法后，系统的 tabbar 原有控件又重新显示出来了。
-  你可以在调用 `- popToRootViewController` 方法后，调用 `- removeOriginControls` 方法，像这样：
+  当调用 `popToRootViewController` 方法后，系统 tabBar 原有的控件又重新显示出来了。
+  你可以在调用 `popToRootViewController` 方法后，调用 `removeOriginControls` 方法解决这个问题，像这样：
 
-  ````objc
+  ```objc
   [self.navigationController popToRootViewControllerAnimated:YES];
 
-  [(LCTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController removeOriginControls];
-  ````
+  [lcTabBarController removeOriginControls];
+  ```
 
 
 ### V 1.2.5
