@@ -70,15 +70,15 @@ Welcome to my blog: http://LeoDev.me
 
 ## Installation
 
+### CocoaPods
+
 LCTabBarController is available on [CocoaPods](https://cocoapods.org/). Just add the following to your project Podfile:
 
 ```ruby
 pod 'LCTabBarController' # Podfile
 ```
 
-
-
-## Non-CocoaPods Installation
+### Non-CocoaPods Installation
 
 Just drag the LCTabBarController folder into your project.
 
@@ -192,7 +192,7 @@ Just drag the LCTabBarController folder into your project.
 
 
 
-## CHANGELOG
+## ChangeLog
 
 ### V 1.3.5
 
