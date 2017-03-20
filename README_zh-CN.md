@@ -196,7 +196,7 @@ pod 'LCTabBarController' # Podfile
 
 ## 版本
 
-### V 1.3.5
+### V 1.3.6
 
 * [#15](https://github.com/iTofu/LCTabBarController/issues/15) 相关，公开 `lcTabBar` 属性。
 
