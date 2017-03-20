@@ -31,6 +31,10 @@
     self.tabBarItem.image = [UIImage imageNamed:@"tabbar_discover"];
     self.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_discover_selected"];
     self.tabBarItem.title = @"Woo!";
+    
+    // Key code
+    // System will display the original controls so you should call this line when you change any tabBar item
+    [(LCTabBarController *)self.tabBarController removeOriginControls];
 }
 
 - (void)rightBarButtonItemClicked {

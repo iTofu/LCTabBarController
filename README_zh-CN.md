@@ -198,11 +198,18 @@ pod 'LCTabBarController' # Podfile
 
 ### V 1.3.5
 
-* 修复 #13，Merged [sunnysuhappy](https://github.com/sunnysuhappy)'s pull #14。
+* [#15](https://github.com/iTofu/LCTabBarController/issues/15) 相关，公开 `lcTabBar` 属性。
+
+
+### V 1.3.5
+
+* 修复 [#13](https://github.com/iTofu/LCTabBarController/issues/13)，Merged [sunnysuhappy](https://github.com/sunnysuhappy)'s pull [#14](https://github.com/iTofu/LCTabBarController/issues/14)。
+
 
 ### V 1.3.3
 
 * 更新 CocoaPods 来源。
+
 
 ### V 1.3.0
 
@@ -295,14 +302,18 @@ pod 'LCTabBarController' # Podfile
 
 ## 联系
 
-* 有问题请直接提交 [Issue](https://github.com/iTofu/LCTabBarController/issues/new) :)
+* 有问题请直接新建 [Issue](https://github.com/iTofu/LCTabBarController/issues/new) :)
 
-* Mail: devtip@163.com
+* Mail: `echo bGVvZGF4aWFAZ21haWwuY29tCg== | base64 -D` || `echo ZGV2dGlwQDE2My5jb20K | base64 -D`
 
-* Blog: http://LeoDev.me
+* Blog: https://LeoDev.me
+
+* Friendly sponsorship with [Alipay or Wechat Pay](https://cdnqiniu.leodev.me/paid_to_leo.png), thank you!
+
+  ![Leo](https://cdnqiniu.leodev.me/paid_to_leo.png)
 
 
 
 ### 授权
 
-本项目采用 [MIT license](http://opensource.org/licenses/MIT) 开源，你可以利用采用该协议的代码做任何事情，只需要继续继承 MIT 协议即可。
+LCTabBarController is released under the [MIT License](https://github.com/iTofu/LCTabBarController/blob/master/LICENSE).

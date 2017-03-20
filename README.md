@@ -194,9 +194,15 @@ Just drag the LCTabBarController folder into your project.
 
 ## ChangeLog
 
+### V 1.3.6
+
+* About [#15](https://github.com/iTofu/LCTabBarController/issues/15), public `lcTabBar`.
+
+
 ### V 1.3.5
 
-* Fix #13，Merged [sunnysuhappy](https://github.com/sunnysuhappy)'s pull #14。
+* Fix [#13](https://github.com/iTofu/LCTabBarController/issues/13)，Merged [sunnysuhappy](https://github.com/sunnysuhappy)'s pull [#14](https://github.com/iTofu/LCTabBarController/issues/14)。
+
 
 ### V 1.3.3
 
@@ -212,8 +218,7 @@ Just drag the LCTabBarController folder into your project.
 
 ### V 1.2.7
 
-* Bug fixed: [Issues 3](https://github.com/iTofu/LCTabBarController/issues/3), thanks [Sesadev](https://github.com/Sesadev)'s commit!
-
+* Bug fixed: [#3](https://github.com/iTofu/LCTabBarController/issues/3), thanks for [Sesadev](https://github.com/Sesadev)'s commit!
 
 
 ### V 1.2.6
@@ -311,14 +316,18 @@ Just drag the LCTabBarController folder into your project.
 
 ## Support
 
-* If you have any question, just [commit a issue](https://github.com/iTofu/LCTabBarController/issues/new)! Thank you!
+* If you have any question, just [commit a issue](https://github.com/iTofu/LCTabBarController/issues/new).
 
-* Mail: devtip@163.com
+* Mail: `echo bGVvZGF4aWFAZ21haWwuY29tCg== | base64 -D` || `echo ZGV2dGlwQDE2My5jb20K | base64 -D`
 
-* Blog: http://LeoDev.me
+* Blog: https://LeoDev.me
+
+* Friendly sponsorship with [Alipay or Wechat Pay](https://cdnqiniu.leodev.me/paid_to_leo.png), thank you!
+
+  ![Leo](https://cdnqiniu.leodev.me/paid_to_leo.png)
 
 
 
 ## License
 
-[MIT License](http://opensource.org/licenses/MIT)
+LCTabBarController is released under the [MIT License](https://github.com/iTofu/LCTabBarController/blob/master/LICENSE).
