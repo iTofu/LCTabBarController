@@ -304,13 +304,21 @@ pod 'LCTabBarController' # Podfile
 
 * 有问题请直接新建 [Issue](https://github.com/iTofu/LCTabBarController/issues/new) :)
 
-* Mail: `echo bGVvZGF4aWFAZ21haWwuY29tCg== | base64 -D` || `echo ZGV2dGlwQDE2My5jb20K | base64 -D`
+* Mail: `echo bGVvZGF4aWFAZ21haWwuY29tCg== | base64 -D` or `echo ZGV2dGlwQDE2My5jb20K | base64 -D`
 
 * Blog: https://LeoDev.me
 
-* Friendly sponsorship with [Alipay or Wechat Pay](https://cdnqiniu.leodev.me/paid_to_leo.png), thank you!
+* 捐赠:
 
-  ![Leo](https://cdnqiniu.leodev.me/paid_to_leo.png)
+  * PayPal:
+  
+    [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=leodaxia@gmail.com&item_name=Support%20Leo)
+    
+  * 支付宝或微信:
+  
+    <img src="https://cdnqiniu.leodev.me/donate.png" alt="Donate with Alipay or Wechat Pay" title="Donate with Alipay or Wechat Pay" width="320"/>
+    
+  注：捐赠并不能会解锁额外的功能。
 
 
 
