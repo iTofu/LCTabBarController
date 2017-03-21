@@ -330,7 +330,7 @@ Just drag the LCTabBarController folder into your project.
   
   * Alipay or Wechat Pay:
   
-    <img src="https://cdnqiniu.leodev.me/donate.png" alt="Donate with Alipay or Wechat Pay" title="Donate with Alipay or Wechat Pay" width="320"/>
+    <img src="https://cdnqiniu.leodev.me/donate.png?v=1" alt="Donate with Alipay or Wechat Pay" title="Donate with Alipay or Wechat Pay" width="320"/>
     
   Please note: donation does not imply any type of service contract.
 
