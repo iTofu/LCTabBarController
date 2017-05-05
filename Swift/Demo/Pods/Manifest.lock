@@ -1,0 +1,22 @@
+PODS:
+  - LCTabBarController (2.0.0):
+    - SnapKit (~> 3.2.0)
+    - Then (~> 2.1.0)
+  - SnapKit (3.2.0)
+  - Then (2.1.0)
+
+DEPENDENCIES:
+  - LCTabBarController (from `../`)
+
+EXTERNAL SOURCES:
+  LCTabBarController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LCTabBarController: 0fde2bd3d2e45ed9a24612af6a1abc1206f69e2a
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  Then: 8496793c8fcac95482b943909b440724c7d8d82c
+
+PODFILE CHECKSUM: 49531513d653361a2a78bcdcb132829c144dab87
+
+COCOAPODS: 1.2.1

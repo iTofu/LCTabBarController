@@ -1,0 +1,1397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04E456105C5E40408F116D46D2CAA58C /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72004E1EF31390BBC054ACCD51E019 /* ConstraintRelatableTarget.swift */; };
+		06EC45DA31F0AA718F680E4F18095817 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8703F3F6DC851E6CB6A2ACD68422CA3 /* ConstraintLayoutGuide.swift */; };
+		080CE788D30CFFB0BC0715A6C968F4F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4795F4242338A6BF2D27820561C063 /* Foundation.framework */; };
+		0AEE7DABA7EADFFFD4519DA81AD03CF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4795F4242338A6BF2D27820561C063 /* Foundation.framework */; };
+		141C7984244B34A952237F3E0423D6A5 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6980CB2E10A93DAF257164667DA4114 /* Debugging.swift */; };
+		1675A58F2EE7634D5073DBA402E7FD7C /* Then-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD55E8A6C30D7C077DE9CF24807E5D32 /* Then-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		185FDF326C07E87FCEE2605708417A15 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F11035CE7B287EF851657DE2B10738F /* ConstraintItem.swift */; };
+		18EBD9E4B9D423CDB19DCC4DEA0E3FA4 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33013B535A6A45549DF43BBA05D2967 /* ConstraintLayoutSupport.swift */; };
+		1E8293A95746048DF29146CEC31C7721 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E756FAC2B4ACA85DB6192094DCE188 /* ConstraintPriority.swift */; };
+		20D39B69F4E2D4B9F27E6329C7D19CCC /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD7B2E39222BC2052D8818F85734E1 /* ConstraintMakerEditable.swift */; };
+		24E4155EAB0436A1A288A8B7BBF9FF9A /* Pods-LCTabBarControllerDemoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E99D065961DD11B3D8E536C94D2CB1D /* Pods-LCTabBarControllerDemoUITests-dummy.m */; };
+		2DB574714C043D8C718AB4C45617587E /* Pods-LCTabBarControllerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 15239826912B721BF7D5AF318D4B2991 /* Pods-LCTabBarControllerDemo-dummy.m */; };
+		36B50164EAD5EAE944D6715BB5F99770 /* Pods-LCTabBarControllerDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 511DC243AA4326BB8E278306614C1239 /* Pods-LCTabBarControllerDemoTests-dummy.m */; };
+		3B42F51E4BD13EA5935BCFE7E499D4A0 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E1F91A88F78BCA5035648DC1DDF4BC /* Constraint.swift */; };
+		43966CDE63D2583AAFFE2EF681A2E85D /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5563CD3FD1E5572F427E5AB5386C340E /* UILayoutSupport+Extensions.swift */; };
+		4B8F7828B681206193C2F1F432D96BE3 /* Pods-LCTabBarControllerDemoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26CED03A1493404C350BD15494700389 /* Pods-LCTabBarControllerDemoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50D3BA3FCE079DCCAB765BFAA6B2FAC6 /* Pods-LCTabBarControllerDemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AEACB029C673954B5290708D8804CCA3 /* Pods-LCTabBarControllerDemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57EBA0CE27AAB12879B6A1A900B95CFC /* Then.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE9A00DCB2F3A84BDD0B67D58EFB9FC /* Then.framework */; };
+		5ED97A3967C6C354F29339BC2F8DE841 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E08C8A4EEFE84AE95188E701C11661 /* ConstraintDSL.swift */; };
+		6352C24F1066F94D0DF759F3C20A981B /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B69F20D0F7CC0D179FC7A88AD97C20 /* ConstraintPriorityTarget.swift */; };
+		635E5F730B52190D051FE098D78DBFBA /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6F5313539663FDD164FD8568EEA62D /* SnapKit.framework */; };
+		6618615254E854DAE3E639F499037443 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F76BF8FCD6B4AAD364B533EEC17802 /* ConstraintOffsetTarget.swift */; };
+		67A07B0063DEBF27F5DF5D76FBC8D0DA /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66214023A5A323CD91DA48C145C83395 /* ConstraintMultiplierTarget.swift */; };
+		6BE07D9C394116106FE804A68AD98520 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E795D7E01F4A7645DB495A6EB4918CE /* Then.swift */; };
+		76E2C2F46F42F2EDD3F6AFB4E43B09B7 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7446CAC994081F78F13DE0505265E3CA /* ConstraintLayoutGuideDSL.swift */; };
+		7CC76E832232E748E78B7C4B4C2E385E /* LCTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56E758904C8CEEE78CBA7851F7DC682 /* LCTabBar.swift */; };
+		7E69ECA59BD5F67302462FB9783C415F /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD0BE39C9821F320A17CDEEC730127 /* ConstraintInsets.swift */; };
+		7F6AA04C381EF84C1F1893806F74912F /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E50A936AB602F2BE307ED741D8740DC /* SnapKit-dummy.m */; };
+		8168AB5D1B3490118633F7FB15C1B02D /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2EB47DDE1BF3146BCEA9D7FEA4381D /* ConstraintDescription.swift */; };
+		85F45BD97A2CCB78CEB159640FD9E9B1 /* Then-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7FF23E7A085F2DE81A32DDBB1508D5 /* Then-dummy.m */; };
+		8644C8368090475336DC055357A65D68 /* LCTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A4FF2B4ECD59544691D52E7448EF2E /* LCTabBarController-dummy.m */; };
+		8CB1AFD6F99DEE8C5D8607926480CFED /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B271C460825E7EC2B7232D98004444D0 /* ConstraintLayoutGuide+Extensions.swift */; };
+		91317E1AD42D4F21F760B3EEFFA28D99 /* LCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB2391CC922CF5886084E31661CD3EF /* LCTabBarController.swift */; };
+		913E59AD3CF14891FDC2EDB5387157C1 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E219EF60B0F6D7500B74B47D101E6484 /* LayoutConstraintItem.swift */; };
+		91547D9A6D7F608C2EC0B4FB4DC560FF /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C84049447092D527FA20B2832C72D8 /* ConstraintConfig.swift */; };
+		917A7050852E53FCE4BF38FAE726E278 /* LCTabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85EFF68B79B066F716FEE9F019A5B125 /* LCTabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		951191171C372811E1EE5B6C8B7523F6 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B9C9381CB502D67508719425A8480 /* LayoutConstraint.swift */; };
+		99613EF697B3A04C7BE02E21DFCC8422 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065273484B52DDB0D6D356DA35DED441 /* ConstraintLayoutSupportDSL.swift */; };
+		9F3B9A934C7F8F9DBD5FA463F2152278 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908A4AD7B083AF774F0F232A0D9D87B4 /* ConstraintMakerRelatable.swift */; };
+		A3F01976EC40A43F40D3B0509FB8D20A /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78FB46AB4344324F746DB4D84F783EB /* ConstraintViewDSL.swift */; };
+		AEC732C8CEEFAD4E4ABC43AF1F603F55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4795F4242338A6BF2D27820561C063 /* Foundation.framework */; };
+		B4353C0F87B58C6FB1E98CFFBC56AF41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4795F4242338A6BF2D27820561C063 /* Foundation.framework */; };
+		B77F661741D860D78132ACEC6EB61205 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95D9874881ECB40B540BDDF9744B66 /* ConstraintRelation.swift */; };
+		BDCBB285C696704FCDE109923FD4452E /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255B761FB2E4E1C6915857629B606531 /* ConstraintView+Extensions.swift */; };
+		BDF0BD23D02D79690AD3BCC16B610628 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9458840695E656AAAE16EAA2DA31C372 /* ConstraintMakerPriortizable.swift */; };
+		BE9FAE3DC965440AF1CA51BD59B4C1A6 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0109154ACC33DCEAAD481F98DEC82D /* ConstraintAttributes.swift */; };
+		CBD35907A3C589A1A7C5072F028FE108 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB443F287A00F35012599DBF0DF1585 /* ConstraintInsetTarget.swift */; };
+		D308ED274CBB2A4DE197A74696EACCD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4795F4242338A6BF2D27820561C063 /* Foundation.framework */; };
+		D38B5F87F2E8A9F9A4727122AB115F48 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1D87C400BAE92DBF908AB6874E4B98 /* ConstraintView.swift */; };
+		D678391F3D397700E4F77BB4E1CB2808 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8F1680FC485C22187E65E4BBF2ACB2 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D962F9E432D1366511DFCE1FDA8FAC56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4795F4242338A6BF2D27820561C063 /* Foundation.framework */; };
+		D9D09A9979C9E30032C7D579D34D0664 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B32786599002ED1802137B23A5E2E58 /* ConstraintMakerFinalizable.swift */; };
+		E78176D3E41E5136F4A5C0DC554E884C /* Pods-LCTabBarControllerDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 38B7B331FB4FDE50ACDDA8BD19B76A97 /* Pods-LCTabBarControllerDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8284A5B013B9760AD18FD9E220F6238 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC1F013F1CEE8F2CE4095184FFCEC92 /* ConstraintMakerExtendable.swift */; };
+		EB7B048961A7BD2B969D800A818E5E2E /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D8B927D28155160DC62031CE421429 /* ConstraintConstantTarget.swift */; };
+		EBBF7E7C6F7A29A583CD1235B8988726 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E728190863459605B9E9A3B9FCA580 /* ConstraintMaker.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B150E1FCAD0065657C3B8088CFF4830 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48D90DF8A76BE0C1276274B9533425E9;
+			remoteInfo = SnapKit;
+		};
+		6B5D19BA2585616118BE94F84CDD3D05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A6F9D09AABDCA7E03B0196E97E13CF4;
+			remoteInfo = LCTabBarController;
+		};
+		AFBAFFAD4A2692AECECAF8C2CA76BE13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69C9824F3BC4F616E585ECA9C57DA242;
+			remoteInfo = Then;
+		};
+		C561285F22AA610D7FD71DDE33D4CB99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69C9824F3BC4F616E585ECA9C57DA242;
+			remoteInfo = Then;
+		};
+		D71C0D9423FF869A2D9E1A0550FE679E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48D90DF8A76BE0C1276274B9533425E9;
+			remoteInfo = SnapKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		065273484B52DDB0D6D356DA35DED441 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		07F76BF8FCD6B4AAD364B533EEC17802 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		09522389FB39B538E5D1E83248299FBD /* Pods-LCTabBarControllerDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LCTabBarControllerDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		15239826912B721BF7D5AF318D4B2991 /* Pods-LCTabBarControllerDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LCTabBarControllerDemo-dummy.m"; sourceTree = "<group>"; };
+		1A6F5313539663FDD164FD8568EEA62D /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E728190863459605B9E9A3B9FCA580 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		21F35947094FD23DDAA5361037E949CA /* Then.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Then.modulemap; sourceTree = "<group>"; };
+		23C05BE1D152D829CFBE6EEEB456332F /* LCTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LCTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		24CF9C5A8194E6BF7F4D2B720247A24F /* Pods_LCTabBarControllerDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LCTabBarControllerDemoTests.framework; path = "Pods-LCTabBarControllerDemoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		255B761FB2E4E1C6915857629B606531 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		26CED03A1493404C350BD15494700389 /* Pods-LCTabBarControllerDemoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LCTabBarControllerDemoUITests-umbrella.h"; sourceTree = "<group>"; };
+		2EACE6EBD5E5A5BAF1E9ED9D18248E33 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		2F0B9C9381CB502D67508719425A8480 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		2F11035CE7B287EF851657DE2B10738F /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		30EDCE5BCB0BFDE2807D33768029B6C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38B7B331FB4FDE50ACDDA8BD19B76A97 /* Pods-LCTabBarControllerDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LCTabBarControllerDemo-umbrella.h"; sourceTree = "<group>"; };
+		38E08C8A4EEFE84AE95188E701C11661 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		3B48B6D5AAEB0B3F866F8355A4406570 /* Pods-LCTabBarControllerDemoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LCTabBarControllerDemoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3D95D9874881ECB40B540BDDF9744B66 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		3DE9A00DCB2F3A84BDD0B67D58EFB9FC /* Then.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Then.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E50A936AB602F2BE307ED741D8740DC /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		41BD0BE39C9821F320A17CDEEC730127 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		43E756FAC2B4ACA85DB6192094DCE188 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		446454424A31B0390F1F60B94AFD3F51 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46C9C61B2CF1099F6B7042A068907E96 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E795D7E01F4A7645DB495A6EB4918CE /* Then.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Then.swift; path = Sources/Then.swift; sourceTree = "<group>"; };
+		50EC5AF72A1E616FA0FFA82C28923F0B /* Pods-LCTabBarControllerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LCTabBarControllerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		511DC243AA4326BB8E278306614C1239 /* Pods-LCTabBarControllerDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LCTabBarControllerDemoTests-dummy.m"; sourceTree = "<group>"; };
+		543809B34A094470F456106054CE305E /* Pods_LCTabBarControllerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LCTabBarControllerDemo.framework; path = "Pods-LCTabBarControllerDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5563CD3FD1E5572F427E5AB5386C340E /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		5C88A0E11DF33C619F2732F0C37534F4 /* Pods-LCTabBarControllerDemoUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LCTabBarControllerDemoUITests-resources.sh"; sourceTree = "<group>"; };
+		63EED870CC7D8C4E26F5C6C7E10236F7 /* Pods-LCTabBarControllerDemoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LCTabBarControllerDemoUITests-frameworks.sh"; sourceTree = "<group>"; };
+		66214023A5A323CD91DA48C145C83395 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		6B32786599002ED1802137B23A5E2E58 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		6D7FF23E7A085F2DE81A32DDBB1508D5 /* Then-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Then-dummy.m"; sourceTree = "<group>"; };
+		6E99D065961DD11B3D8E536C94D2CB1D /* Pods-LCTabBarControllerDemoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LCTabBarControllerDemoUITests-dummy.m"; sourceTree = "<group>"; };
+		6F4795F4242338A6BF2D27820561C063 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7446CAC994081F78F13DE0505265E3CA /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		79FFB383ABE5539C1CC23E96B5834D7A /* Pods-LCTabBarControllerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LCTabBarControllerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A4512F366DA7C5B82908E3E4F303E2F /* Pods-LCTabBarControllerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LCTabBarControllerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		7D63494A79DD7DC9AF45EC2564A02187 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		7F34D5B20522B3DE19F7CC77D3CB8531 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		85EFF68B79B066F716FEE9F019A5B125 /* LCTabBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LCTabBarController-umbrella.h"; sourceTree = "<group>"; };
+		86D8B927D28155160DC62031CE421429 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		879252129A9BFAE5E2DA3B4DE3950D17 /* Pods-LCTabBarControllerDemoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LCTabBarControllerDemoUITests.modulemap"; sourceTree = "<group>"; };
+		8E91B516C36F5E2A08BCA333CA765E33 /* Then.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Then.framework; path = Then.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		908A4AD7B083AF774F0F232A0D9D87B4 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9458840695E656AAAE16EAA2DA31C372 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		95A4FF2B4ECD59544691D52E7448EF2E /* LCTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LCTabBarController-dummy.m"; sourceTree = "<group>"; };
+		968B17BB2702DD92F4DE2B62AB1A974D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96E1F91A88F78BCA5035648DC1DDF4BC /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		9B6F039B356928501EB2F193AB8C7BC7 /* Pods_LCTabBarControllerDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LCTabBarControllerDemoUITests.framework; path = "Pods-LCTabBarControllerDemoUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C0109154ACC33DCEAAD481F98DEC82D /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		9F1D87C400BAE92DBF908AB6874E4B98 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		A58079CD744A9B4BFC74E62FCEDD1AF1 /* LCTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LCTabBarController.xcconfig; sourceTree = "<group>"; };
+		A5B69F20D0F7CC0D179FC7A88AD97C20 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		A9D771B7B09DFBB71A3249E8A51A8FA2 /* Pods-LCTabBarControllerDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LCTabBarControllerDemoTests-frameworks.sh"; sourceTree = "<group>"; };
+		ADC1F013F1CEE8F2CE4095184FFCEC92 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		AEACB029C673954B5290708D8804CCA3 /* Pods-LCTabBarControllerDemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LCTabBarControllerDemoTests-umbrella.h"; sourceTree = "<group>"; };
+		B271C460825E7EC2B7232D98004444D0 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		B9E8E8F1933DAE0ABE7E4A2BF7080523 /* Pods-LCTabBarControllerDemoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LCTabBarControllerDemoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BD55E8A6C30D7C077DE9CF24807E5D32 /* Then-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Then-umbrella.h"; sourceTree = "<group>"; };
+		C396EADC0D76ABE832384869FCEDB600 /* Pods-LCTabBarControllerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LCTabBarControllerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		C3B8DABC3C8CC18CF167C457834061AA /* Pods-LCTabBarControllerDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LCTabBarControllerDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C6980CB2E10A93DAF257164667DA4114 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		C93725BA44B57FF156CB5052890A3BED /* Pods-LCTabBarControllerDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LCTabBarControllerDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		CD2EB47DDE1BF3146BCEA9D7FEA4381D /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		CD8F1680FC485C22187E65E4BBF2ACB2 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		CE72004E1EF31390BBC054ACCD51E019 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		CECD7B2E39222BC2052D8818F85734E1 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		D0C84049447092D527FA20B2832C72D8 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		D16740371ECCF44E2C02BB26B05323B9 /* Pods-LCTabBarControllerDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LCTabBarControllerDemoTests.modulemap"; sourceTree = "<group>"; };
+		D56E758904C8CEEE78CBA7851F7DC682 /* LCTabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LCTabBar.swift; sourceTree = "<group>"; };
+		D78FB46AB4344324F746DB4D84F783EB /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		D79A875B84DAA7251BA78A10C250A36D /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8703F3F6DC851E6CB6A2ACD68422CA3 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		DCB443F287A00F35012599DBF0DF1585 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		DEDA4F8035D36483EEC3E8438BC17A27 /* LCTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LCTabBarController.modulemap; sourceTree = "<group>"; };
+		E030FCA9A77871DA15C9842F908930DD /* Then-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Then-prefix.pch"; sourceTree = "<group>"; };
+		E14F16CC26408ACAA6203C065B72B83C /* Pods-LCTabBarControllerDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LCTabBarControllerDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E219EF60B0F6D7500B74B47D101E6484 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		E33013B535A6A45549DF43BBA05D2967 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		E6C0A6E2F64D2F2739FBA872D8466939 /* Pods-LCTabBarControllerDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LCTabBarControllerDemo.modulemap"; sourceTree = "<group>"; };
+		E89BCACB239A8B411CC93636EC101815 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8E1C9D9C1A1410BCE73AB49825C7DE0 /* Pods-LCTabBarControllerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LCTabBarControllerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		ED5A44F57FEE8E5EEE6B4BE2168B6299 /* Pods-LCTabBarControllerDemoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LCTabBarControllerDemoTests-resources.sh"; sourceTree = "<group>"; };
+		F05E2C7BED0B1A97521602608E79DD94 /* Pods-LCTabBarControllerDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LCTabBarControllerDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F36C2EC0915BC50BBE2E7B9FED364E0C /* Then.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Then.xcconfig; sourceTree = "<group>"; };
+		F4C0A739722CA676A2FE397D6D18853D /* LCTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LCTabBarController.framework; path = LCTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD2C8801079C84553A185EC2FB67CB6D /* Pods-LCTabBarControllerDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LCTabBarControllerDemo-frameworks.sh"; sourceTree = "<group>"; };
+		FEB2391CC922CF5886084E31661CD3EF /* LCTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LCTabBarController.swift; sourceTree = "<group>"; };
+		FEB499BCE701F8D91A52A7910C43A62B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB5A932B7F93DCFA1F6B7A5740CD0F3 /* Pods-LCTabBarControllerDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LCTabBarControllerDemo-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0656783B79B0E02769136AD5EB750DFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC732C8CEEFAD4E4ABC43AF1F603F55 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158B1A0979DE268A1ED38E1EAFE664C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AEE7DABA7EADFFFD4519DA81AD03CF8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C41EEF7714489902351BDA061D6A71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D308ED274CBB2A4DE197A74696EACCD2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56442C4E8BFB95EBF92F979CDF8E927A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4353C0F87B58C6FB1E98CFFBC56AF41 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		715462A03110CE79EAF79D7F4F650D78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D962F9E432D1366511DFCE1FDA8FAC56 /* Foundation.framework in Frameworks */,
+				635E5F730B52190D051FE098D78DBFBA /* SnapKit.framework in Frameworks */,
+				57EBA0CE27AAB12879B6A1A900B95CFC /* Then.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E725EAF3BA73650570A71A960B5E9C4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				080CE788D30CFFB0BC0715A6C968F4F8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15EB72176F375A1713185A11D006BE78 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				890E4331221A3B085D4ACDD8CF8CD12E /* LCTabBarController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2D6CAF3F680CB64F010605F7CCF43F6D /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				96E1F91A88F78BCA5035648DC1DDF4BC /* Constraint.swift */,
+				9C0109154ACC33DCEAAD481F98DEC82D /* ConstraintAttributes.swift */,
+				D0C84049447092D527FA20B2832C72D8 /* ConstraintConfig.swift */,
+				86D8B927D28155160DC62031CE421429 /* ConstraintConstantTarget.swift */,
+				CD2EB47DDE1BF3146BCEA9D7FEA4381D /* ConstraintDescription.swift */,
+				38E08C8A4EEFE84AE95188E701C11661 /* ConstraintDSL.swift */,
+				41BD0BE39C9821F320A17CDEEC730127 /* ConstraintInsets.swift */,
+				DCB443F287A00F35012599DBF0DF1585 /* ConstraintInsetTarget.swift */,
+				2F11035CE7B287EF851657DE2B10738F /* ConstraintItem.swift */,
+				D8703F3F6DC851E6CB6A2ACD68422CA3 /* ConstraintLayoutGuide.swift */,
+				B271C460825E7EC2B7232D98004444D0 /* ConstraintLayoutGuide+Extensions.swift */,
+				7446CAC994081F78F13DE0505265E3CA /* ConstraintLayoutGuideDSL.swift */,
+				E33013B535A6A45549DF43BBA05D2967 /* ConstraintLayoutSupport.swift */,
+				065273484B52DDB0D6D356DA35DED441 /* ConstraintLayoutSupportDSL.swift */,
+				20E728190863459605B9E9A3B9FCA580 /* ConstraintMaker.swift */,
+				CECD7B2E39222BC2052D8818F85734E1 /* ConstraintMakerEditable.swift */,
+				ADC1F013F1CEE8F2CE4095184FFCEC92 /* ConstraintMakerExtendable.swift */,
+				6B32786599002ED1802137B23A5E2E58 /* ConstraintMakerFinalizable.swift */,
+				9458840695E656AAAE16EAA2DA31C372 /* ConstraintMakerPriortizable.swift */,
+				908A4AD7B083AF774F0F232A0D9D87B4 /* ConstraintMakerRelatable.swift */,
+				66214023A5A323CD91DA48C145C83395 /* ConstraintMultiplierTarget.swift */,
+				07F76BF8FCD6B4AAD364B533EEC17802 /* ConstraintOffsetTarget.swift */,
+				43E756FAC2B4ACA85DB6192094DCE188 /* ConstraintPriority.swift */,
+				A5B69F20D0F7CC0D179FC7A88AD97C20 /* ConstraintPriorityTarget.swift */,
+				CE72004E1EF31390BBC054ACCD51E019 /* ConstraintRelatableTarget.swift */,
+				3D95D9874881ECB40B540BDDF9744B66 /* ConstraintRelation.swift */,
+				9F1D87C400BAE92DBF908AB6874E4B98 /* ConstraintView.swift */,
+				255B761FB2E4E1C6915857629B606531 /* ConstraintView+Extensions.swift */,
+				D78FB46AB4344324F746DB4D84F783EB /* ConstraintViewDSL.swift */,
+				C6980CB2E10A93DAF257164667DA4114 /* Debugging.swift */,
+				2F0B9C9381CB502D67508719425A8480 /* LayoutConstraint.swift */,
+				E219EF60B0F6D7500B74B47D101E6484 /* LayoutConstraintItem.swift */,
+				5563CD3FD1E5572F427E5AB5386C340E /* UILayoutSupport+Extensions.swift */,
+				58E481BD15790EC9D82B0480BE58CC8B /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		32C37B46FFA548943FF8403A7C10E89A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D6CAF3F680CB64F010605F7CCF43F6D /* SnapKit */,
+				B5CED444F4ACBA1610D7FF3158349371 /* Then */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3842644C5EE20C558AF96A522620C592 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A6F5313539663FDD164FD8568EEA62D /* SnapKit.framework */,
+				3DE9A00DCB2F3A84BDD0B67D58EFB9FC /* Then.framework */,
+				7AF6885774F950E3F5CE72FF603D657A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		571D8D60AEF38CEB6E988DD4B3607698 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D56E758904C8CEEE78CBA7851F7DC682 /* LCTabBar.swift */,
+				FEB2391CC922CF5886084E31661CD3EF /* LCTabBarController.swift */,
+			);
+			name = Sources;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		58E481BD15790EC9D82B0480BE58CC8B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E89BCACB239A8B411CC93636EC101815 /* Info.plist */,
+				7F34D5B20522B3DE19F7CC77D3CB8531 /* SnapKit.modulemap */,
+				2EACE6EBD5E5A5BAF1E9ED9D18248E33 /* SnapKit.xcconfig */,
+				3E50A936AB602F2BE307ED741D8740DC /* SnapKit-dummy.m */,
+				7D63494A79DD7DC9AF45EC2564A02187 /* SnapKit-prefix.pch */,
+				CD8F1680FC485C22187E65E4BBF2ACB2 /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		5A9981B19A836910D095C7FBAAE9BB10 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2FF853488F72F870E8BC6A09CBA3197 /* Pods-LCTabBarControllerDemo */,
+				B08300B13AD112FC89EFEEE4E58FB114 /* Pods-LCTabBarControllerDemoTests */,
+				CB35201A5F745747E852448B5B92005F /* Pods-LCTabBarControllerDemoUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5F225C122B2A3F08A7D802435A4BBC2F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEB499BCE701F8D91A52A7910C43A62B /* Info.plist */,
+				DEDA4F8035D36483EEC3E8438BC17A27 /* LCTabBarController.modulemap */,
+				A58079CD744A9B4BFC74E62FCEDD1AF1 /* LCTabBarController.xcconfig */,
+				95A4FF2B4ECD59544691D52E7448EF2E /* LCTabBarController-dummy.m */,
+				23C05BE1D152D829CFBE6EEEB456332F /* LCTabBarController-prefix.pch */,
+				85EFF68B79B066F716FEE9F019A5B125 /* LCTabBarController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Demo/Pods/Target Support Files/LCTabBarController";
+			sourceTree = "<group>";
+		};
+		7AF6885774F950E3F5CE72FF603D657A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6F4795F4242338A6BF2D27820561C063 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				15EB72176F375A1713185A11D006BE78 /* Development Pods */,
+				3842644C5EE20C558AF96A522620C592 /* Frameworks */,
+				32C37B46FFA548943FF8403A7C10E89A /* Pods */,
+				B6B70E676D5DDC2E7C6E3CA618C9E87A /* Products */,
+				5A9981B19A836910D095C7FBAAE9BB10 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		890E4331221A3B085D4ACDD8CF8CD12E /* LCTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				571D8D60AEF38CEB6E988DD4B3607698 /* Sources */,
+				5F225C122B2A3F08A7D802435A4BBC2F /* Support Files */,
+			);
+			name = LCTabBarController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		9D113E796A0B95E37BD01327FC1FA268 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				46C9C61B2CF1099F6B7042A068907E96 /* Info.plist */,
+				21F35947094FD23DDAA5361037E949CA /* Then.modulemap */,
+				F36C2EC0915BC50BBE2E7B9FED364E0C /* Then.xcconfig */,
+				6D7FF23E7A085F2DE81A32DDBB1508D5 /* Then-dummy.m */,
+				E030FCA9A77871DA15C9842F908930DD /* Then-prefix.pch */,
+				BD55E8A6C30D7C077DE9CF24807E5D32 /* Then-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Then";
+			sourceTree = "<group>";
+		};
+		B08300B13AD112FC89EFEEE4E58FB114 /* Pods-LCTabBarControllerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				968B17BB2702DD92F4DE2B62AB1A974D /* Info.plist */,
+				D16740371ECCF44E2C02BB26B05323B9 /* Pods-LCTabBarControllerDemoTests.modulemap */,
+				09522389FB39B538E5D1E83248299FBD /* Pods-LCTabBarControllerDemoTests-acknowledgements.markdown */,
+				C3B8DABC3C8CC18CF167C457834061AA /* Pods-LCTabBarControllerDemoTests-acknowledgements.plist */,
+				511DC243AA4326BB8E278306614C1239 /* Pods-LCTabBarControllerDemoTests-dummy.m */,
+				A9D771B7B09DFBB71A3249E8A51A8FA2 /* Pods-LCTabBarControllerDemoTests-frameworks.sh */,
+				ED5A44F57FEE8E5EEE6B4BE2168B6299 /* Pods-LCTabBarControllerDemoTests-resources.sh */,
+				AEACB029C673954B5290708D8804CCA3 /* Pods-LCTabBarControllerDemoTests-umbrella.h */,
+				50EC5AF72A1E616FA0FFA82C28923F0B /* Pods-LCTabBarControllerDemoTests.debug.xcconfig */,
+				C396EADC0D76ABE832384869FCEDB600 /* Pods-LCTabBarControllerDemoTests.release.xcconfig */,
+			);
+			name = "Pods-LCTabBarControllerDemoTests";
+			path = "Target Support Files/Pods-LCTabBarControllerDemoTests";
+			sourceTree = "<group>";
+		};
+		B2FF853488F72F870E8BC6A09CBA3197 /* Pods-LCTabBarControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				446454424A31B0390F1F60B94AFD3F51 /* Info.plist */,
+				E6C0A6E2F64D2F2739FBA872D8466939 /* Pods-LCTabBarControllerDemo.modulemap */,
+				E14F16CC26408ACAA6203C065B72B83C /* Pods-LCTabBarControllerDemo-acknowledgements.markdown */,
+				C93725BA44B57FF156CB5052890A3BED /* Pods-LCTabBarControllerDemo-acknowledgements.plist */,
+				15239826912B721BF7D5AF318D4B2991 /* Pods-LCTabBarControllerDemo-dummy.m */,
+				FD2C8801079C84553A185EC2FB67CB6D /* Pods-LCTabBarControllerDemo-frameworks.sh */,
+				FFB5A932B7F93DCFA1F6B7A5740CD0F3 /* Pods-LCTabBarControllerDemo-resources.sh */,
+				38B7B331FB4FDE50ACDDA8BD19B76A97 /* Pods-LCTabBarControllerDemo-umbrella.h */,
+				7A4512F366DA7C5B82908E3E4F303E2F /* Pods-LCTabBarControllerDemo.debug.xcconfig */,
+				E8E1C9D9C1A1410BCE73AB49825C7DE0 /* Pods-LCTabBarControllerDemo.release.xcconfig */,
+			);
+			name = "Pods-LCTabBarControllerDemo";
+			path = "Target Support Files/Pods-LCTabBarControllerDemo";
+			sourceTree = "<group>";
+		};
+		B5CED444F4ACBA1610D7FF3158349371 /* Then */ = {
+			isa = PBXGroup;
+			children = (
+				4E795D7E01F4A7645DB495A6EB4918CE /* Then.swift */,
+				9D113E796A0B95E37BD01327FC1FA268 /* Support Files */,
+			);
+			name = Then;
+			path = Then;
+			sourceTree = "<group>";
+		};
+		B6B70E676D5DDC2E7C6E3CA618C9E87A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4C0A739722CA676A2FE397D6D18853D /* LCTabBarController.framework */,
+				543809B34A094470F456106054CE305E /* Pods_LCTabBarControllerDemo.framework */,
+				24CF9C5A8194E6BF7F4D2B720247A24F /* Pods_LCTabBarControllerDemoTests.framework */,
+				9B6F039B356928501EB2F193AB8C7BC7 /* Pods_LCTabBarControllerDemoUITests.framework */,
+				D79A875B84DAA7251BA78A10C250A36D /* SnapKit.framework */,
+				8E91B516C36F5E2A08BCA333CA765E33 /* Then.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB35201A5F745747E852448B5B92005F /* Pods-LCTabBarControllerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				30EDCE5BCB0BFDE2807D33768029B6C3 /* Info.plist */,
+				879252129A9BFAE5E2DA3B4DE3950D17 /* Pods-LCTabBarControllerDemoUITests.modulemap */,
+				B9E8E8F1933DAE0ABE7E4A2BF7080523 /* Pods-LCTabBarControllerDemoUITests-acknowledgements.markdown */,
+				3B48B6D5AAEB0B3F866F8355A4406570 /* Pods-LCTabBarControllerDemoUITests-acknowledgements.plist */,
+				6E99D065961DD11B3D8E536C94D2CB1D /* Pods-LCTabBarControllerDemoUITests-dummy.m */,
+				63EED870CC7D8C4E26F5C6C7E10236F7 /* Pods-LCTabBarControllerDemoUITests-frameworks.sh */,
+				5C88A0E11DF33C619F2732F0C37534F4 /* Pods-LCTabBarControllerDemoUITests-resources.sh */,
+				26CED03A1493404C350BD15494700389 /* Pods-LCTabBarControllerDemoUITests-umbrella.h */,
+				79FFB383ABE5539C1CC23E96B5834D7A /* Pods-LCTabBarControllerDemoUITests.debug.xcconfig */,
+				F05E2C7BED0B1A97521602608E79DD94 /* Pods-LCTabBarControllerDemoUITests.release.xcconfig */,
+			);
+			name = "Pods-LCTabBarControllerDemoUITests";
+			path = "Target Support Files/Pods-LCTabBarControllerDemoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		08DCD7A010662CB6CD8C1E1818784E9F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D678391F3D397700E4F77BB4E1CB2808 /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25C0ADFF940CB5CFEDD5C71288546DB1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E78176D3E41E5136F4A5C0DC554E884C /* Pods-LCTabBarControllerDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34659AF2EBB043519F253904000068D4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				917A7050852E53FCE4BF38FAE726E278 /* LCTabBarController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540DB9A832C4395DACB8E434A4B1AB85 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B8F7828B681206193C2F1F432D96BE3 /* Pods-LCTabBarControllerDemoUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B306A54CA340BED14033D8093FB744A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1675A58F2EE7634D5073DBA402E7FD7C /* Then-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D55C0230F52BB20CC43EC74E18D118DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D3BA3FCE079DCCAB765BFAA6B2FAC6 /* Pods-LCTabBarControllerDemoTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		48D90DF8A76BE0C1276274B9533425E9 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FC81BF97D0435A0DC95C8671873B81F /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				8F896E28E4DAFC74615674A5FD026A48 /* Sources */,
+				158B1A0979DE268A1ED38E1EAFE664C6 /* Frameworks */,
+				08DCD7A010662CB6CD8C1E1818784E9F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = D79A875B84DAA7251BA78A10C250A36D /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		69C9824F3BC4F616E585ECA9C57DA242 /* Then */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60E9D02E22E9A526E6220BB6E52BC407 /* Build configuration list for PBXNativeTarget "Then" */;
+			buildPhases = (
+				7B940E30272B6A0A44D536186B4885BD /* Sources */,
+				E725EAF3BA73650570A71A960B5E9C4B /* Frameworks */,
+				B306A54CA340BED14033D8093FB744A0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Then;
+			productName = Then;
+			productReference = 8E91B516C36F5E2A08BCA333CA765E33 /* Then.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6A6F9D09AABDCA7E03B0196E97E13CF4 /* LCTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE7837A7D42D4EC6B25EAF1D360BED6B /* Build configuration list for PBXNativeTarget "LCTabBarController" */;
+			buildPhases = (
+				427FC047E071F6848F6C466FA41C5413 /* Sources */,
+				715462A03110CE79EAF79D7F4F650D78 /* Frameworks */,
+				34659AF2EBB043519F253904000068D4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4BCE45B3FE556E7D67204F9E7838821 /* PBXTargetDependency */,
+				38CD7F71594F30F20EE7EB748A87B7F8 /* PBXTargetDependency */,
+			);
+			name = LCTabBarController;
+			productName = LCTabBarController;
+			productReference = F4C0A739722CA676A2FE397D6D18853D /* LCTabBarController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7FCA560435CE19D84207A4E1847E127F /* Pods-LCTabBarControllerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65DED7B576AA1273E0D7C84D552DB62C /* Build configuration list for PBXNativeTarget "Pods-LCTabBarControllerDemoTests" */;
+			buildPhases = (
+				6601C70217CD570946A33CD4F1A5163E /* Sources */,
+				56442C4E8BFB95EBF92F979CDF8E927A /* Frameworks */,
+				D55C0230F52BB20CC43EC74E18D118DC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LCTabBarControllerDemoTests";
+			productName = "Pods-LCTabBarControllerDemoTests";
+			productReference = 24CF9C5A8194E6BF7F4D2B720247A24F /* Pods_LCTabBarControllerDemoTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		850FBD9D23583FE769FAE944B2170130 /* Pods-LCTabBarControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DF91AE5E312E0EA6EA462A67CF75C55 /* Build configuration list for PBXNativeTarget "Pods-LCTabBarControllerDemo" */;
+			buildPhases = (
+				CEBC987BE9CC2B28B2B74FE8EEBD0CDF /* Sources */,
+				0656783B79B0E02769136AD5EB750DFF /* Frameworks */,
+				25C0ADFF940CB5CFEDD5C71288546DB1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E94D82CB8C8F3A3858DB8CF17CCB9A8F /* PBXTargetDependency */,
+				7D55DAA40299E12E12B5C564BFA2C891 /* PBXTargetDependency */,
+				A58EF0580D18C729325EA321375B143E /* PBXTargetDependency */,
+			);
+			name = "Pods-LCTabBarControllerDemo";
+			productName = "Pods-LCTabBarControllerDemo";
+			productReference = 543809B34A094470F456106054CE305E /* Pods_LCTabBarControllerDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		86D60D1696540CFB0F85F547D2C43B83 /* Pods-LCTabBarControllerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70500E38626E5D930C093123AA2CE1E8 /* Build configuration list for PBXNativeTarget "Pods-LCTabBarControllerDemoUITests" */;
+			buildPhases = (
+				E9F009E6E80496C05EDCE96B34A219AE /* Sources */,
+				55C41EEF7714489902351BDA061D6A71 /* Frameworks */,
+				540DB9A832C4395DACB8E434A4B1AB85 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LCTabBarControllerDemoUITests";
+			productName = "Pods-LCTabBarControllerDemoUITests";
+			productReference = 9B6F039B356928501EB2F193AB8C7BC7 /* Pods_LCTabBarControllerDemoUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B6B70E676D5DDC2E7C6E3CA618C9E87A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A6F9D09AABDCA7E03B0196E97E13CF4 /* LCTabBarController */,
+				850FBD9D23583FE769FAE944B2170130 /* Pods-LCTabBarControllerDemo */,
+				7FCA560435CE19D84207A4E1847E127F /* Pods-LCTabBarControllerDemoTests */,
+				86D60D1696540CFB0F85F547D2C43B83 /* Pods-LCTabBarControllerDemoUITests */,
+				48D90DF8A76BE0C1276274B9533425E9 /* SnapKit */,
+				69C9824F3BC4F616E585ECA9C57DA242 /* Then */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		427FC047E071F6848F6C466FA41C5413 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC76E832232E748E78B7C4B4C2E385E /* LCTabBar.swift in Sources */,
+				8644C8368090475336DC055357A65D68 /* LCTabBarController-dummy.m in Sources */,
+				91317E1AD42D4F21F760B3EEFFA28D99 /* LCTabBarController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6601C70217CD570946A33CD4F1A5163E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B50164EAD5EAE944D6715BB5F99770 /* Pods-LCTabBarControllerDemoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B940E30272B6A0A44D536186B4885BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85F45BD97A2CCB78CEB159640FD9E9B1 /* Then-dummy.m in Sources */,
+				6BE07D9C394116106FE804A68AD98520 /* Then.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F896E28E4DAFC74615674A5FD026A48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B42F51E4BD13EA5935BCFE7E499D4A0 /* Constraint.swift in Sources */,
+				BE9FAE3DC965440AF1CA51BD59B4C1A6 /* ConstraintAttributes.swift in Sources */,
+				91547D9A6D7F608C2EC0B4FB4DC560FF /* ConstraintConfig.swift in Sources */,
+				EB7B048961A7BD2B969D800A818E5E2E /* ConstraintConstantTarget.swift in Sources */,
+				8168AB5D1B3490118633F7FB15C1B02D /* ConstraintDescription.swift in Sources */,
+				5ED97A3967C6C354F29339BC2F8DE841 /* ConstraintDSL.swift in Sources */,
+				7E69ECA59BD5F67302462FB9783C415F /* ConstraintInsets.swift in Sources */,
+				CBD35907A3C589A1A7C5072F028FE108 /* ConstraintInsetTarget.swift in Sources */,
+				185FDF326C07E87FCEE2605708417A15 /* ConstraintItem.swift in Sources */,
+				8CB1AFD6F99DEE8C5D8607926480CFED /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				06EC45DA31F0AA718F680E4F18095817 /* ConstraintLayoutGuide.swift in Sources */,
+				76E2C2F46F42F2EDD3F6AFB4E43B09B7 /* ConstraintLayoutGuideDSL.swift in Sources */,
+				18EBD9E4B9D423CDB19DCC4DEA0E3FA4 /* ConstraintLayoutSupport.swift in Sources */,
+				99613EF697B3A04C7BE02E21DFCC8422 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				EBBF7E7C6F7A29A583CD1235B8988726 /* ConstraintMaker.swift in Sources */,
+				20D39B69F4E2D4B9F27E6329C7D19CCC /* ConstraintMakerEditable.swift in Sources */,
+				E8284A5B013B9760AD18FD9E220F6238 /* ConstraintMakerExtendable.swift in Sources */,
+				D9D09A9979C9E30032C7D579D34D0664 /* ConstraintMakerFinalizable.swift in Sources */,
+				BDF0BD23D02D79690AD3BCC16B610628 /* ConstraintMakerPriortizable.swift in Sources */,
+				9F3B9A934C7F8F9DBD5FA463F2152278 /* ConstraintMakerRelatable.swift in Sources */,
+				67A07B0063DEBF27F5DF5D76FBC8D0DA /* ConstraintMultiplierTarget.swift in Sources */,
+				6618615254E854DAE3E639F499037443 /* ConstraintOffsetTarget.swift in Sources */,
+				1E8293A95746048DF29146CEC31C7721 /* ConstraintPriority.swift in Sources */,
+				6352C24F1066F94D0DF759F3C20A981B /* ConstraintPriorityTarget.swift in Sources */,
+				04E456105C5E40408F116D46D2CAA58C /* ConstraintRelatableTarget.swift in Sources */,
+				B77F661741D860D78132ACEC6EB61205 /* ConstraintRelation.swift in Sources */,
+				BDCBB285C696704FCDE109923FD4452E /* ConstraintView+Extensions.swift in Sources */,
+				D38B5F87F2E8A9F9A4727122AB115F48 /* ConstraintView.swift in Sources */,
+				A3F01976EC40A43F40D3B0509FB8D20A /* ConstraintViewDSL.swift in Sources */,
+				141C7984244B34A952237F3E0423D6A5 /* Debugging.swift in Sources */,
+				951191171C372811E1EE5B6C8B7523F6 /* LayoutConstraint.swift in Sources */,
+				913E59AD3CF14891FDC2EDB5387157C1 /* LayoutConstraintItem.swift in Sources */,
+				7F6AA04C381EF84C1F1893806F74912F /* SnapKit-dummy.m in Sources */,
+				43966CDE63D2583AAFFE2EF681A2E85D /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBC987BE9CC2B28B2B74FE8EEBD0CDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DB574714C043D8C718AB4C45617587E /* Pods-LCTabBarControllerDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9F009E6E80496C05EDCE96B34A219AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E4155EAB0436A1A288A8B7BBF9FF9A /* Pods-LCTabBarControllerDemoUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38CD7F71594F30F20EE7EB748A87B7F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Then;
+			target = 69C9824F3BC4F616E585ECA9C57DA242 /* Then */;
+			targetProxy = AFBAFFAD4A2692AECECAF8C2CA76BE13 /* PBXContainerItemProxy */;
+		};
+		7D55DAA40299E12E12B5C564BFA2C891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 48D90DF8A76BE0C1276274B9533425E9 /* SnapKit */;
+			targetProxy = D71C0D9423FF869A2D9E1A0550FE679E /* PBXContainerItemProxy */;
+		};
+		A58EF0580D18C729325EA321375B143E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Then;
+			target = 69C9824F3BC4F616E585ECA9C57DA242 /* Then */;
+			targetProxy = C561285F22AA610D7FD71DDE33D4CB99 /* PBXContainerItemProxy */;
+		};
+		E4BCE45B3FE556E7D67204F9E7838821 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 48D90DF8A76BE0C1276274B9533425E9 /* SnapKit */;
+			targetProxy = 4B150E1FCAD0065657C3B8088CFF4830 /* PBXContainerItemProxy */;
+		};
+		E94D82CB8C8F3A3858DB8CF17CCB9A8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LCTabBarController;
+			target = 6A6F9D09AABDCA7E03B0196E97E13CF4 /* LCTabBarController */;
+			targetProxy = 6B5D19BA2585616118BE94F84CDD3D05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		050DBF9D8D980B95D21CF34A834462CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8E1C9D9C1A1410BCE73AB49825C7DE0 /* Pods-LCTabBarControllerDemo.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LCTabBarControllerDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LCTabBarControllerDemo/Pods-LCTabBarControllerDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LCTabBarControllerDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0D2819B3F0DBEB051C3B8B5825EA4EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C396EADC0D76ABE832384869FCEDB600 /* Pods-LCTabBarControllerDemoTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LCTabBarControllerDemoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LCTabBarControllerDemoTests/Pods-LCTabBarControllerDemoTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LCTabBarControllerDemoTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		32C51662C21BD7BBB59E72831F4254EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A58079CD744A9B4BFC74E62FCEDD1AF1 /* LCTabBarController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LCTabBarController/LCTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LCTabBarController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LCTabBarController/LCTabBarController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LCTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		34725060DECF1A5186FE2A0287AF85DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EACE6EBD5E5A5BAF1E9ED9D18248E33 /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41D526858196E5EEC6C8CA09EC41B9B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50EC5AF72A1E616FA0FFA82C28923F0B /* Pods-LCTabBarControllerDemoTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LCTabBarControllerDemoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LCTabBarControllerDemoTests/Pods-LCTabBarControllerDemoTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LCTabBarControllerDemoTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		430A86DAAE9E8B13F8C16C7C73967522 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F05E2C7BED0B1A97521602608E79DD94 /* Pods-LCTabBarControllerDemoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LCTabBarControllerDemoUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LCTabBarControllerDemoUITests/Pods-LCTabBarControllerDemoUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LCTabBarControllerDemoUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5BA613401AAE65C7B6FDFC9A26CC9D3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F36C2EC0915BC50BBE2E7B9FED364E0C /* Then.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Then/Then-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Then/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Then/Then.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Then;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E1EABF294A7FD5C603F6EDB02A0AEE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A58079CD744A9B4BFC74E62FCEDD1AF1 /* LCTabBarController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LCTabBarController/LCTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LCTabBarController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LCTabBarController/LCTabBarController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LCTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		80BACC984EDA077B218002A93A24A58F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79FFB383ABE5539C1CC23E96B5834D7A /* Pods-LCTabBarControllerDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LCTabBarControllerDemoUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LCTabBarControllerDemoUITests/Pods-LCTabBarControllerDemoUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LCTabBarControllerDemoUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DA5820A9EF0F85C83DB745D3F525D5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EACE6EBD5E5A5BAF1E9ED9D18248E33 /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BF440F1C94753A8EABCF995948BB7092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A4512F366DA7C5B82908E3E4F303E2F /* Pods-LCTabBarControllerDemo.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LCTabBarControllerDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LCTabBarControllerDemo/Pods-LCTabBarControllerDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LCTabBarControllerDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C104F7F091290C3D1E248192F07FE689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E8FA09E6A8D7C59EDF731CF0ED7D7DBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F36C2EC0915BC50BBE2E7B9FED364E0C /* Then.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Then/Then-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Then/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Then/Then.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Then;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DF91AE5E312E0EA6EA462A67CF75C55 /* Build configuration list for PBXNativeTarget "Pods-LCTabBarControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF440F1C94753A8EABCF995948BB7092 /* Debug */,
+				050DBF9D8D980B95D21CF34A834462CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FC81BF97D0435A0DC95C8671873B81F /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DA5820A9EF0F85C83DB745D3F525D5F /* Debug */,
+				34725060DECF1A5186FE2A0287AF85DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C104F7F091290C3D1E248192F07FE689 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60E9D02E22E9A526E6220BB6E52BC407 /* Build configuration list for PBXNativeTarget "Then" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BA613401AAE65C7B6FDFC9A26CC9D3C /* Debug */,
+				E8FA09E6A8D7C59EDF731CF0ED7D7DBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65DED7B576AA1273E0D7C84D552DB62C /* Build configuration list for PBXNativeTarget "Pods-LCTabBarControllerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41D526858196E5EEC6C8CA09EC41B9B4 /* Debug */,
+				0D2819B3F0DBEB051C3B8B5825EA4EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70500E38626E5D930C093123AA2CE1E8 /* Build configuration list for PBXNativeTarget "Pods-LCTabBarControllerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80BACC984EDA077B218002A93A24A58F /* Debug */,
+				430A86DAAE9E8B13F8C16C7C73967522 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE7837A7D42D4EC6B25EAF1D360BED6B /* Build configuration list for PBXNativeTarget "LCTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32C51662C21BD7BBB59E72831F4254EB /* Debug */,
+				5E1EABF294A7FD5C603F6EDB02A0AEE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
