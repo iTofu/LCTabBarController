@@ -132,12 +132,20 @@
 
 - (CGRect)imageRectForContentRect:(CGRect)contentRect {
     
-    CGFloat imageX = 0.f;
-    CGFloat imageY = 0.f;
-    CGFloat imageW = contentRect.size.width;
-    CGFloat imageH = contentRect.size.height * self.itemImageRatio;
+    if (CGSizeEqualToSize(self.itemImageSize,CGSizeZero )) {
+        CGFloat imageX = 0.f;
+        CGFloat imageY = 0.f;
+        CGFloat imageW = contentRect.size.width;
+        CGFloat imageH = contentRect.size.height * self.itemImageRatio;
+        
+        return CGRectMake(imageX, imageY, imageW, imageH);
+    }
+    else{
+        CGFloat imageY = (contentRect.size.width-self.itemImageSize.width)/2;
+        
+        return CGRectMake(self.itemImageTop, imageY, self.itemImageSize.width, self.itemImageSize.height);
+    }
     
-    return CGRectMake(imageX, imageY, imageW, imageH);
 }
 
 - (CGRect)titleRectForContentRect:(CGRect)contentRect {
