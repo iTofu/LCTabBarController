@@ -45,7 +45,16 @@
 
 - (void)addTabBarItem:(UITabBarItem *)item {
     
-    LCTabBarItem *tabBarItem = [[LCTabBarItem alloc] initWithItemImageRatio:self.itemImageRatio];
+    LCTabBarItem *tabBarItem;
+    if (CGSizeEqualToSize(self.itemImageSize,CGSizeZero )){
+        tabBarItem = [[LCTabBarItem alloc] initWithItemImageRatio:self.itemImageRatio];
+    }
+    else{
+        tabBarItem = [[LCTabBarItem alloc] initWithItemImageRect:CGRectMake(0, self.itemImageTop, self.itemImageSize.width, self.itemImageSize.height)];
+        tabBarItem.itemImageRatio = self.itemImageRatio;
+    }
+    tabBarItem.itemImageTop           = self.itemImageTop;
+    tabBarItem.itemImageSize          = self.itemImageSize;
     
     tabBarItem.badgeTitleFont         = self.badgeTitleFont;
     tabBarItem.itemTitleFont          = self.itemTitleFont;

@@ -79,4 +79,5 @@
  */
 - (instancetype)initWithItemImageRatio:(CGFloat)itemImageRatio;
 
+- (instancetype)initWithItemImageRect:(CGRect)itemImageRect;
 @end

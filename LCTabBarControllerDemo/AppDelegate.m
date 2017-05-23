@@ -68,7 +68,9 @@
 //    tabBarC.selectedItemTitleColor = [UIColor redColor];
 //    tabBarC.itemImageRatio         = 0.5f;
 //    tabBarC.badgeTitleFont         = [UIFont boldSystemFontOfSize:12.0f];
-
+    
+    tabBarC.itemImageTop           = 8.0f;
+    tabBarC.itemImageSize          = CGSizeMake(24, 24);
     tabBarC.viewControllers        = @[navC1, navC2, navC3, navC4];
 
     self.window.rootViewController = tabBarC;

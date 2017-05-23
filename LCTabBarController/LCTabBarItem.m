@@ -67,6 +67,17 @@
     return self;
 }
 
+
+- (instancetype)initWithItemImageRect:(CGRect)itemImageRect {
+    
+    if (self = [super init]) {
+        
+        self.itemImageSize = itemImageRect.size;
+        self.itemImageTop  = itemImageRect.origin.y;
+    }
+    return self;
+}
+
 #pragma mark -
 
 - (void)setItemTitleFont:(UIFont *)itemTitleFont {
@@ -141,9 +152,9 @@
         return CGRectMake(imageX, imageY, imageW, imageH);
     }
     else{
-        CGFloat imageY = (contentRect.size.width-self.itemImageSize.width)/2;
+        CGFloat imageX = (contentRect.size.width-self.itemImageSize.width)/2;
         
-        return CGRectMake(self.itemImageTop, imageY, self.itemImageSize.width, self.itemImageSize.height);
+        return CGRectMake(imageX, self.itemImageTop, self.itemImageSize.width, self.itemImageSize.height);
     }
     
 }
