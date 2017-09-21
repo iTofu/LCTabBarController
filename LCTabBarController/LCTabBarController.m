@@ -106,14 +106,19 @@
 //}
 
 - (void)viewWillAppear:(BOOL)animated {
-    
     [super viewWillAppear:animated];
     
     [self removeOriginControls];
 }
 
-- (void)removeOriginControls {
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     
+    [self removeOriginControls];
+}
+
+- (void)removeOriginControls {
+
     [self.tabBar.subviews enumerateObjectsUsingBlock:^(__kindof UIView * obj, NSUInteger idx, BOOL * stop) {
         
         if ([obj isKindOfClass:[UIControl class]]) {
