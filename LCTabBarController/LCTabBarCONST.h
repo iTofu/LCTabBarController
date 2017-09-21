@@ -28,7 +28,12 @@
 #import <UIKit/UIKit.h>
 
 
-#define LCColorForTabBar(r, g, b)   [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1.0f]
+#define LCColorForTabBar(r, g, b)       [UIColor colorWithRed:(r)/255.0f \
+                                                        green:(g)/255.0f \
+                                                         blue:(b)/255.0f \
+                                                        alpha:1.0f]
+
+#define LCNotificationTabBarItemChanged @"LCNotificationTabBarItemChanged"
 
 
 //#define LC_TABBAR_ITEM_TITLE_COLOR      LCColorForTabBar(117, 117, 117) // tabBar 标题字体颜色
