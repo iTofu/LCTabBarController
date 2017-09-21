@@ -325,7 +325,7 @@ Just drag the LCTabBarController folder into your project.
 
 * If you have any question, just [commit a issue](https://github.com/iTofu/LCTabBarController/issues/new).
 
-* Mail: `echo bGVvZGF4aWFAZ21haWwuY29tCg== | base64 -D` or `echo ZGV2dGlwQDE2My5jb20K | base64 -D`
+* Mail: `echo bGVvZGF4aWFAZ21haWwuY29tCg== | base64 -D`
 
 * Blog: https://LeoDev.me
 

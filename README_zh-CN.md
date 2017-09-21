@@ -311,7 +311,7 @@ pod 'LCTabBarController' # Podfile
 
 * 有问题请直接新建 [Issue](https://github.com/iTofu/LCTabBarController/issues/new) :)
 
-* Mail: `echo bGVvZGF4aWFAZ21haWwuY29tCg== | base64 -D` or `echo ZGV2dGlwQDE2My5jb20K | base64 -D`
+* Mail: `echo bGVvZGF4aWFAZ21haWwuY29tCg== | base64 -D`
 
 * Blog: https://LeoDev.me
 
