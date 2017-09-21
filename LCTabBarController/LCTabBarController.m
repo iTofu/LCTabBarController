@@ -123,7 +123,8 @@
         
         if ([obj isKindOfClass:[UIControl class]]) {
             
-            [obj removeFromSuperview];
+            [obj setHidden:YES];
+//            [obj removeFromSuperview];
         }
     }];
 }

@@ -29,7 +29,7 @@
     
     [self.navigationController popToRootViewControllerAnimated:YES];
     
-    [(LCTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController removeOriginControls];
+//    [(LCTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController removeOriginControls];
 }
 
 @end

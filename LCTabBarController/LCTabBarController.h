@@ -64,6 +64,6 @@
  *  System will display the original controls so you should call this line when you change any tabBar item, like: `- popToRootViewController`, `someViewController.tabBarItem.title = xx`, etc.
  *  Remove origin controls
  */
-- (void)removeOriginControls;
+- (void)removeOriginControls __deprecated_msg("Method deprecated. The framework will be processed automatically now.");
 
 @end
