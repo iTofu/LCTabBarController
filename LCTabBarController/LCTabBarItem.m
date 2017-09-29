@@ -67,6 +67,17 @@
     return self;
 }
 
+
+- (instancetype)initWithItemImageRect:(CGRect)itemImageRect {
+    
+    if (self = [super init]) {
+        
+        self.itemImageSize = itemImageRect.size;
+        self.itemImageTop  = itemImageRect.origin.y;
+    }
+    return self;
+}
+
 #pragma mark -
 
 - (void)setItemTitleFont:(UIFont *)itemTitleFont {
@@ -134,12 +145,20 @@
 
 - (CGRect)imageRectForContentRect:(CGRect)contentRect {
     
-    CGFloat imageX = 0.f;
-    CGFloat imageY = 0.f;
-    CGFloat imageW = contentRect.size.width;
-    CGFloat imageH = contentRect.size.height * self.itemImageRatio;
+    if (CGSizeEqualToSize(self.itemImageSize,CGSizeZero )) {
+        CGFloat imageX = 0.f;
+        CGFloat imageY = 0.f;
+        CGFloat imageW = contentRect.size.width;
+        CGFloat imageH = contentRect.size.height * self.itemImageRatio;
+        
+        return CGRectMake(imageX, imageY, imageW, imageH);
+    }
+    else{
+        CGFloat imageX = (contentRect.size.width-self.itemImageSize.width)/2;
+        
+        return CGRectMake(imageX, self.itemImageTop, self.itemImageSize.width, self.itemImageSize.height);
+    }
     
-    return CGRectMake(imageX, imageY, imageW, imageH);
 }
 
 - (CGRect)titleRectForContentRect:(CGRect)contentRect {

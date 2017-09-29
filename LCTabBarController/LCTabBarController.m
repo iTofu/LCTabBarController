@@ -77,7 +77,7 @@
     
     [super loadView];
     
-    self.itemImageRatio = 0.70f;
+    self.itemImageRatio = 0.60f;
 }
 
 - (void)viewDidLoad {
@@ -135,6 +135,9 @@
     self.lcTabBar.selectedItemTitleColor = self.selectedItemTitleColor;
     
     self.lcTabBar.tabBarItemCount = viewControllers.count;
+    
+    self.lcTabBar.itemImageSize         = self.itemImageSize;
+    self.lcTabBar.itemImageTop          = self.itemImageTop;
     
     [viewControllers enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         

@@ -56,6 +56,16 @@
 @property (nonatomic, strong) UIFont *badgeTitleFont;
 
 /**
+ *  TabBar item image size
+ */
+@property (nonatomic, assign) CGSize itemImageSize;
+
+/**
+ *  TabBar item image top
+ */
+@property (nonatomic, assign) CGFloat itemImageTop;
+
+/**
  *  TabBar item image ratio
  */
 @property (nonatomic, assign) CGFloat itemImageRatio;
