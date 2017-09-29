@@ -132,6 +132,8 @@
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     
+    [[NSNotificationCenter defaultCenter] postNotificationName:LCNotificationTabBarItemChanged object:nil];
+    
     [self setTitle:self.tabBarItem.title forState:UIControlStateNormal];
     [self setImage:self.tabBarItem.image forState:UIControlStateNormal];
     [self setImage:self.tabBarItem.selectedImage forState:UIControlStateSelected];

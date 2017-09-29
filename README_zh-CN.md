@@ -196,6 +196,13 @@ pod 'LCTabBarController' # Podfile
 
 ## 版本
 
+### V 1.3.7
+
+* 适配 iOS 11。
+
+* 自动处理系统原有控件再显示的问题，[#27](https://github.com/iTofu/LCTabBarController/issues/27) by [tbl00c](https://github.com/tbl00c)。
+
+
 ### V 1.3.6
 
 * [#15](https://github.com/iTofu/LCTabBarController/issues/15) 相关，公开 `lcTabBar` 属性。
@@ -304,7 +311,7 @@ pod 'LCTabBarController' # Podfile
 
 * 有问题请直接新建 [Issue](https://github.com/iTofu/LCTabBarController/issues/new) :)
 
-* Mail: `echo bGVvZGF4aWFAZ21haWwuY29tCg== | base64 -D` or `echo ZGV2dGlwQDE2My5jb20K | base64 -D`
+* Mail: `echo bGVvZGF4aWFAZ21haWwuY29tCg== | base64 -D`
 
 * Blog: https://LeoDev.me
 

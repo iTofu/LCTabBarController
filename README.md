@@ -194,6 +194,13 @@ Just drag the LCTabBarController folder into your project.
 
 ## ChangeLog
 
+### V 1.3.7
+
+* Adapt for iOS 11.
+
+* Improve framework with [#27](https://github.com/iTofu/LCTabBarController/issues/27) by [tbl00c](https://github.com/tbl00c).
+
+
 ### V 1.3.6
 
 * About [#15](https://github.com/iTofu/LCTabBarController/issues/15), public `lcTabBar`.
@@ -318,7 +325,7 @@ Just drag the LCTabBarController folder into your project.
 
 * If you have any question, just [commit a issue](https://github.com/iTofu/LCTabBarController/issues/new).
 
-* Mail: `echo bGVvZGF4aWFAZ21haWwuY29tCg== | base64 -D` or `echo ZGV2dGlwQDE2My5jb20K | base64 -D`
+* Mail: `echo bGVvZGF4aWFAZ21haWwuY29tCg== | base64 -D`
 
 * Blog: https://LeoDev.me
 
