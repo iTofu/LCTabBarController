@@ -34,10 +34,24 @@
 
 @implementation LCTabBar
 
-- (NSMutableArray *)tabBarItems {
+- (void)setTabBarItemCount:(NSInteger)tabBarItemCount {
+    _tabBarItemCount = tabBarItemCount;
     
+    for (LCTabBarItem *tabBarItem in self.tabBarItems) {
+        tabBarItem.tabBarItemCount = tabBarItemCount;
+    }
+}
+
+- (void)setItemImageRatio:(CGFloat)itemImageRatio {
+    _itemImageRatio = itemImageRatio;
+    
+    for (LCTabBarItem *tabBarItem in self.tabBarItems) {
+        tabBarItem.itemImageRatio = itemImageRatio;
+    }
+}
+
+- (NSMutableArray *)tabBarItems {
     if (_tabBarItems == nil) {
-        
         _tabBarItems = [[NSMutableArray alloc] init];
     }
     return _tabBarItems;
@@ -56,7 +70,8 @@
     
     tabBarItem.tabBarItem = item;
     
-    [tabBarItem addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchDown];
+    UITapGestureRecognizer *tapGR = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(buttonClick:)];
+    [tabBarItem addGestureRecognizer:tapGR];
     
     [self addSubview:tabBarItem];
     
@@ -64,14 +79,18 @@
     
     if (self.tabBarItems.count == 1) {
         
-        [self buttonClick:tabBarItem];
+        [self onClickTabBarItem:tabBarItem];
     }
 }
 
-- (void)buttonClick:(LCTabBarItem *)tabBarItem {
+- (void)buttonClick:(UITapGestureRecognizer *)tapGR {
+    LCTabBarItem *tabBarItem = (LCTabBarItem *)tapGR.view;
     
+    [self onClickTabBarItem:tabBarItem];
+}
+
+- (void)onClickTabBarItem:(LCTabBarItem *)tabBarItem {
     if ([self.delegate respondsToSelector:@selector(tabBar:didSelectedItemFrom:to:)]) {
-        
         [self.delegate tabBar:self didSelectedItemFrom:self.selectedItem.tabBarItem.tag to:tabBarItem.tag];
     }
     

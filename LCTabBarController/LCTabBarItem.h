@@ -27,7 +27,22 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LCTabBarItem : UIButton
+@interface LCTabBarItem : UIView
+
+/**
+ *  TabBar's image view
+ */
+@property (nonatomic, weak) UIImageView *imageView;
+
+/**
+ *  TabBar's title label
+ */
+@property (nonatomic, weak) UILabel *titleLabel;
+
+/**
+ *  Is tabBar be selected
+ */
+@property (nonatomic, assign, getter=isSelected) BOOL selected;
 
 /**
  *  TabBar item

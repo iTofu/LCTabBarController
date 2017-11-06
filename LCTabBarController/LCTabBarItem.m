@@ -31,7 +31,7 @@
 
 @interface LCTabBarItem ()
 
-@property (nonatomic, strong) LCTabBarBadge *tabBarBadge;
+@property (nonatomic, weak) LCTabBarBadge *tabBarBadge;
 
 @end
 
@@ -46,48 +46,91 @@
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
-    
     if (self = [super initWithFrame:frame]) {
+        CGSize size = self.bounds.size;
         
-        self.imageView.contentMode = UIViewContentModeCenter;
-        self.titleLabel.textAlignment = NSTextAlignmentCenter;
+        UIImageView *imageView = [[UIImageView alloc] init];
+        imageView.image        = self.tabBarItem.image;
+        imageView.contentMode  = UIViewContentModeCenter;
+        imageView.frame        = CGRectMake(0, 0, size.width, size.height * self.itemImageRatio);
+        [self addSubview:imageView];
         
-        self.tabBarBadge = [[LCTabBarBadge alloc] init];
-        [self addSubview:self.tabBarBadge];
+        UILabel *titleLabel      = [[UILabel alloc] init];
+        titleLabel.font          = self.itemTitleFont;
+        titleLabel.textColor     = self.itemTitleColor;
+        titleLabel.textAlignment = NSTextAlignmentCenter;
+        CGFloat titleY           = size.height * self.itemImageRatio + (self.itemImageRatio == 1.0f ? 100.0f : -5.0f);
+        titleLabel.frame         = CGRectMake(0, titleY, size.width, size.height - titleY);
+        [self addSubview:titleLabel];
+        
+        LCTabBarBadge *tabBarBadge = [[LCTabBarBadge alloc] init];
+        [self addSubview:tabBarBadge];
+        
+        _imageView   = imageView;
+        _titleLabel  = titleLabel;
+        _tabBarBadge = tabBarBadge;
     }
     return self;
 }
 
 - (instancetype)initWithItemImageRatio:(CGFloat)itemImageRatio {
-    
     if (self = [super init]) {
-        
         self.itemImageRatio = itemImageRatio;
     }
     return self;
 }
 
+- (void)updateViewContent {
+    if (self.isSelected) {
+        self.imageView.image      = self.tabBarItem.selectedImage;
+        self.titleLabel.textColor = self.selectedItemTitleColor;
+    } else {
+        self.imageView.image      = self.tabBarItem.image;
+        self.titleLabel.textColor = self.itemTitleColor;
+    }
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    CGSize size           = self.bounds.size;
+    self.imageView.frame  = CGRectMake(0, 0, size.width, size.height * self.itemImageRatio);
+    CGFloat titleY        = size.height * self.itemImageRatio + (self.itemImageRatio == 1.0f ? 100.0f : -5.0f);
+    self.titleLabel.frame = CGRectMake(0, titleY, size.width, size.height - titleY);
+}
+
 #pragma mark -
 
-- (void)setItemTitleFont:(UIFont *)itemTitleFont {
+- (void)setSelected:(BOOL)selected {
+    _selected = selected;
     
+    [self updateViewContent];
+}
+
+- (void)setTabBarItemCount:(NSInteger)tabBarItemCount {
+    _tabBarItemCount = tabBarItemCount;
+    
+    self.tabBarBadge.tabBarItemCount = tabBarItemCount;
+}
+
+- (void)setItemImageRatio:(CGFloat)itemImageRatio {
+    _itemImageRatio = itemImageRatio;
+    
+    [self setNeedsLayout];
+}
+
+- (void)setItemTitleFont:(UIFont *)itemTitleFont {
     _itemTitleFont = itemTitleFont;
     
     self.titleLabel.font = itemTitleFont;
 }
 
 - (void)setItemTitleColor:(UIColor *)itemTitleColor {
-    
     _itemTitleColor = itemTitleColor;
-    
-    [self setTitleColor:itemTitleColor forState:UIControlStateNormal];
 }
 
 - (void)setSelectedItemTitleColor:(UIColor *)selectedItemTitleColor {
-    
     _selectedItemTitleColor = selectedItemTitleColor;
-    
-    [self setTitleColor:selectedItemTitleColor forState:UIControlStateSelected];
 }
 
 - (void)setBadgeTitleFont:(UIFont *)badgeTitleFont {
@@ -98,13 +141,6 @@
 }
 
 #pragma mark -
-
-- (void)setTabBarItemCount:(NSInteger)tabBarItemCount {
-    
-    _tabBarItemCount = tabBarItemCount;
-    
-    self.tabBarBadge.tabBarItemCount = self.tabBarItemCount;
-}
 
 
 - (void)setTabBarItem:(UITabBarItem *)tabBarItem {
@@ -123,10 +159,9 @@
     
     [[NSNotificationCenter defaultCenter] postNotificationName:LCNotificationTabBarItemChanged object:nil];
     
-    [self setTitle:self.tabBarItem.title forState:UIControlStateNormal];
-    [self setImage:self.tabBarItem.image forState:UIControlStateNormal];
-    [self setImage:self.tabBarItem.selectedImage forState:UIControlStateSelected];
+    [self updateViewContent];
     
+    self.titleLabel.text = self.tabBarItem.title;
     self.tabBarBadge.badgeValue = self.tabBarItem.badgeValue;
 }
 

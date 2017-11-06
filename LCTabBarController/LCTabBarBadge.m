@@ -46,6 +46,12 @@
     return self;
 }
 
+- (void)setTabBarItemCount:(NSInteger)tabBarItemCount {
+    _tabBarItemCount = tabBarItemCount;
+    
+    [self updateView];
+}
+
 - (void)setBadgeTitleFont:(UIFont *)badgeTitleFont {
     
     _badgeTitleFont = badgeTitleFont;
@@ -63,28 +69,32 @@
         
         [self setTitle:badgeValue forState:UIControlStateNormal];
         
-        CGRect frame = self.frame;
-        
-        if (self.badgeValue.length > 0) {
-            
-            CGFloat badgeW = self.currentBackgroundImage.size.width;
-            CGFloat badgeH = self.currentBackgroundImage.size.height;
-            
-            CGSize titleSize = [badgeValue sizeWithAttributes:[NSDictionary dictionaryWithObjectsAndKeys:self.badgeTitleFont, NSFontAttributeName, nil]];
-            frame.size.width = MAX(badgeW, titleSize.width + 10);
-            frame.size.height = badgeH;
-            self.frame = frame;
-            
-        } else {
-            
-            frame.size.width = 12.0f;
-            frame.size.height = frame.size.width;
-        }
-        
-        frame.origin.x = 58.0f * ([UIScreen mainScreen].bounds.size.width / self.tabBarItemCount) / 375.0f * 4.0f;
-        frame.origin.y = 2.0f;
-        self.frame = frame;
+        [self updateView];
     }
+}
+
+- (void)updateView {
+    CGRect frame = self.frame;
+    
+    if (self.badgeValue.length > 0) {
+        
+        CGFloat badgeW = self.currentBackgroundImage.size.width;
+        CGFloat badgeH = self.currentBackgroundImage.size.height;
+        
+        CGSize titleSize = [self.badgeValue sizeWithAttributes:[NSDictionary dictionaryWithObjectsAndKeys:self.badgeTitleFont, NSFontAttributeName, nil]];
+        frame.size.width = MAX(badgeW, titleSize.width + 10);
+        frame.size.height = badgeH;
+        self.frame = frame;
+        
+    } else {
+        
+        frame.size.width = 12.0f;
+        frame.size.height = frame.size.width;
+    }
+    
+    frame.origin.x = 58.0f * ([UIScreen mainScreen].bounds.size.width / self.tabBarItemCount) / 375.0f * 4.0f;
+    frame.origin.y = 2.0f;
+    self.frame = frame;
 }
 
 - (UIImage *)resizedImageFromMiddle:(UIImage *)image {

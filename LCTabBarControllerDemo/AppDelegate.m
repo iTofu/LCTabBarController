@@ -69,7 +69,12 @@
 //    tabBarC.itemImageRatio         = 0.5f;
 //    tabBarC.badgeTitleFont         = [UIFont boldSystemFontOfSize:12.0f];
 
-    tabBarC.viewControllers        = @[navC1, navC2, navC3, navC4];
+    [tabBarC addChildViewController:navC1];
+    [tabBarC addChildViewController:navC2];
+    [tabBarC addChildViewController:navC3];
+    [tabBarC addChildViewController:navC4];
+    
+//    tabBarC.viewControllers        = @[navC1, navC2, navC3, navC4];
 
     self.window.rootViewController = tabBarC;
     

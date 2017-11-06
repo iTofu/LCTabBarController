@@ -29,8 +29,22 @@
     
     [self.navigationController popToRootViewControllerAnimated:YES];
     
-    // Needn't do this now
-//    [(LCTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController removeOriginControls];
+    /**
+     * Call this for iOS 11.0-
+     *
+     * You could also add this method to your custom navigationController's method: `-popToRootViewControllerAnimated:`, like this:
+     *
+     * - (NSArray *)popToRootViewControllerAnimated:(BOOL)animated {
+     *     [super popToRootViewControllerAnimated:animated];
+     *
+     *     if ([UIDevice currentDevice].systemVersion.floatValue < 11.0) {
+     *         [(LCTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController removeOriginControls];
+     *     }
+     * }
+     */
+    if ([UIDevice currentDevice].systemVersion.floatValue < 11.0) {
+        [(LCTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController removeOriginControls];
+    }
 }
 
 @end

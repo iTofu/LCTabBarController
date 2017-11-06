@@ -35,40 +35,67 @@
 
 @implementation LCTabBarController
 
-- (UIColor *)itemTitleColor {
+@synthesize badgeTitleFont;
+@synthesize itemTitleFont;
+@synthesize itemTitleColor;
+@synthesize selectedItemTitleColor;
+
+- (void)setBadgeTitleFont:(UIFont *)aBadgeTitleFont {
+    badgeTitleFont = aBadgeTitleFont;
     
-    if (!_itemTitleColor) {
-        
-        _itemTitleColor = LCColorForTabBar(117, 117, 117);
-    }
-    return _itemTitleColor;
+    self.lcTabBar.badgeTitleFont = aBadgeTitleFont;
 }
 
-- (UIColor *)selectedItemTitleColor {
+- (void)setItemTitleFont:(UIFont *)aItemTitleFont {
+    itemTitleFont = aItemTitleFont;
     
-    if (!_selectedItemTitleColor) {
-        
-        _selectedItemTitleColor = LCColorForTabBar(234, 103, 7);
-    }
-    return _selectedItemTitleColor;
+    self.lcTabBar.itemTitleFont = aItemTitleFont;
+}
+
+- (void)setItemTitleColor:(UIColor *)aItemTitleColor {
+    itemTitleColor = aItemTitleColor;
+    
+    self.lcTabBar.itemTitleColor = aItemTitleColor;
+}
+
+- (void)setItemImageRatio:(CGFloat)itemImageRatio {
+    _itemImageRatio = itemImageRatio;
+    
+    self.lcTabBar.itemImageRatio = itemImageRatio;
+}
+
+- (void)setSelectedItemTitleColor:(UIColor *)aSelectedItemTitleColor {
+    selectedItemTitleColor = aSelectedItemTitleColor;
+    
+    self.lcTabBar.selectedItemTitleColor = aSelectedItemTitleColor;
 }
 
 - (UIFont *)itemTitleFont {
-    
-    if (!_itemTitleFont) {
-        
-        _itemTitleFont = [UIFont systemFontOfSize:10.0f];
+    if (!itemTitleFont) {
+        itemTitleFont = [UIFont systemFontOfSize:10.0f];
     }
-    return _itemTitleFont;
+    return itemTitleFont;
 }
 
 - (UIFont *)badgeTitleFont {
-    
-    if (!_badgeTitleFont) {
-        
-        _badgeTitleFont = [UIFont systemFontOfSize:11.0f];
+    if (!badgeTitleFont) {
+        badgeTitleFont = [UIFont systemFontOfSize:11.0f];
     }
-    return _badgeTitleFont;
+    return badgeTitleFont;
+}
+
+- (UIColor *)itemTitleColor {
+    if (!itemTitleColor) {
+        itemTitleColor = LCColorForTabBar(117, 117, 117);
+    }
+    return itemTitleColor;
+}
+
+- (UIColor *)selectedItemTitleColor {
+    if (!selectedItemTitleColor) {
+        selectedItemTitleColor = LCColorForTabBar(234, 103, 7);
+    }
+    return selectedItemTitleColor;
 }
 
 #pragma mark -
@@ -90,12 +117,17 @@
         tabBar.frame     = self.tabBar.bounds;
         tabBar.delegate  = self;
         
+        tabBar.badgeTitleFont         = self.badgeTitleFont;
+        tabBar.itemTitleFont          = self.itemTitleFont;
+        tabBar.itemTitleColor         = self.itemTitleColor;
+        tabBar.itemImageRatio         = self.itemImageRatio;
+        tabBar.selectedItemTitleColor = self.selectedItemTitleColor;
+        
         self.lcTabBar = tabBar;
     })];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleTabBarItemChanged)
-                                                 name:LCNotificationTabBarItemChanged
-                                               object:nil];
+                                                 name:LCNotificationTabBarItemChanged object:nil];
 }
 
 - (void)handleTabBarItemChanged {
@@ -115,38 +147,32 @@
 }
 
 - (void)hideOriginControls {
-    [self.tabBar.subviews enumerateObjectsUsingBlock:^(__kindof UIView * obj, NSUInteger idx, BOOL * stop) {
-        if ([obj isKindOfClass:[UIControl class]]) {
-            [obj setHidden:YES];
-        }
-    }];
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 1.0) {
+        // iOS 11.0+
+        [self.tabBar.subviews enumerateObjectsUsingBlock:^(__kindof UIView * obj, NSUInteger idx, BOOL * stop) {
+            if ([obj isKindOfClass:[UIControl class]]) {
+                [obj setHidden:YES];
+            }
+        }];
+    } else {
+        // TODO: fix iOS 11.0-
+        
+    }
 }
 
 - (void)removeOriginControls {
     [self hideOriginControls];
 }
 
-- (void)setViewControllers:(NSArray *)viewControllers {
+- (void)addChildViewController:(UIViewController *)childController {
+    [super addChildViewController:childController];
     
-    self.lcTabBar.badgeTitleFont         = self.badgeTitleFont;
-    self.lcTabBar.itemTitleFont          = self.itemTitleFont;
-    self.lcTabBar.itemImageRatio         = self.itemImageRatio;
-    self.lcTabBar.itemTitleColor         = self.itemTitleColor;
-    self.lcTabBar.selectedItemTitleColor = self.selectedItemTitleColor;
+    self.lcTabBar.tabBarItemCount = self.viewControllers.count;
     
-    self.lcTabBar.tabBarItemCount = viewControllers.count;
+    UIImage *selectedImage = childController.tabBarItem.selectedImage;
+    childController.tabBarItem.selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
-    [viewControllers enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        
-        UIViewController *VC = (UIViewController *)obj;
-        
-        UIImage *selectedImage = VC.tabBarItem.selectedImage;
-        VC.tabBarItem.selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-        
-        [self addChildViewController:VC];
-        
-        [self.lcTabBar addTabBarItem:VC.tabBarItem];
-    }];
+    [self.lcTabBar addTabBarItem:childController.tabBarItem];
 }
 
 - (void)setSelectedIndex:(NSUInteger)selectedIndex {
