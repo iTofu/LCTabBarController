@@ -1,3 +1,9 @@
 language: objective-c
-os: osx
 osx_image: xcode7.2
+
+# env:
+#   - ACTION=test  PLATFORM=iOS     DESTINATION='platform=iOS Simulator,name=iPhone 6S'
+
+xcode_workspace: LCTabBarControllerDemo.xcodeproj
+
+xcode_scheme: LCTabBarControllerDemo
