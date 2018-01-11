@@ -1,0 +1,6 @@
+framework module Pods_LCTabBarControllerDemo {
+  umbrella header "Pods-LCTabBarControllerDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

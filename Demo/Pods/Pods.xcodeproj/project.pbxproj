@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		092B724E3C1E35AA896CC8AD69771463 /* LCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E9F94993A091C0880C450F965FDFBE /* LCTabBarController.m */; };
+		0AD48C06C8F64C2BA583EC50F15B248B /* LCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B87F00A4D37847885860BBFA3B25E8B /* LCTabBar.m */; };
+		118A8B50665671766254B355D8124905 /* LCTabBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 7121B84029CCFA47BBA0D8731A60B3FF /* LCTabBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1623C062090D7A177F440F917490E925 /* LCTabBarCONST.h in Headers */ = {isa = PBXBuildFile; fileRef = A59D1918B8F9AEC56440245AC53F1C60 /* LCTabBarCONST.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A1B1CF12D2D175420C8F02D3907C21 /* LCTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = F53D8DDD634E03FD29461F1FDB908C52 /* LCTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EDB05FCD02F50787B615DF9E9D87AAE /* Pods-LCTabBarControllerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CACDCF8D999DE0E926286250B5B0AB0 /* Pods-LCTabBarControllerDemo-dummy.m */; };
+		6076B8B6B1176E7ABD2EA91C39536C21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		617B5F583881E4CB942A32A4AA81B406 /* LCTabBarBadge.h in Headers */ = {isa = PBXBuildFile; fileRef = 17ABF93EBFFFAE01BD4C46E7D0CA74FA /* LCTabBarBadge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62C875322799C5DE5C2C6A29CE1D428E /* UIImage+LCTarBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B6878B0A1283FB0957E91E6BF8A2F48 /* UIImage+LCTarBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72747CB6D4FCB5F8D6ECE127D71386D7 /* UIImage+LCTarBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EADDA4EC92939C1C77FB02FF7004E9 /* UIImage+LCTarBarController.m */; };
+		A70DB3409FDF201A043049C9EDB75F28 /* LCTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D920F97F397CB728FD7E360F4BF48C08 /* LCTabBarItem.m */; };
+		B3B5B827BEE1752982A9C29507C0DA02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		BEAD9C00B796A7D171BB76721181D27E /* LCTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B48E90AA9A2CE89925141437D5C6CD4 /* LCTabBarController-dummy.m */; };
+		D11111D8D66BCC73111F6F9C44C72DA1 /* LCTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B38F3BF9F2ADB558B9AB0DE438A21AC /* LCTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC63B8AD7AD7334D8E039F99E812AF9F /* LCTabBarBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = B61F739A0E7DDE8F692D683309CA423D /* LCTabBarBadge.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47728887A79B6C309A72920C70CEA388 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94294EAC1D5A150D67B1E1DF9534C5DC;
+			remoteInfo = LCTabBarController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CACDCF8D999DE0E926286250B5B0AB0 /* Pods-LCTabBarControllerDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LCTabBarControllerDemo-dummy.m"; sourceTree = "<group>"; };
+		17ABF93EBFFFAE01BD4C46E7D0CA74FA /* LCTabBarBadge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LCTabBarBadge.h; path = Source/LCTabBarBadge.h; sourceTree = "<group>"; };
+		19464FB238175D1EBA30F9C0ED4FC5E8 /* libPods-LCTabBarControllerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LCTabBarControllerDemo.a"; path = "libPods-LCTabBarControllerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B38F3BF9F2ADB558B9AB0DE438A21AC /* LCTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LCTabBar.h; path = Source/LCTabBar.h; sourceTree = "<group>"; };
+		2B48E90AA9A2CE89925141437D5C6CD4 /* LCTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LCTabBarController-dummy.m"; sourceTree = "<group>"; };
+		2B6878B0A1283FB0957E91E6BF8A2F48 /* UIImage+LCTarBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+LCTarBarController.h"; path = "Source/UIImage+LCTarBarController.h"; sourceTree = "<group>"; };
+		632DB260CDE712F93FF5100129E52C70 /* RevealServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RevealServer.framework; path = "RevealServer-13/iOS/RevealServer.framework"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		67E9F94993A091C0880C450F965FDFBE /* LCTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LCTabBarController.m; path = Source/LCTabBarController.m; sourceTree = "<group>"; };
+		69EADDA4EC92939C1C77FB02FF7004E9 /* UIImage+LCTarBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+LCTarBarController.m"; path = "Source/UIImage+LCTarBarController.m"; sourceTree = "<group>"; };
+		7121B84029CCFA47BBA0D8731A60B3FF /* LCTabBarItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LCTabBarItem.h; path = Source/LCTabBarItem.h; sourceTree = "<group>"; };
+		8CEA1F2662DFE24D64753755D0B88662 /* LCTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LCTabBarController.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B87F00A4D37847885860BBFA3B25E8B /* LCTabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LCTabBar.m; path = Source/LCTabBar.m; sourceTree = "<group>"; };
+		9BDD7BF915477994675B803CA04330C0 /* LCTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LCTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		9F5066EAF423F37CA188D49B8379DFA9 /* libLCTabBarController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLCTabBarController.a; path = libLCTabBarController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A59D1918B8F9AEC56440245AC53F1C60 /* LCTabBarCONST.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LCTabBarCONST.h; path = Source/LCTabBarCONST.h; sourceTree = "<group>"; };
+		AF4E81B394E9DB957E4F05BB991703BA /* Pods-LCTabBarControllerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LCTabBarControllerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B052C9FDFF5CC6A9ECCC6781D4D538BD /* Pods-LCTabBarControllerDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LCTabBarControllerDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B61F739A0E7DDE8F692D683309CA423D /* LCTabBarBadge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LCTabBarBadge.m; path = Source/LCTabBarBadge.m; sourceTree = "<group>"; };
+		C1191D4167ACD8F08B2E6B8DA096F611 /* Pods-LCTabBarControllerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LCTabBarControllerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C4D0973069E60A8815EA0D5A1DB24B40 /* Pods-LCTabBarControllerDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LCTabBarControllerDemo-resources.sh"; sourceTree = "<group>"; };
+		D8AAB5B3019FB2AA997F5368B7AA3BC0 /* Pods-LCTabBarControllerDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LCTabBarControllerDemo-frameworks.sh"; sourceTree = "<group>"; };
+		D920F97F397CB728FD7E360F4BF48C08 /* LCTabBarItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LCTabBarItem.m; path = Source/LCTabBarItem.m; sourceTree = "<group>"; };
+		D9DFE95CBF349DF9F9278071DFE49B56 /* Pods-LCTabBarControllerDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LCTabBarControllerDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		F53D8DDD634E03FD29461F1FDB908C52 /* LCTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LCTabBarController.h; path = Source/LCTabBarController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BD418B5E36418B589E96CC0C1492887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3B5B827BEE1752982A9C29507C0DA02 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D81D30ADCCCE5DAD39792EBB53592C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6076B8B6B1176E7ABD2EA91C39536C21 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1901BB46B02DAE294113316F9886C1B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F5066EAF423F37CA188D49B8379DFA9 /* libLCTabBarController.a */,
+				19464FB238175D1EBA30F9C0ED4FC5E8 /* libPods-LCTabBarControllerDemo.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F3C5A476D6A684262B8D170B4E21AB1 /* Pods-LCTabBarControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B052C9FDFF5CC6A9ECCC6781D4D538BD /* Pods-LCTabBarControllerDemo-acknowledgements.markdown */,
+				D9DFE95CBF349DF9F9278071DFE49B56 /* Pods-LCTabBarControllerDemo-acknowledgements.plist */,
+				0CACDCF8D999DE0E926286250B5B0AB0 /* Pods-LCTabBarControllerDemo-dummy.m */,
+				D8AAB5B3019FB2AA997F5368B7AA3BC0 /* Pods-LCTabBarControllerDemo-frameworks.sh */,
+				C4D0973069E60A8815EA0D5A1DB24B40 /* Pods-LCTabBarControllerDemo-resources.sh */,
+				C1191D4167ACD8F08B2E6B8DA096F611 /* Pods-LCTabBarControllerDemo.debug.xcconfig */,
+				AF4E81B394E9DB957E4F05BB991703BA /* Pods-LCTabBarControllerDemo.release.xcconfig */,
+			);
+			name = "Pods-LCTabBarControllerDemo";
+			path = "Target Support Files/Pods-LCTabBarControllerDemo";
+			sourceTree = "<group>";
+		};
+		6D66749716588F023B04C6158293C6A6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F3C5A476D6A684262B8D170B4E21AB1 /* Pods-LCTabBarControllerDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				B448786505667DDD28E2732CAAB5F662 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				9B6766349D399265AA26ED6C7E8D5333 /* Pods */,
+				1901BB46B02DAE294113316F9886C1B3 /* Products */,
+				6D66749716588F023B04C6158293C6A6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9B6766349D399265AA26ED6C7E8D5333 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E853FEE7349B6E1788A524CC074AEEB0 /* Reveal-SDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E522DCEA0CA1B2F178D29D0AC9F13C0 /* LCTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				2B38F3BF9F2ADB558B9AB0DE438A21AC /* LCTabBar.h */,
+				9B87F00A4D37847885860BBFA3B25E8B /* LCTabBar.m */,
+				17ABF93EBFFFAE01BD4C46E7D0CA74FA /* LCTabBarBadge.h */,
+				B61F739A0E7DDE8F692D683309CA423D /* LCTabBarBadge.m */,
+				A59D1918B8F9AEC56440245AC53F1C60 /* LCTabBarCONST.h */,
+				F53D8DDD634E03FD29461F1FDB908C52 /* LCTabBarController.h */,
+				67E9F94993A091C0880C450F965FDFBE /* LCTabBarController.m */,
+				7121B84029CCFA47BBA0D8731A60B3FF /* LCTabBarItem.h */,
+				D920F97F397CB728FD7E360F4BF48C08 /* LCTabBarItem.m */,
+				2B6878B0A1283FB0957E91E6BF8A2F48 /* UIImage+LCTarBarController.h */,
+				69EADDA4EC92939C1C77FB02FF7004E9 /* UIImage+LCTarBarController.m */,
+				E15A6B277B94080E1D974DC1DD4AD5AF /* Support Files */,
+			);
+			name = LCTabBarController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		B448786505667DDD28E2732CAAB5F662 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E522DCEA0CA1B2F178D29D0AC9F13C0 /* LCTabBarController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E15A6B277B94080E1D974DC1DD4AD5AF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA1F2662DFE24D64753755D0B88662 /* LCTabBarController.xcconfig */,
+				2B48E90AA9A2CE89925141437D5C6CD4 /* LCTabBarController-dummy.m */,
+				9BDD7BF915477994675B803CA04330C0 /* LCTabBarController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Demo/Pods/Target Support Files/LCTabBarController";
+			sourceTree = "<group>";
+		};
+		E853FEE7349B6E1788A524CC074AEEB0 /* Reveal-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				FDD35C28CA6FA4C26D22013283E2D0DB /* Frameworks */,
+			);
+			name = "Reveal-SDK";
+			path = "Reveal-SDK";
+			sourceTree = "<group>";
+		};
+		FDD35C28CA6FA4C26D22013283E2D0DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				632DB260CDE712F93FF5100129E52C70 /* RevealServer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		674A8E3D79D1B00F1FD9579D74009454 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D11111D8D66BCC73111F6F9C44C72DA1 /* LCTabBar.h in Headers */,
+				617B5F583881E4CB942A32A4AA81B406 /* LCTabBarBadge.h in Headers */,
+				1623C062090D7A177F440F917490E925 /* LCTabBarCONST.h in Headers */,
+				23A1B1CF12D2D175420C8F02D3907C21 /* LCTabBarController.h in Headers */,
+				118A8B50665671766254B355D8124905 /* LCTabBarItem.h in Headers */,
+				62C875322799C5DE5C2C6A29CE1D428E /* UIImage+LCTarBarController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		218C5A0D3E06D689FEFF58F1D14EF8E1 /* Pods-LCTabBarControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 202B70B2AD049E8FF1815CD925FD1DA3 /* Build configuration list for PBXNativeTarget "Pods-LCTabBarControllerDemo" */;
+			buildPhases = (
+				B3016A6FBDD03E32DB8B8B445898C828 /* Sources */,
+				2BD418B5E36418B589E96CC0C1492887 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				416853F748EAE4E4C6528F53FC91E491 /* PBXTargetDependency */,
+			);
+			name = "Pods-LCTabBarControllerDemo";
+			productName = "Pods-LCTabBarControllerDemo";
+			productReference = 19464FB238175D1EBA30F9C0ED4FC5E8 /* libPods-LCTabBarControllerDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		94294EAC1D5A150D67B1E1DF9534C5DC /* LCTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14D2709977689B9093F5AFC5A6E17175 /* Build configuration list for PBXNativeTarget "LCTabBarController" */;
+			buildPhases = (
+				05524A751F8A5E2A67B6DBBB3F59B6C6 /* Sources */,
+				7D81D30ADCCCE5DAD39792EBB53592C7 /* Frameworks */,
+				674A8E3D79D1B00F1FD9579D74009454 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LCTabBarController;
+			productName = LCTabBarController;
+			productReference = 9F5066EAF423F37CA188D49B8379DFA9 /* libLCTabBarController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 1901BB46B02DAE294113316F9886C1B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94294EAC1D5A150D67B1E1DF9534C5DC /* LCTabBarController */,
+				218C5A0D3E06D689FEFF58F1D14EF8E1 /* Pods-LCTabBarControllerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05524A751F8A5E2A67B6DBBB3F59B6C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AD48C06C8F64C2BA583EC50F15B248B /* LCTabBar.m in Sources */,
+				FC63B8AD7AD7334D8E039F99E812AF9F /* LCTabBarBadge.m in Sources */,
+				BEAD9C00B796A7D171BB76721181D27E /* LCTabBarController-dummy.m in Sources */,
+				092B724E3C1E35AA896CC8AD69771463 /* LCTabBarController.m in Sources */,
+				A70DB3409FDF201A043049C9EDB75F28 /* LCTabBarItem.m in Sources */,
+				72747CB6D4FCB5F8D6ECE127D71386D7 /* UIImage+LCTarBarController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3016A6FBDD03E32DB8B8B445898C828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EDB05FCD02F50787B615DF9E9D87AAE /* Pods-LCTabBarControllerDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		416853F748EAE4E4C6528F53FC91E491 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LCTabBarController;
+			target = 94294EAC1D5A150D67B1E1DF9534C5DC /* LCTabBarController */;
+			targetProxy = 47728887A79B6C309A72920C70CEA388 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1E12B8B45BB4E98B5360FB252C1C3228 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF4E81B394E9DB957E4F05BB991703BA /* Pods-LCTabBarControllerDemo.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54644D5D389DB64D7E3A8B0DA9C8AB0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CEA1F2662DFE24D64753755D0B88662 /* LCTabBarController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LCTabBarController/LCTabBarController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B343EE2F12E6BC1C225DB53472444B1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CEA1F2662DFE24D64753755D0B88662 /* LCTabBarController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LCTabBarController/LCTabBarController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FC937C410B065226C7A232B9B0F7F5BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1191D4167ACD8F08B2E6B8DA096F611 /* Pods-LCTabBarControllerDemo.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14D2709977689B9093F5AFC5A6E17175 /* Build configuration list for PBXNativeTarget "LCTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B343EE2F12E6BC1C225DB53472444B1B /* Debug */,
+				54644D5D389DB64D7E3A8B0DA9C8AB0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		202B70B2AD049E8FF1815CD925FD1DA3 /* Build configuration list for PBXNativeTarget "Pods-LCTabBarControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC937C410B065226C7A232B9B0F7F5BE /* Debug */,
+				1E12B8B45BB4E98B5360FB252C1C3228 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */,
+				B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

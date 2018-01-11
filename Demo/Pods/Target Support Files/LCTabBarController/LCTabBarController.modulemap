@@ -1,0 +1,6 @@
+framework module LCTabBarController {
+  umbrella header "LCTabBarController-umbrella.h"
+
+  export *
+  module * { export * }
+}

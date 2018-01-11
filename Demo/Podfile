@@ -1,0 +1,13 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'LCTabBarControllerDemo' do
+  
+  # use_frameworks!
+
+  # Pods for LCTabBarControllerDemo
+  pod 'LCTabBarController', :path => '../'
+  
+  pod 'Reveal-SDK', :configurations => ['Debug']
+
+end
