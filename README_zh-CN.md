@@ -7,11 +7,13 @@
 [![LeoDev](https://img.shields.io/badge/blog-LeoDev.me-brightgreen.svg)](http://leodev.me)
 [![Join the chat at https://gitter.im/iTofu/LCTabBarController](https://badges.gitter.im/iTofu/LCTabBarController.svg)](https://gitter.im/iTofu/LCTabBarController?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+> ⚠️ 因工作繁忙，这个库暂时不会获得支持，请慎重集成。
+
 一个感天动地的高度自定义的 tabBarController！
 
 你几乎可以自定义 100% 的属性！😍 ✨
 
-![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/demo01.png)
+![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCTabBarController/master/Preview/demo01.png)
 
 ```
 In me the tiger sniffs the rose.
